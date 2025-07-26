@@ -1,12 +1,12 @@
-import Footer from "@/components/Footer";
 import MainSection from "@/components/MainSection";
-import NavBar from "@/components/NavBar";
+import QualityManagement from "@/components/QualityManagement";
 import React from "react";
 
 const HomePage = () => {
     return (
         <>
             <MainSection />
+            <QualityManagement />
         </>
     );
 };
