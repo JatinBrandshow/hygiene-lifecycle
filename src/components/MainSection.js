@@ -14,7 +14,7 @@ const slides = [
     },
     {
         id: 2,
-        image: "/img/main-section/main-section.webp",
+        image: "/img/main-section/main-section-1.webp",
         title: "Unleash Your Creativity",
         subtitle: "Design Without Limits",
         description: "Explore endless possibilities with our creative platform that empowers designers and artists to bring their wildest ideas to life.",
@@ -22,7 +22,7 @@ const slides = [
     },
     {
         id: 3,
-        image: "/img/main-section/main-section.webp",
+        image: "/img/main-section/main-section-2.webp",
         title: "Future-Ready Technology",
         subtitle: "Innovation at Your Fingertips",
         description: "Stay ahead of the curve with cutting-edge technology solutions that adapt to your needs and scale with your business growth.",
@@ -53,7 +53,7 @@ const MainSection = () => {
     };
 
     return (
-        <section className="relative w-full h-screen overflow-hidden">
+        <section className="relative w-full h-[93vh] overflow-hidden">
             {/* Slides */}
             <div className="relative w-full h-full">
                 {slides.map((slide, index) => (
