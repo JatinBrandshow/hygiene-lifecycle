@@ -30,9 +30,14 @@ const VisionMissionValues = () => {
             <section className="py-16 bg-white">
                 <div className="max-w-[1400px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
                     {items.map((item, index) => (
-                        <div key={index} className="relative flex items-center justify-center">
+                        <div key={index} className="relative flex items-center justify-center group">
                             {/* Outer semi-circle ring */}
-                            <div className={`w-96 h-96 rounded-full border-[10px] ${item.ringColor} border-t-transparent border-b-transparent rotate-[135deg] absolute`}></div>
+                            <div
+  className={`absolute w-[380px] h-[380px] rounded-full border-[10px] ${item.ringColor}
+    border-t-transparent border-b-transparent transition-transform duration-500
+    ${index % 2 === 0 ? "rotate-[135deg]" : "-rotate-[135deg]"}
+    spin-on-hover`}  // note: no group-hover here
+/>
 
                             {/* Inner white circle content */}
                             <div className="w-80 h-80 bg-white rounded-full shadow-lg z-10 flex flex-col items-center justify-center text-center px-4">
