@@ -51,7 +51,7 @@ const MainSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[93vh] overflow-hidden">
+    <section className="relative w-full h-[85vh] overflow-hidden">
       {/* Slides */}
       <div className="relative w-full h-full">
         {slides.map((slide, index) => (

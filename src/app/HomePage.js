@@ -15,8 +15,8 @@ const HomePage = () => {
             <QualityManagement />
             <ProductGallery />
             <WhyChooseUs />
-            <ContactUs />
             <OurCustomers />
+            {/* <ContactUs /> */}
         </>
     );
 };
