@@ -74,7 +74,7 @@ const ContactUs = () => {
     }
 
     return (
-        <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row bg-white shadow-2xl rounded-2xl overflow-hidden">
+        <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row bg-white shadow-2xl rounded-2xl overflow-hidden my-8">
             {/* Left Image Section */}
             <div className="md:w-1/2 w-full h-64 md:h-auto">
                 <img

@@ -5,6 +5,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import ContactUs from "@/components/ContactUs";
 import ProductGallery from "@/components/ProductGallery";
 import React from "react";
+import OurCustomers from "@/components/OurCustomers";
 
 const HomePage = () => {
     return (
@@ -14,7 +15,8 @@ const HomePage = () => {
             <QualityManagement />
             <ProductGallery />
             <WhyChooseUs />
-            <ContactUs /> 
+            <ContactUs />
+            <OurCustomers />
         </>
     );
 };
