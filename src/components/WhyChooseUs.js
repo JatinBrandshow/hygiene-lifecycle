@@ -31,12 +31,14 @@ const WhyChooseUs = () => {
 
             {/* Content */}
             <div className="container mx-auto px-4 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                {/* Section Heading Centered */}
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
+                    Why Choose Us
+                </h2>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
                     {/* Left Content */}
-                    <div className="space-y-6">
-                        <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
-                            Why Choose Us
-                        </h2>
+                    <div className="space-y-6 flex flex-col">
                         <p className="text-lg text-gray-700 leading-relaxed">
                             We work towards making this world a healthier place. Working over the years in the pharmaceutical sector, we understand the requirements of our clients and hence deliver an exclusive range of medicine. Our clients trust us for quality, ethical business practices and our commitment.
                         </p>
@@ -53,7 +55,7 @@ const WhyChooseUs = () => {
                             ))}
                         </div>
 
-                        <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                        <div className="flex flex-col sm:flex-row gap-4 mt-auto">
                             <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow hover:shadow-lg transition-all">
                                 Contact Now
                             </button>
@@ -63,8 +65,8 @@ const WhyChooseUs = () => {
                         </div>
                     </div>
 
-                    {/* No Right Side Image anymore */}
-                    <div className="hidden lg:block">
+                    {/* Right Image Matching Height */}
+                    <div className="hidden lg:block h-full">
                         <img
                             src="/img/why-choose-us.webp"
                             alt="Why Choose Us"
