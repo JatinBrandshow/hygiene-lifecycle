@@ -62,9 +62,9 @@ const CarbapenemInjection = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 flex justify-center">
-                        <div className="relative w-full max-w-md h-100">
+                        <div className="relative w-full max-w-md h-80">
                             <Image
-                                src="/img/carbapenem1.jpg"
+                                src="/img/carbapenem/carbapenem1.jpg"
                                 alt="Carbapenem Injection Range"
                                 fill
                                 className="object-contain"
