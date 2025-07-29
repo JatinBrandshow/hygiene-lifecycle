@@ -15,23 +15,23 @@ const NavBar = () => {
         },
         {
             name: "About",
-            href: "/about",
+            href: "/about", 
             submenu: [
-                { name: "Who We Are", href: "/about#who-we-are" },
-                { name: "Vision and Mission", href: "/about#vision-mission" },
-                { name: "Our Management", href: "/about#management" },
-                { name: "Global Accreditations", href: "/about#accreditations" },
-                { name: "Quality Policy", href: "/about#quality-policy" },
-                { name: "Quality Practices", href: "/about#quality-practices" },
-                { name: "Our Strengths", href: "/about#strengths" },
+                { name: "Who We Are", href: "/about" },
+                { name: "Vision and Mission", href: "/about/vision-and-mission" },
+                { name: "Our Management", href: "/about/our-management" },
+                { name: "Global Accreditations", href: "/about/accreditation" },
+                { name: "Quality Policy", href: "/about/quality-policy" },
+                { name: "Quality Practices", href: "/about/quality-practices" },
+                { name: "Our Strengths", href: "/about/our-strength" },
             ],
         },
         {
             name: "Products",
-            href: "/products",
+            href: "/carbapenem-injection", 
             submenu: [
-                { name: "Carbapenem Injections", href: "/products#carbapenem" },
-                { name: "Cephalosporin Injections", href: "/products#cephalosporin" },
+                { name: "Carbapenem Injections", href: "/carbapenem-injection" },
+                { name: "Cephalosporin Injections", href: "/cephalosporin-injection" },
             ],
         },
         {
@@ -40,14 +40,14 @@ const NavBar = () => {
         },
         {
             name: "R&D",
-            href: "/rd",
+            href: "/research-and-devlopment",
         },
         {
             name: "Market",
-            href: "/market",
+            href: "/global-presence", // Added default href for the parent item
             submenu: [
-                { name: "Domestic Customers", href: "/market#domestic" },
-                { name: "Global Presence", href: "/market#global" },
+                { name: "Domestic Customers", href: "/domestic-customers" },
+                { name: "Global Presence", href: "/global-presence" },
             ],
         },
         {
@@ -76,19 +76,35 @@ const NavBar = () => {
                         <div className="hidden lg:flex items-center space-x-4">
                             {navigationItems.map((item) => (
                                 <div key={item.name} className="relative group">
-                                    <Link href={item.href} className="relative px-4 py-2 text-sm font-medium text-gray-500 hover:text-black transition group">
-                                        {item.name}
-                                        <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
-                                    </Link>
-
-                                    {item.submenu && (
-                                        <div className="absolute top-full left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md z-50 w-56">
-                                            {item.submenu.map((subItem) => (
-                                                <Link key={subItem.name} href={subItem.href} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                                                    {subItem.name}
-                                                </Link>
-                                            ))}
-                                        </div>
+                                    {item.submenu ? (
+                                        <>
+                                            <Link 
+                                                href={item.href} 
+                                                className="relative px-4 py-2 text-sm font-medium text-gray-500 hover:text-black transition group"
+                                            >
+                                                {item.name}
+                                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                                            </Link>
+                                            <div className="absolute top-full left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md z-50 w-56">
+                                                {item.submenu.map((subItem) => (
+                                                    <Link 
+                                                        key={subItem.name} 
+                                                        href={subItem.href} 
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                    >
+                                                        {subItem.name}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <Link 
+                                            href={item.href} 
+                                            className="relative px-4 py-2 text-sm font-medium text-gray-500 hover:text-black transition group"
+                                        >
+                                            {item.name}
+                                            <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                                        </Link>
                                     )}
                                 </div>
                             ))}
@@ -132,9 +148,29 @@ const NavBar = () => {
 
                         {/* Mobile Links */}
                         {navigationItems.map((item) => (
-                            <Link key={item.name} href={item.href} onClick={() => setIsOpen(false)} className="px-2 py-2 rounded-md text-gray-600 hover:bg-gray-100 hover:text-black transition">
-                                {item.name}
-                            </Link>
+                            <div key={item.name} className="flex flex-col">
+                                <Link
+                                    href={item.href}
+                                    onClick={() => setIsOpen(false)}
+                                    className="px-2 py-2 rounded-md text-gray-600 hover:bg-gray-100 hover:text-black transition"
+                                >
+                                    {item.name}
+                                </Link>
+                                {item.submenu && (
+                                    <div className="ml-4 mt-1 flex flex-col space-y-1">
+                                        {item.submenu.map((subItem) => (
+                                            <Link
+                                                key={subItem.name}
+                                                href={subItem.href}
+                                                onClick={() => setIsOpen(false)}
+                                                className="px-2 py-1 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black transition text-sm"
+                                            >
+                                                {subItem.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
                         ))}
 
                         <div className="pt-4 mt-auto border-t">
