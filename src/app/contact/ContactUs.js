@@ -5,7 +5,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaBuilding, FaGlobe } fro
 import { motion } from "framer-motion";
 
 export default function Contact() {
- const contactInfo = [
+  const contactInfo = [
     {
       title: "CORPORATE OFFICE",
       location: "Chandigarh",
@@ -34,7 +34,7 @@ export default function Contact() {
       hours: "Mon-Sat: 8:00 AM - 5:00 PM",
       email: "operations@shamshree.com"
     }
-];
+  ];
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -48,40 +48,40 @@ export default function Contact() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-    <div className="relative h-[500px] overflow-hidden bg-gradient-to-r from-blue-900 to-indigo-800">
-  {/* Overlay gradient */}
-  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent"></div>
-  
-  {/* Content */}
-  <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
-    <motion.h1
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
-    >
-      Connect With Us
-    </motion.h1>
-    
-    <motion.div
-      initial={{ scaleX: 0 }}
-      animate={{ scaleX: 1 }}
-      transition={{ duration: 0.8, delay: 0.3 }}
-      className="w-32 h-1.5 bg-gradient-to-r from-cyan-400 to-blue-500 mb-8 mx-auto rounded-full"
-    ></motion.div>
-    
-    <motion.p
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.6, duration: 0.5 }}
-      className="text-xl md:text-2xl text-blue-100 max-w-3xl leading-relaxed"
-    >
-      Reach out to our pharmaceutical experts across India for world-class solutions
-    </motion.p>
-  </div>
-</div>
+      <div className="relative h-[500px] overflow-hidden bg-gradient-to-r from-blue-900 to-indigo-800">
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent"></div>
 
-     {/* Main Content */}
+        {/* Content */}
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+          >
+            Connect With Us
+          </motion.h1>
+
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="w-32 h-1.5 bg-gradient-to-r from-cyan-400 to-blue-500 mb-8 mx-auto rounded-full"
+          ></motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6, duration: 0.5 }}
+            className="text-xl md:text-2xl text-blue-100 max-w-3xl leading-relaxed"
+          >
+            Reach out to our pharmaceutical experts across India for world-class solutions
+          </motion.p>
+        </div>
+      </div>
+
+      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Image and General Info Section - Moved to top */}
         <div className="flex flex-col lg:flex-row items-center gap-12 mb-16">
@@ -261,7 +261,7 @@ export default function Contact() {
             </motion.div>
           ))}
         </div>
-    </div>
+      </div>
     </div>
   );
 }
