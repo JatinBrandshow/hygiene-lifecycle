@@ -65,7 +65,7 @@ const CephalosporinInjection = () => {
                     <div className="md:w-1/2 flex justify-center">
                         <div className="relative w-full max-w-md h-80">
                             <Image
-                                src="/img/ceophalosporin/carbapenem1.jpg"
+                                src="/img/Carbapenem1.jpg"
                                 alt="Cephalosporin Injection Range"
                                 fill
                                 className="object-contain"
@@ -137,7 +137,7 @@ const CephalosporinInjection = () => {
                     <div className="bg-white rounded-xl shadow-md overflow-hidden p-6">
                         <div className="relative w-full h-auto">
                             <Image
-                                src="/img/ceophalosporin/cephalosporin-product-List111.jpg"
+                                src="/img/ceophalosporin/Cephalosporin-product-List111.jpg"
                                 alt="Carbapenem Product Strengths"
                                 width={1200}
                                 height={800}
