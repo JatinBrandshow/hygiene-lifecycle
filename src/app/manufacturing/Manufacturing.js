@@ -4,14 +4,14 @@ import Image from 'next/image';
 
 const Manufacturing = () => {
   const manufacturingImages = [
-    { src: '/img/Plant1.jpg', alt: 'Manufacturing Plant 1' },
-    { src: '/img/manufacturing/Vial-Filling-Machine.jpg', alt: 'Vial Filling Machine' },
-    { src: '/img/manufacturing/Vial-Inspection.jpg', alt: 'Vial Inspection Process' },
-    { src: '/img/manufacturing/Vial-Washing-Machine.jpg', alt: 'Vial Washing Machine' },
-    { src: '/img/manufacturing/Warehouse.jpg', alt: 'Warehouse Facility' },
-    { src: '/img/manufacturing/Water-System.jpg', alt: 'Purified Water System' },
-    { src: '/img/manufacturing/RM-Store.jpg', alt: 'Raw Material Store' },
-    { src: '/img/manufacturing/Auto-Cartoning-Machine1.jpg', alt: 'Automated Cartoning Machine' }
+    { src: '/img/Plant1.webp', alt: 'Manufacturing Plant 1' },
+    { src: '/img/manufacturing/Vial-Filling-Machine.webp', alt: 'Vial Filling Machine' },
+    { src: '/img/manufacturing/Vial-Inspection.webp', alt: 'Vial Inspection Process' },
+    { src: '/img/manufacturing/Vial-Washing-Machine.webp', alt: 'Vial Washing Machine' },
+    { src: '/img/manufacturing/Warehouse.webp', alt: 'Warehouse Facility' },
+    { src: '/img/manufacturing/Water-System.webp', alt: 'Purified Water System' },
+    { src: '/img/manufacturing/RM-Store.webp', alt: 'Raw Material Store' },
+    { src: '/img/manufacturing/Auto-Cartoning-Machine1.webp', alt: 'Automated Cartoning Machine' }
   ];
 
   const capabilities = [

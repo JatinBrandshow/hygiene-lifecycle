@@ -55,7 +55,7 @@ const GlobalPresence = () => {
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden">
                     <div className="relative h-[650px] w-auto">
                         <Image
-                            src="/img/global-presence/global-presence1111.jpg"
+                            src="/img/global-presence/global-presence1111.webp"
                             alt="Global Presence Map"
                             fill
                             className="object-contain p-4"

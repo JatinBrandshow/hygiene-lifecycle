@@ -80,7 +80,7 @@ const QualityPractices = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
               <Image
-                src="/img/quality-practices/quality-practices.jpg"
+                src="/img/quality-practices/quality-practices.webp"
                 alt="Validation Process"
                 width={600}
                 height={400}
@@ -180,7 +180,7 @@ const QualityPractices = () => {
             
             <div className="lg:w-1/2 order-1 lg:order-2">
               <Image
-                src="/img/quality-practices/quality-practices2.jpg"
+                src="/img/quality-practices/quality-practices2.webp"
                 alt="Quality Assurance Team"
                 width={600}
                 height={400}

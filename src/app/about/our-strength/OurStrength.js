@@ -25,7 +25,7 @@ const OurStrengths = () => {
         <div className="absolute right-4 top-0 bottom-0 w-2/2 hidden lg:flex items-center justify-end-safe">
           <div className="relative w-full max-w-[500px] h-[500px]">
             <Image 
-              src="/img/our-strength/Strength1.png"
+              src="/img/our-strength/Strength1.webp"
               alt="Pharmaceutical Strengths"
               fill
               className="object-contain"
@@ -127,7 +127,7 @@ const OurStrengths = () => {
             <div className="lg:w-1/2">
               <div className="relative rounded-2xl overflow-hidden h-full min-h-[400px]">
                 <Image
-                  src="/img/domestic-customer/strength_img2.png"
+                  src="/img/domestic-customer/strength_img2.webp"
                   alt="Shamshree Team"
                   fill
                   className="object-cover rounded-2xl"

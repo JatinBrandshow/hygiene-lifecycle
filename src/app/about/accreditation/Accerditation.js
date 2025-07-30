@@ -5,38 +5,38 @@ import { useState } from 'react';
 const AccreditationPage = () => {
   const regions = {
     Asia: [
-      { id: 1, image: '/img/global-accreditations/Afghanistan.png', alt: 'Afghanistan Certification' },
-      { id: 2, image: '/img/global-accreditations/Cambodia.png', alt: 'Cambodia Certification' },
-      { id: 3, image: '/img/global-accreditations/Myanmar.png', alt: 'Myanmar Certification' },
-      { id: 4, image: '/img/global-accreditations/Philippines.png', alt: 'Philippines Certification' },
-      { id: 5, image: '/img/global-accreditations/Sri-lanka.png', alt: 'Sri Lanka Certification' },
-      { id: 6, image: '/img/global-accreditations/Yemen.png', alt: 'Yemen Certification' }
+      { id: 1, image: '/img/global-accreditations/Afghanistan.webp', alt: 'Afghanistan Certification' },
+      { id: 2, image: '/img/global-accreditations/Cambodia.webp', alt: 'Cambodia Certification' },
+      { id: 3, image: '/img/global-accreditations/Myanmar.webp', alt: 'Myanmar Certification' },
+      { id: 4, image: '/img/global-accreditations/Philippines.webp', alt: 'Philippines Certification' },
+      { id: 5, image: '/img/global-accreditations/Sri-lanka.webp', alt: 'Sri Lanka Certification' },
+      { id: 6, image: '/img/global-accreditations/Yemen.webp', alt: 'Yemen Certification' }
     ],
     Africa: [
-      { id: 1, image: '/img/global-accreditations/Guinea.png', alt: 'Guinea Certification' },
-      { id: 2, image: '/img/global-accreditations/Kenya.png', alt: 'Kenya Certification' },
-      { id: 3, image: '/img/global-accreditations/Nigeria.png', alt: 'Nigeria Certification' },
-      { id: 4, image: '/img/global-accreditations/Zambia.png', alt: 'Zambia Certification' },
-      { id: 5, image: '/img/global-accreditations/Madagascar1.png', alt: 'Madagascar Certification' }
+      { id: 1, image: '/img/global-accreditations/Guinea.webp', alt: 'Guinea Certification' },
+      { id: 2, image: '/img/global-accreditations/Kenya.webp', alt: 'Kenya Certification' },
+      { id: 3, image: '/img/global-accreditations/Nigeria.webp', alt: 'Nigeria Certification' },
+      { id: 4, image: '/img/global-accreditations/Zambia.webp', alt: 'Zambia Certification' },
+      { id: 5, image: '/img/global-accreditations/Madagascar1.webp', alt: 'Madagascar Certification' }
     ],
     CIS: [
-      { id: 1, image: '/img/global-accreditations/Kyrgyzstan.png', alt: 'Kyrgyzstan Certification' },
-      { id: 2, image: '/img/global-accreditations/Tajikistan.png', alt: 'Tajikistan Certification' },
-      { id: 3, image: '/img/global-accreditations/Turkmenistan.png', alt: 'Turkmenistan Certification' },
-      { id: 4, image: '/img/global-accreditations/Uzbekistan.png', alt: 'Uzbekistan Certification' }
+      { id: 1, image: '/img/global-accreditations/Kyrgyzstan.webp', alt: 'Kyrgyzstan Certification' },
+      { id: 2, image: '/img/global-accreditations/Tajikistan.webp', alt: 'Tajikistan Certification' },
+      { id: 3, image: '/img/global-accreditations/Turkmenistan.webp', alt: 'Turkmenistan Certification' },
+      { id: 4, image: '/img/global-accreditations/Uzbekistan.webp', alt: 'Uzbekistan Certification' }
     ],
     FWA: [
-      { id: 1, image: '/img/global-accreditations/Cameroon.png', alt: 'Cameroon Certification' },
-      { id: 2, image: '/img/global-accreditations/DRC.png', alt: 'DRC Certification' },
-      { id: 3, image: '/img/global-accreditations/Ivory-coast.png', alt: 'Ivory Coast Certification' },
-      { id: 4, image: '/img/global-accreditations/Mali.png', alt: 'Mali Certification' }
+      { id: 1, image: '/img/global-accreditations/Cameroon.webp', alt: 'Cameroon Certification' },
+      { id: 2, image: '/img/global-accreditations/DRC.webp', alt: 'DRC Certification' },
+      { id: 3, image: '/img/global-accreditations/Ivory-coast.webp', alt: 'Ivory Coast Certification' },
+      { id: 4, image: '/img/global-accreditations/Mali.webp', alt: 'Mali Certification' }
     ],
     Latam: [
-      { id: 1, image: '/img/global-accreditations/Bolivia.png', alt: 'Bolivia Certification' },
-      { id: 2, image: '/img/global-accreditations/Chile.png', alt: 'Chile Certification' },
-      { id: 3, image: '/img/global-accreditations/Costa-Rica.png', alt: 'Costa Rica Certification' },
-      { id: 4, image: '/img/global-accreditations/Ecuador.png', alt: 'Ecuador Certification' },
-      { id: 5, image: '/img/global-accreditations/Guatemala.png', alt: 'Guatemala Certification' }
+      { id: 1, image: '/img/global-accreditations/Bolivia.webp', alt: 'Bolivia Certification' },
+      { id: 2, image: '/img/global-accreditations/Chile.webp', alt: 'Chile Certification' },
+      { id: 3, image: '/img/global-accreditations/Costa-Rica.webp', alt: 'Costa Rica Certification' },
+      { id: 4, image: '/img/global-accreditations/Ecuador.webp', alt: 'Ecuador Certification' },
+      { id: 5, image: '/img/global-accreditations/Guatemala.webp', alt: 'Guatemala Certification' }
     ]
   };
 

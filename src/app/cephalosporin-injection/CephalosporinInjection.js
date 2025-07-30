@@ -8,37 +8,37 @@ const CephalosporinInjection = () => {
         {
             name: "CEFPASH-100", 
            presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--01.png"
+            image: "/img/ceophalosporin/cephalosporin-product--01.webp"
         },
         {
             name: "FOTAX-1000",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--02.png"
+            image: "/img/ceophalosporin/cephalosporin-product--02.webp"
         },
         {
             name: "SHAMCEF-750",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--03.png"
+            image: "/img/ceophalosporin/cephalosporin-product--03.webp"
         },
         {
             name: "CEFEPASH-TZ 1125",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--04.png"
+            image: "/img/ceophalosporin/cephalosporin-product--04.webp"
         },
         {
             name: "CEFSULASH-1000",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--05.png"
+            image: "/img/ceophalosporin/cephalosporin-product--05.webp"
         },
         {
             name: "CEFTRASH-1000",
             presentation: "Injection",
-            image: "/img/ceophalosporin/cephalosporin-product--06.png"
+            image: "/img/ceophalosporin/cephalosporin-product--06.webp"
         },
         {
             name: "CEFRIBACTAM",
             presentation: "Capsule",
-            image: "/img/ceophalosporin/cephalosporin-product--07.png"
+            image: "/img/ceophalosporin/cephalosporin-product--07.webp"
         }
     ];
 
@@ -65,7 +65,7 @@ const CephalosporinInjection = () => {
                     <div className="md:w-1/2 flex justify-center">
                         <div className="relative w-full max-w-md h-80">
                             <Image
-                                src="/img/Carbapenem1.jpg"
+                                src="/img/Carbapenem1.webp"
                                 alt="Cephalosporin Injection Range"
                                 fill
                                 className="object-contain"

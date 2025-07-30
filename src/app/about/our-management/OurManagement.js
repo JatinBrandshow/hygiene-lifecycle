@@ -27,7 +27,7 @@ const OurManagement = () => {
                         <div className="flex justify-center pt-8 px-8">
                             <div className="relative w-48 h-48 rounded-full border-4 border-white shadow-lg overflow-hidden">
                                 <Image
-                                    src="/img/our-management/jatinder_kumar.jpg"
+                                    src="/img/our-management/jatinder_kumar.webp"
                                     alt="Mr. Jatinder Kumar Jain"
                                     fill
                                     className="object-cover"
@@ -70,7 +70,7 @@ const OurManagement = () => {
                                 <div className="absolute inset-0 flex items-center justify-center p-6">
                                     <div className="relative w-full h-full max-w-[150px] max-h-[150px] rounded-full border-4 border-white shadow-md overflow-hidden">
                                         <Image
-                                            src="/img/our-management/alka.jpg"
+                                            src="/img/our-management/alka.webp"
                                             alt="Mrs. Alka Jain"
                                             fill
                                             className="object-cover"
@@ -107,7 +107,7 @@ const OurManagement = () => {
                                 <div className="absolute inset-0 flex items-center justify-center p-6">
                                     <div className="relative w-full h-full max-w-[150px] max-h-[150px] rounded-full border-4 border-white shadow-md overflow-hidden">
                                         <Image
-                                            src="/img/our-management/akhil.jpg"
+                                            src="/img/our-management/akhil.webp"
                                             alt="Mr. Akhil Jain"
                                             fill
                                             className="object-cover"
@@ -158,7 +158,7 @@ const OurManagement = () => {
                     <div className="mb-16 rounded-2xl overflow-hidden shadow-xl">
                         <div className="aspect-video relative">
                             <Image
-                                src="/img/our-management/team1111.jpg"
+                                src="/img/our-management/team1111.webp"
                                 alt="Shamshree Pharmaceuticals Team"
                                 fill
                                 className="object-cover"

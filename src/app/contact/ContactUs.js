@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import deskImage from "../../../public/img/contact.jpg";
+import deskImage from "../../../public/img/contact.webp";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaBuilding, FaGlobe } from "react-icons/fa";
 import { motion } from "framer-motion";
 

@@ -4,9 +4,9 @@ import Image from 'next/image';
 
 const ResearchDevelopment = () => {
     const rndImages = [
-        { src: '/img/r&d/Research--03.jpg', alt: 'Advanced Research Laboratory' },
-        { src: '/img/r&d/Research--01.jpg', alt: 'Our Research Team' },
-        { src: '/img/r&d/Research--02.jpg', alt: 'Cutting-edge Equipment' }
+        { src: '/img/r&d/Research--03.webp', alt: 'Advanced Research Laboratory' },
+        { src: '/img/r&d/Research--01.webp', alt: 'Our Research Team' },
+        { src: '/img/r&d/Research--02.webp', alt: 'Cutting-edge Equipment' }
     ];
 
     const services = [
@@ -65,7 +65,7 @@ const ResearchDevelopment = () => {
                 <div className="absolute right-0 top-0 bottom-0 w-1/2 hidden lg:flex items-center justify-end">
                     <div className="relative w-full h-full">
                         <Image
-                            src="/img/r&d/Research--01.jpg"
+                            src="/img/r&d/Research--01.webp"
                             alt="Research Laboratory"
                             fill
                             className="object-cover"

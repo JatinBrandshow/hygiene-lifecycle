@@ -6,40 +6,40 @@ const CarbapenemInjection = () => {
         {
             name: "ZETRO-1000",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--01.png"
+            image: "/img/carbapenem/carbapenem-product--01.webp"
         },
         {
             name: "DORPEN-500",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--02.png"
+            image: "/img/carbapenem/carbapenem-product--02.webp"
         },
         {
             name: "IMICILASH-500",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--03.png"
+            image: "/img/carbapenem/carbapenem-product--03.webp"
         },
         {
             name: "MERONASH-1000",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--04.png"
+            image: "/img/carbapenem/carbapenem-product--04.webp"
         },
         {
             name: "MERONASH-S",
             description: "Ertapenem sodium IP equivalent to Ertapenem 1g",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--05.png"
+            image: "/img/carbapenem/carbapenem-product--05.webp"
         },
         {
             name: "CEFTRASH-1000",
             description: "Meropenem 1g + Vaborbactam 1g",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--06.png"
+            image: "/img/ceophalosporin/cephalosporin-product--06.webp"
         },
         {
             name: "IMIPENEM + CILASTATIN + RELEBACTAM",
             description: "Imipenem 500mg + Cilastatin 500mg + Relebactam 250mg",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--07.png"
+            image: "/img/ceophalosporin/cephalosporin-product--07.webp"
         }
     ];
 
@@ -64,7 +64,7 @@ const CarbapenemInjection = () => {
                     <div className="md:w-1/2 flex justify-center">
                         <div className="relative w-full max-w-md h-80">
                             <Image
-                                src="/img/Carbapenem1.jpg"
+                                src="/img/Carbapenem1.webp"
                                 alt="Carbapenem Injection Range"
                                 fill
                                 className="object-contain"
@@ -141,7 +141,7 @@ const CarbapenemInjection = () => {
                     <div className="bg-white rounded-xl shadow-md overflow-hidden p-6">
                         <div className="relative w-full h-auto">
                             <Image
-                                src="/img/carbapenem/Carbapenem-product-List1.jpg"
+                                src="/img/carbapenem/Carbapenem-product-List1.webp"
                                 alt="Carbapenem Product Strengths"
                                 width={1200}
                                 height={800}

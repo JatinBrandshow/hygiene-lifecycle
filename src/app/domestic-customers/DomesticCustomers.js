@@ -3,18 +3,18 @@ import Image from 'next/image';
 
 const DomesticCustomers = () => {
   const companyLogos = [
-    { src: '/img/domestic-customer/client-lo-1.png', alt: 'Company 1' },
-    { src: '/img/domestic-customer/client-lo-2.png', alt: 'Company 2' },
-    { src: '/img/domestic-customer/client-lo-3.png', alt: 'Company 3' },
-    { src: '/img/domestic-customer/client-lo-4.png', alt: 'Company 4' },
-    { src: '/img/domestic-customer/client-lo-5.png', alt: 'Company 5' },
-    { src: '/img/domestic-customer/client-lo-6.png', alt: 'Company 6' },
-    { src: '/img/domestic-customer/client-lo-7.png', alt: 'Company 7' },
-    { src: '/img/domestic-customer/client-lo-8.png', alt: 'Company 8' },
-    { src: '/img/domestic-customer/client-lo-9.png', alt: 'Company 9' },
-    { src: '/img/domestic-customer/client-lo-10.png', alt: 'Company 10' },
-    { src: '/img/domestic-customer/client-lo-11.png', alt: 'Company 11' },
-    { src: '/img/domestic-customer/client-lo-12.png', alt: 'Company 12' }
+    { src: '/img/domestic-customer/client-lo-1.webp', alt: 'Company 1' },
+    { src: '/img/domestic-customer/client-lo-2.webp', alt: 'Company 2' },
+    { src: '/img/domestic-customer/client-lo-3.webp', alt: 'Company 3' },
+    { src: '/img/domestic-customer/client-lo-4.webp', alt: 'Company 4' },
+    { src: '/img/domestic-customer/client-lo-5.webp', alt: 'Company 5' },
+    { src: '/img/domestic-customer/client-lo-6.webp', alt: 'Company 6' },
+    { src: '/img/domestic-customer/client-lo-7.webp', alt: 'Company 7' },
+    { src: '/img/domestic-customer/client-lo-8.webp', alt: 'Company 8' },
+    { src: '/img/domestic-customer/client-lo-9.webp', alt: 'Company 9' },
+    { src: '/img/domestic-customer/client-lo-10.webp', alt: 'Company 10' },
+    { src: '/img/domestic-customer/client-lo-11.webp', alt: 'Company 11' },
+    { src: '/img/domestic-customer/client-lo-12.webp', alt: 'Company 12' }
   ];
 
   return (
