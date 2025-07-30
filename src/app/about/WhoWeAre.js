@@ -16,7 +16,7 @@ export default function WhoWeAre() {
       <section className="relative w-full h-[80vh] min-h-[500px] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-purple-900/80 z-10" />
         <Image
-          src="/img/Plant1.svg"
+          src="/img/Plant1.webp"
           alt="Who We Are"
           layout="fill"
           objectFit="cover"
