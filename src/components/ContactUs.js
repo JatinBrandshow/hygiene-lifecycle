@@ -1,200 +1,207 @@
 "use client";
 
-import React, { useState } from "react";
-import { CheckCircle, Send, Loader2 } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+const images = [
+  "/img/main-section/main-section.webp",
+  "/img/main-section/main-section-1.webp",
+  "/img/main-section/main-section-2.webp",
+];
 
 const ContactUs = () => {
-    const [form, setForm] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        inquiry: "",
-        message: "",
-    });
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isSubmitted, setIsSubmitted] = useState(false);
-    const [errors, setErrors] = useState({});
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [formVisible, setFormVisible] = useState(false);
 
-    const validateForm = () => {
-        const newErrors = {};
-        if (!form.name.trim()) newErrors.name = "Name is required";
-        if (!form.email.trim()) newErrors.email = "Email is required";
-        else if (!/\S+@\S+\.\S+/.test(form.email)) newErrors.email = "Email is invalid";
-        if (!form.phone.trim()) newErrors.phone = "Phone number is required";
-        if (!form.subject.trim()) newErrors.subject = "Subject is required";
-        if (!form.inquiry.trim()) newErrors.inquiry = "Please select an option";
-        if (!form.message.trim()) newErrors.message = "Message is required";
-        setErrors(newErrors);
-        return Object.keys(newErrors).length === 0;
-    };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setForm({ ...form, [name]: value });
-        if (errors[name]) {
-            setErrors({ ...errors, [name]: "" });
-        }
-    };
+  return (
+    <section className="grid lg:grid-cols-2 bg-[#f5f6ee] text-slate-800 relative">
+      {/* Left Column */}
+      <div className="p-8 md:p-12 lg:p-20 flex flex-col justify-between">
+        <div>
+          <div className="space-y-8 mb-16">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+              Contact Us
+            </h2>
+            <p className="text-lg text-slate-600 max-w-md">
+              We're here to help with any questions or inquiries. Whether you're
+              a consumer or a reseller, we've got you covered.
+            </p>
+          </div>
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (!validateForm()) return;
-
-        setIsSubmitting(true);
-        await new Promise((res) => setTimeout(res, 2000));
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-
-        setTimeout(() => {
-            setIsSubmitted(false);
-            setForm({
-                name: "",
-                email: "",
-                phone: "",
-                subject: "",
-                inquiry: "",
-                message: "",
-            });
-        }, 3000);
-    };
-
-    if (isSubmitted) {
-        return (
-            <div className="max-w-md mx-auto text-center p-8 bg-white rounded-2xl shadow-2xl border">
-                <div className="space-y-4">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                        <CheckCircle className="text-green-500" size={32} />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900">Thank You!</h3>
-                    <p className="text-gray-600">We’ve received your message. Our team will reach out soon.</p>
-                </div>
+          <div className="grid grid-cols-2 gap-8 mb-16">
+            <div>
+              <h3 className="text-sm font-medium text-slate-500 mb-2">
+                Head Office
+              </h3>
+              <p>Deventerstraat 11</p>
+              <p>7575 EM, Oldenzaal</p>
+              <p>The Netherlands</p>
             </div>
-        );
-    }
-
-    return (
-        <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row bg-white shadow-2xl rounded-2xl overflow-hidden my-8">
-            {/* Left Image Section */}
-            <div className="md:w-1/2 w-full h-64 md:h-auto">
-                <img
-                    src="/img/why-choose-us.webp" // replace with your actual image path
-                    alt="Contact Illustration"
-                    className="object-cover w-full h-full"
-                />
+            <div>
+              <h3 className="text-sm font-medium text-slate-500 mb-2">Mail</h3>
+              <p>info@palmer-dinnerware.com</p>
+              <h3 className="text-sm font-medium text-slate-500 mt-4 mb-2">
+                Phone
+              </h3>
+              <p>+31 541 581 600</p>
             </div>
-
-            {/* Right Form Section */}
-            <div className="md:w-1/2 w-full p-8">
-                <div className="text-center mb-8">
-                    <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Send className="text-white" size={24} />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h3>
-                    <p className="text-gray-600">Let us know how we can help you.</p>
-                </div>
-
-                <form onSubmit={handleSubmit} className="space-y-4">
-                    <input
-                        name="name"
-                        type="text"
-                        placeholder="Your Name"
-                        value={form.name}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.name ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
-
-                    <input
-                        name="email"
-                        type="email"
-                        placeholder="Your Email"
-                        value={form.email}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.email ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
-
-                    <input
-                        name="phone"
-                        type="text"
-                        placeholder="Phone Number"
-                        value={form.phone}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.phone ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
-
-                    <input
-                        name="subject"
-                        type="text"
-                        placeholder="Subject"
-                        value={form.subject}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.subject ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.subject && <p className="text-red-500 text-sm">{errors.subject}</p>}
-
-                    <select
-                        name="inquiry"
-                        value={form.inquiry}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.inquiry ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    >
-                        <option value="">Inquire related to</option>
-                        <option value="product">Product</option>
-                        <option value="partnership">Partnership</option>
-                        <option value="support">Support</option>
-                        <option value="other">Other</option>
-                    </select>
-                    {errors.inquiry && <p className="text-red-500 text-sm">{errors.inquiry}</p>}
-
-                    <textarea
-                        name="message"
-                        placeholder="Write your message here..."
-                        rows={4}
-                        value={form.message}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 resize-none ${
-                            errors.message ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
-
-                    <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className="w-full h-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow hover:shadow-xl transition-all flex items-center justify-center disabled:opacity-50"
-                    >
-                        {isSubmitting ? (
-                            <>
-                                <Loader2 className="mr-2 animate-spin" size={16} />
-                                Submitting...
-                            </>
-                        ) : (
-                            "Submit"
-                        )}
-                    </button>
-                </form>
-            </div>
+          </div>
         </div>
-    );
+
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Fill in the form (clickable entire card) */}
+          <button
+            onClick={() => setFormVisible(true)}
+            className="p-6 bg-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition text-left w-full"
+          >
+            <div className="space-y-2">
+              <p className="text-sm text-slate-400">Questions?</p>
+              <h3 className="text-2xl font-semibold text-slate-900">
+                Fill in the form
+              </h3>
+            </div>
+            <ArrowRight className="w-6 h-6 self-end mt-4 text-indigo-600" />
+          </button>
+
+          {/* Support card */}
+          <div className="p-6 bg-white rounded-xl shadow-md flex flex-col justify-between hover:shadow-lg transition">
+            <div className="space-y-2">
+              <h3 className="text-2xl font-semibold text-slate-900">Support</h3>
+            </div>
+            <Link href="#" className="self-end mt-4 text-indigo-600">
+              <ArrowRight className="w-6 h-6" />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Column - Image Slider */}
+      <div className="relative min-h-[400px] lg:min-h-screen overflow-hidden bg-slate-100">
+        {/* Image Slides */}
+        <div
+          className="flex h-full w-full transition-transform duration-1000 ease-in-out"
+          style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+        >
+          {images.map((img, index) => (
+            <div key={index} className="relative min-w-full h-full">
+              <Image
+                src={img}
+                alt={`Slide ${index + 1}`}
+                fill
+                className="object-cover"
+                priority={index === currentImageIndex}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Progress Bars */}
+        <div className="absolute top-4 right-4 flex space-x-2 z-10">
+          {images.map((_, index) => (
+            <div
+              key={index}
+              onClick={() => setCurrentImageIndex(index)}
+              className="w-10 h-1 bg-white/40 rounded overflow-hidden cursor-pointer"
+            >
+              {index === currentImageIndex && (
+                <div
+                  className="h-full bg-indigo-500"
+                  style={{
+                    animation: "progressBar 4s linear forwards",
+                  }}
+                />
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Slide-in Form Overlay */}
+        <div
+          className={`absolute inset-0 z-20 bg-black bg-opacity-90 text-white p-8 transition-transform duration-700 ease-in-out ${
+            formVisible ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          {/* Close Button on right center with rounded bg */}
+          <button
+            onClick={() => setFormVisible(false)}
+            className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-200 z-[9999]"
+          >
+            &times;
+          </button>
+
+          {/* Form Content */}
+          <div className="max-w-2xl mx-auto mt-16 space-y-6">
+            <h3 className="text-4xl font-bold mb-6 leading-snug">
+              Leave a message <br /> and we will contact you soon
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="First name"
+                className="bg-black border border-gray-600 p-3 rounded"
+              />
+              <input
+                type="text"
+                placeholder="Last name"
+                className="bg-black border border-gray-600 p-3 rounded"
+              />
+              <input
+                type="email"
+                placeholder="example@mail.com"
+                className="bg-black border border-gray-600 p-3 rounded md:col-span-2"
+              />
+              <input
+                type="tel"
+                placeholder="+31 644 666 888"
+                className="bg-black border border-gray-600 p-3 rounded md:col-span-2"
+              />
+            </div>
+
+            <textarea
+              placeholder="Type a message..."
+              className="bg-black border border-gray-600 p-3 rounded w-full h-32"
+            />
+
+            <label className="flex items-center space-x-2 text-sm">
+              <input type="checkbox" className="accent-indigo-500" />
+              <span>
+                Accept the{" "}
+                <a href="#" className="underline">
+                  Terms and Conditions
+                </a>
+              </span>
+            </label>
+
+            <button className="bg-white text-black font-semibold py-2 px-6 rounded hover:bg-gray-200">
+              Send message →
+            </button>
+          </div>
+        </div>
+
+        {/* Progress Keyframe */}
+        <style jsx>{`
+          @keyframes progressBar {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 100%;
+            }
+          }
+        `}</style>
+      </div>
+    </section>
+  );
 };
 
 export default ContactUs;

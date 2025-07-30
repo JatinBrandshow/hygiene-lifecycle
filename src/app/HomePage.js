@@ -18,7 +18,7 @@ const HomePage = () => {
             <StatsSection />
             <WhyChooseUs />
             <OurCustomers />
-            {/* <ContactUs /> */}
+            <ContactUs />
         </>
     );
 };
