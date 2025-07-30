@@ -198,7 +198,7 @@ const Manufacturing = () => {
             <div className="lg:w-1/2">
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/img/quality-practices/quality-practices.jpg"
+                  src="/img/quality-practices/quality-practices.webp"
                   alt="Manufacturing Process"
                   fill
                   className="object-cover"
