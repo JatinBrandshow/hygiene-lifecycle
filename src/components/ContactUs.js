@@ -1,199 +1,113 @@
 "use client";
 
-import React, { useState } from "react";
-import { CheckCircle, Send, Loader2 } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+const images = ["/img/main-section/main-section.webp", "/img/main-section/main-section-1.webp", "/img/main-section/main-section-2.webp"];
 
 const ContactUs = () => {
-    const [form, setForm] = useState({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        inquiry: "",
-        message: "",
-    });
-    const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isSubmitted, setIsSubmitted] = useState(false);
-    const [errors, setErrors] = useState({});
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const validateForm = () => {
-        const newErrors = {};
-        if (!form.name.trim()) newErrors.name = "Name is required";
-        if (!form.email.trim()) newErrors.email = "Email is required";
-        else if (!/\S+@\S+\.\S+/.test(form.email)) newErrors.email = "Email is invalid";
-        if (!form.phone.trim()) newErrors.phone = "Phone number is required";
-        if (!form.subject.trim()) newErrors.subject = "Subject is required";
-        if (!form.inquiry.trim()) newErrors.inquiry = "Please select an option";
-        if (!form.message.trim()) newErrors.message = "Message is required";
-        setErrors(newErrors);
-        return Object.keys(newErrors).length === 0;
-    };
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }, 3000); // every 3 seconds
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setForm({ ...form, [name]: value });
-        if (errors[name]) {
-            setErrors({ ...errors, [name]: "" });
-        }
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        if (!validateForm()) return;
-
-        setIsSubmitting(true);
-        await new Promise((res) => setTimeout(res, 2000));
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-
-        setTimeout(() => {
-            setIsSubmitted(false);
-            setForm({
-                name: "",
-                email: "",
-                phone: "",
-                subject: "",
-                inquiry: "",
-                message: "",
-            });
-        }, 3000);
-    };
-
-    if (isSubmitted) {
-        return (
-            <div className="max-w-md mx-auto text-center p-8 bg-white rounded-2xl shadow-2xl border">
-                <div className="space-y-4">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-                        <CheckCircle className="text-green-500" size={32} />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900">Thank You!</h3>
-                    <p className="text-gray-600">We’ve received your message. Our team will reach out soon.</p>
-                </div>
-            </div>
-        );
-    }
+        return () => clearInterval(interval);
+    }, []);
 
     return (
-        <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row bg-white shadow-2xl rounded-2xl overflow-hidden my-8">
-            {/* Left Image Section */}
-            <div className="md:w-1/2 w-full h-64 md:h-auto">
-                <img
-                    src="/img/why-choose-us.webp" // replace with your actual image path
-                    alt="Contact Illustration"
-                    className="object-cover w-full h-full"
-                />
-            </div>
+        <>
+            <section className="grid lg:grid-cols-2">
+                {/* Left Column */}
+                <div className="bg-palmer-beige p-8 md:p-12 lg:p-20 flex flex-col justify-between">
+                    <div>
+                        <div className="space-y-8 mb-16">
+                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-palmer-dark">Contact Us</h2>
 
-            {/* Right Form Section */}
-            <div className="md:w-1/2 w-full p-8">
-                <div className="text-center mb-8">
-                    <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Send className="text-white" size={24} />
+                            <p className="text-lg text-palmer-dark max-w-md">We're here to help with any questions or inquiries. Whether you're a consumer or a reseller, we've got you covered.</p>
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-8 text-palmer-dark mb-16">
+                            <div>
+                                <h3 className="text-sm font-medium text-gray-500 mb-2">Head office</h3>
+                                <p>Deventerstraat 11</p>
+                                <p>7575 EM, Oldenzaal</p>
+                                <p>The Netherlands</p>
+                            </div>
+                            <div>
+                                <h3 className="text-sm font-medium text-gray-500 mb-2">Mail</h3>
+                                <p>info@palmer-dinnerware.com</p>
+                                <h3 className="text-sm font-medium text-gray-500 mt-4 mb-2">Phone</h3>
+                                <p>+31 541 581 600</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Get in Touch</h3>
-                    <p className="text-gray-600">Let us know how we can help you.</p>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                        <div className="bg-palmer-dark text-white p-6 rounded-xl shadow-md flex flex-col justify-between">
+                            <div className="space-y-2">
+                                <p className="text-sm text-gray-400">Questions?</p>
+                                <h3 className="text-2xl font-bold">Fill in the form</h3>
+                            </div>
+                            <Link href="#" className="self-end mt-4">
+                                <ArrowRight className="w-6 h-6" />
+                            </Link>
+                        </div>
+                        <div className="bg-palmer-light text-palmer-dark p-6 rounded-xl shadow-md flex flex-col justify-between">
+                            <div className="space-y-2">
+                                <h3 className="text-2xl font-bold">Support</h3>
+                            </div>
+                            <Link href="#" className="self-end mt-4">
+                                <ArrowRight className="w-6 h-6" />
+                            </Link>
+                        </div>
+                    </div>
                 </div>
 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                    <input
-                        name="name"
-                        type="text"
-                        placeholder="Your Name"
-                        value={form.name}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.name ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+                {/* Right Column - Slide animation with progress bar */}
+                <div className="relative min-h-[400px] lg:min-h-screen overflow-hidden">
+                    {/* Sliding container */}
+                    <div className="flex h-full w-full transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
+                        {images.map((img, index) => (
+                            <div key={index} className="relative min-w-full h-full">
+                                <Image src={img} alt={`Slide ${index + 1}`} fill className="object-cover" priority={index === currentImageIndex} />
+                            </div>
+                        ))}
+                    </div>
 
-                    <input
-                        name="email"
-                        type="email"
-                        placeholder="Your Email"
-                        value={form.email}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.email ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+                    {/* Progress Bars */}
+                    <div className="absolute top-4 right-4 flex space-x-2 z-10">
+                        {images.map((_, index) => (
+                            <div key={index} onClick={() => setCurrentImageIndex(index)} className="w-10 h-1 bg-white/30 rounded overflow-hidden cursor-pointer">
+                                {index === currentImageIndex && (
+                                    <div
+                                        className="h-full bg-white"
+                                        style={{
+                                            animation: "progressBar 4s linear forwards",
+                                        }}
+                                    />
+                                )}
+                            </div>
+                        ))}
+                    </div>
 
-                    <input
-                        name="phone"
-                        type="text"
-                        placeholder="Phone Number"
-                        value={form.phone}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.phone ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
-
-                    <input
-                        name="subject"
-                        type="text"
-                        placeholder="Subject"
-                        value={form.subject}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.subject ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.subject && <p className="text-red-500 text-sm">{errors.subject}</p>}
-
-                    <select
-                        name="inquiry"
-                        value={form.inquiry}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full h-12 px-4 border rounded-lg focus:outline-none focus:ring-2 ${
-                            errors.inquiry ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    >
-                        <option value="">Inquire related to</option>
-                        <option value="product">Product</option>
-                        <option value="partnership">Partnership</option>
-                        <option value="support">Support</option>
-                        <option value="other">Other</option>
-                    </select>
-                    {errors.inquiry && <p className="text-red-500 text-sm">{errors.inquiry}</p>}
-
-                    <textarea
-                        name="message"
-                        placeholder="Write your message here..."
-                        rows={4}
-                        value={form.message}
-                        onChange={handleChange}
-                        disabled={isSubmitting}
-                        className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 resize-none ${
-                            errors.message ? "border-red-500 focus:ring-red-500" : "border-gray-300 focus:ring-blue-500"
-                        }`}
-                    />
-                    {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
-
-                    <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className="w-full h-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow hover:shadow-xl transition-all flex items-center justify-center disabled:opacity-50"
-                    >
-                        {isSubmitting ? (
-                            <>
-                                <Loader2 className="mr-2 animate-spin" size={16} />
-                                Submitting...
-                            </>
-                        ) : (
-                            "Submit"
-                        )}
-                    </button>
-                </form>
-            </div>
-        </div>
+                    {/* Keyframes for progress bar */}
+                    <style jsx>{`
+                        @keyframes progressBar {
+                            0% {
+                                width: 0%;
+                            }
+                            100% {
+                                width: 100%;
+                            }
+                        }
+                    `}</style>
+                </div>
+            </section>
+        </>
     );
 };
 
