@@ -95,7 +95,7 @@ const Manufacturing = () => {
         <div className="absolute right-0 top-0 bottom-0 w-1/2 hidden lg:block">
           <div className="relative h-full w-full">
             <Image 
-              src="/img/manufacturing/Vial-Inspection.jpg"
+              src="/img/manufacturing/Vial-Inspection.webp"
               alt="Manufacturing Facility"
               fill
               className="object-cover object-left"
