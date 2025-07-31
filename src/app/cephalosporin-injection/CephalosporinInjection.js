@@ -6,8 +6,8 @@ import { useEffect } from 'react';
 const CephalosporinInjection = () => {
     const products = [
         {
-            name: "CEFPASH-100", 
-           presentation: "Vial",
+            name: "CEFPASH-100",
+            presentation: "Vial",
             image: "/img/ceophalosporin/cephalosporin-product--01.webp"
         },
         {
@@ -47,35 +47,35 @@ const CephalosporinInjection = () => {
     return (
         <div className="font-sans bg-gray-50">
             {/* Hero Section */}
-       <div className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-12 md:py-20">
-  <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
-    <div className="md:w-1/2 mb-8 md:mb-0">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
-        Cephalosporin <span className="text-blue-300">Injections</span>
-      </h1>
-      <p className="text-lg sm:text-xl text-blue-100 mb-4 md:mb-8 max-w-lg">
-        Comprehensive range of cephalosporin antibiotics
-      </p>
-      <div className="w-32 h-1.5 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full mb-4 md:mb-8"></div>
-      <p className="text-sm sm:text-base text-blue-100 max-w-xl">
-        Our complete cephalosporin portfolio includes specialized formulations for
-        treating a wide spectrum of bacterial infections.
-      </p>
-    </div>
-    <div className="md:w-1/2 flex justify-center w-full mt-8 md:mt-0">
-      <div className="relative w-full h-48 sm:h-64 md:h-80 aspect-video">
-        <Image
-          src="/img/Carbapenem1.webp"
-          alt="Cephalosporin Injection Range"
-          fill
-          className="object-contain"
-          priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
-        />
-      </div>
-    </div>
-  </div>
-</div>
+            <div className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-12 md:py-20">
+                <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 mb-8 md:mb-0">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
+                            Cephalosporin <span className="text-blue-300">Injections</span>
+                        </h1>
+                        <p className="text-lg sm:text-xl text-blue-100 mb-4 md:mb-8 max-w-lg">
+                            Comprehensive range of cephalosporin antibiotics
+                        </p>
+                        <div className="w-32 h-1.5 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full mb-4 md:mb-8"></div>
+                        <p className="text-sm sm:text-base text-blue-100 max-w-xl">
+                            Our complete cephalosporin portfolio includes specialized formulations for
+                            treating a wide spectrum of bacterial infections.
+                        </p>
+                    </div>
+                    <div className="md:w-1/2 flex justify-center w-full mt-8 md:mt-0">
+                        <div className="relative w-full h-48 sm:h-64 md:h-80 aspect-video">
+                            <Image
+                                src="/img/Carbapenem1.webp"
+                                alt="Cephalosporin Injection Range"
+                                fill
+                                className="object-contain"
+                                priority
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             {/* Product Showcase */}
             <section className="py-16 bg-white">
@@ -212,7 +212,7 @@ const CephalosporinInjection = () => {
                 </div>
             </section>
 
-        
+
         </div>
     );
 };
