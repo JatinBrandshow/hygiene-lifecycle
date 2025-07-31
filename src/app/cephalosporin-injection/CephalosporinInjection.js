@@ -65,7 +65,7 @@ const CephalosporinInjection = () => {
     <div className="md:w-1/2 flex justify-center w-full mt-8 md:mt-0">
       <div className="relative w-full h-48 sm:h-64 md:h-80 aspect-video">
         <Image
-          src="/img/cephalosporin/cephalosporin-hero.webp"
+          src="/img/Carbapenem1.webp"
           alt="Cephalosporin Injection Range"
           fill
           className="object-contain"
