@@ -46,7 +46,7 @@ const CarbapenemInjection = () => {
     return (
         <div className="font-sans bg-gray-50">
             {/* Hero Section */}
-            <div className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20">
+            <div className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-12 md:py-20">
                 <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-10 md:mb-0">
                         <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -61,14 +61,15 @@ const CarbapenemInjection = () => {
                             treating serious infections with enhanced efficacy and safety profiles.
                         </p>
                     </div>
-                    <div className="md:w-1/2 flex justify-center">
-                        <div className="relative w-full max-w-md h-80">
+                    <div className="md:w-1/2 flex justify-center w-full">
+                        <div className="relative w-full h-48 md:h-80"> {/* Changed from fixed h-80 to responsive h-48 md:h-80 */}
                             <Image
                                 src="/img/Carbapenem1.webp"
                                 alt="Carbapenem Injection Range"
                                 fill
                                 className="object-contain"
                                 priority
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                     </div>
