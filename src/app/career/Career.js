@@ -12,8 +12,6 @@ const Careers = () => {
         setIsClient(true);
     }, []);
 
-
-
     const generateParticles = () => {
         return [...Array(30)].map((_, i) => {
             const size = Math.random() * 15 + 5;
@@ -32,70 +30,53 @@ const Careers = () => {
                         top: `${Math.random() * 100}%`,
                         animation: `float ${duration}s ease-in-out infinite both`,
                         animationDelay: `${delay}s`,
-                        boxShadow: `0 0 ${size}px ${size / 2}px rgba(${hexToRgb(colors.primary)}, 0.2)`,
-                        transform: `translate(${Math.random() * distance - distance / 2}px, ${Math.random() * distance - distance / 2}px)`
+                        boxShadow: `0 0 ${size}px ${size/2}px rgba(23, 60, 150, 0.2)`,
+                        transform: `translate(${Math.random() * distance - distance/2}px, ${Math.random() * distance - distance/2}px)`
                     }}
                 />
             );
         });
     };
 
-    // Helper function to convert hex to rgb
-    const hexToRgb = (hex) => {
-        const r = parseInt(hex.slice(1, 3), 16);
-        const g = parseInt(hex.slice(3, 5), 16);
-        const b = parseInt(hex.slice(5, 7), 16);
-        return `${r}, ${g}, ${b}`;
-    };
-
     return (
         <div className="font-sans bg-white overflow-hidden">
-            {/* Add CSS variables at the root level */}
-            <style jsx global>{`
-                :root {
-                    --primary: ${colors.primary};
-                    --secondary: ${colors.secondary};
-                    --tertiary: ${colors.tertiary};
-                }
-            `}</style>
-
             {/* Hero Section */}
-            <div className={`relative h-[700px] bg-gradient-to-br from-tertiary to-primary text-white overflow-hidden`}>
+            <div className="relative h-[700px] bg-gradient-to-br from-tertiary to-primary text-white overflow-hidden">
                 {isClient && (
                     <div className="absolute inset-0 overflow-hidden">
                         {generateParticles()}
                     </div>
                 )}
 
-                <div className={`absolute -top-40 -right-40 w-80 h-80 rounded-full bg-primary/20 blur-3xl`}></div>
-                <div className={`absolute -bottom-20 -left-20 w-60 h-60 rounded-full bg-tertiary/20 blur-2xl`}></div>
+                <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-primary/20 blur-3xl"></div>
+                <div className="absolute -bottom-20 -left-20 w-60 h-60 rounded-full bg-tertiary/20 blur-2xl"></div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
                     <div className="max-w-2xl relative">
                         <div className="flex items-center mb-6 animate-fadeIn">
-                            <div className={`w-14 h-14 bg-secondary rounded-full flex items-center justify-center mr-4 animate-pulse`}>
+                            <div className="w-14 h-14 bg-secondary rounded-full flex items-center justify-center mr-4 animate-pulse">
                                 <GiMedicines className="text-white text-2xl animate-bounce" />
                             </div>
-                            <span className={`text-white font-medium tracking-widest text-sm bg-primary px-4 py-1 rounded-full`}>
+                            <span className="text-white font-medium tracking-widest text-sm bg-primary px-4 py-1 rounded-full">
                                 INNOVATE WITH US
                             </span>
                         </div>
-
+                        
                         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight relative">
                             <span className="text-white relative inline-block">
                                 <span className="relative z-10">Redefining</span>
                             </span>{' '}
                             <span className="relative text-white">
                                 Healthcare Through Science
-                                <span className={`absolute -bottom-2 left-0 h-1 w-full bg-secondary rounded-full`}></span>
+                                <span className="absolute -bottom-2 left-0 h-1 w-full bg-secondary rounded-full"></span>
                             </span>
                         </h1>
-
+                        
                         <p className="text-xl text-white/90 mb-8 max-w-lg leading-relaxed">
                             Join our team of passionate researchers and help develop the next generation of life-saving medications
                         </p>
-
-                        <button className={`px-8 py-3.5 bg-secondary text-white font-medium rounded-full hover:bg-secondary/90 transition-all duration-300 transform hover:scale-105 flex items-center group shadow-lg hover:shadow-xl`}>
+                        
+                        <button className="px-8 py-3.5 bg-secondary text-white font-medium rounded-full hover:bg-secondary/90 transition-all duration-300 transform hover:scale-105 flex items-center group shadow-lg hover:shadow-xl">
                             <span className="relative overflow-hidden">
                                 <span className="block group-hover:-translate-y-7 transition-transform duration-300">Explore Careers</span>
                                 <span className="absolute left-0 top-7 block group-hover:-translate-y-7 transition-transform duration-300">Join Now →</span>
@@ -106,7 +87,7 @@ const Careers = () => {
                 </div>
 
                 <div className="absolute right-20 top-1/4 w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 animate-float"></div>
-                <div className={`absolute right-40 bottom-1/3 w-10 h-16 rounded-full bg-secondary/20 backdrop-blur-sm border border-secondary/30 animate-float animation-delay-2000`}></div>
+                <div className="absolute right-40 bottom-1/3 w-10 h-16 rounded-full bg-secondary/20 backdrop-blur-sm border border-secondary/30 animate-float animation-delay-2000"></div>
             </div>
 
             {/* Career Paths Section */}
@@ -115,7 +96,7 @@ const Careers = () => {
                 <div className="max-w-7xl mx-auto px-6 relative z-20">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                            <span className={`text-primary`}>Transformative</span> Career Paths
+                            <span className="text-primary">Transformative</span> Career Paths
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Where your expertise meets cutting-edge pharmaceutical innovation
@@ -125,26 +106,26 @@ const Careers = () => {
                     <div className="grid md:grid-cols-3 gap-8 mb-20">
                         {[
                             {
-                                icon: <FaDna className={`text-primary text-4xl`} />,
+                                icon: <FaDna className="text-primary text-4xl" />,
                                 title: "Genomic Research",
                                 description: "Pioneer personalized medicine through DNA analysis",
-                                color: `from-primary/10 to-primary/20`
+                                color: "from-primary/10 to-primary/20"
                             },
                             {
-                                icon: <GiChemicalDrop className={`text-secondary text-4xl`} />,
+                                icon: <GiChemicalDrop className="text-secondary text-4xl" />,
                                 title: "Drug Formulation",
                                 description: "Develop new chemical entities and delivery systems",
-                                color: `from-secondary/10 to-secondary/20`
+                                color: "from-secondary/10 to-secondary/20"
                             },
                             {
-                                icon: <FaShieldAlt className={`text-tertiary text-4xl`} />,
+                                icon: <FaShieldAlt className="text-tertiary text-4xl" />,
                                 title: "Quality Control",
                                 description: "Ensure safety and efficacy of all medications",
-                                color: `from-tertiary/10 to-tertiary/20`
+                                color: "from-tertiary/10 to-tertiary/20"
                             }
                         ].map((area, index) => (
-                            <div
-                                key={index}
+                            <div 
+                                key={index} 
                                 className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 group relative overflow-hidden"
                             >
                                 <div className={`absolute inset-0 bg-gradient-to-br ${area.color} opacity-30 group-hover:opacity-50 transition-opacity`}></div>
@@ -155,7 +136,7 @@ const Careers = () => {
                                     <h3 className="text-xl font-bold text-gray-800 mb-3 text-center">{area.title}</h3>
                                     <p className="text-gray-600 text-center">{area.description}</p>
                                     <div className="mt-6 text-center">
-                                        <span className={`inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full`}>
+                                        <span className="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
                                             8 Open Positions
                                         </span>
                                     </div>
@@ -167,10 +148,10 @@ const Careers = () => {
                     {/* Stats Section */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
                         {[
-                            { number: "150+", label: "Clinical Trials", color: `bg-primary/10 text-primary` },
-                            { number: "40+", label: "Countries", color: `bg-secondary/10 text-secondary` },
-                            { number: "500+", label: "Scientists", color: `bg-tertiary/10 text-tertiary` },
-                            { number: "25+", label: "Patents", color: `bg-primary/10 text-primary` }
+                            { number: "150+", label: "Clinical Trials", color: "bg-primary/10 text-primary" },
+                            { number: "40+", label: "Countries", color: "bg-secondary/10 text-secondary" },
+                            { number: "500+", label: "Scientists", color: "bg-tertiary/10 text-tertiary" },
+                            { number: "25+", label: "Patents", color: "bg-primary/10 text-primary" }
                         ].map((stat, index) => (
                             <div key={index} className="p-6 rounded-xl text-center transition-all hover:shadow-lg">
                                 <div className={`text-4xl font-bold mb-2 ${stat.color} p-4 rounded-full w-24 h-24 flex items-center justify-center mx-auto`}>
@@ -183,7 +164,7 @@ const Careers = () => {
                 </div>
             </section>
 
-            {/* Application Form Section */}
+             {/* Application Form Section */}
             <section id="form" className="py-24 bg-[url('/img/lab-bg.jpg')] bg-cover bg-center relative">
                 <div className={`absolute inset-0 bg-tertiary/90`}></div>
                 <div className="max-w-5xl mx-auto px-6 relative z-10">
