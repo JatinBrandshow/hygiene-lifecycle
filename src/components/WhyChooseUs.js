@@ -23,23 +23,23 @@ const WhyChooseUs = () => {
 
     return (
         <section
-            className="w-full py-16 bg-gray-50 bg-cover bg-center relative"
+            className="w-full py-14 bg-gray-50 bg-cover bg-center relative max-lg:py-10 max-md:py-8 max-sm:py-6"
             style={{ backgroundImage: "url('/img/why-choose-us.webp')" }}
         >
             {/* Overlay */}
             <div className="absolute inset-0 bg-white/80 lg:bg-white/70 backdrop-blur-sm z-0" />
 
             {/* Content */}
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="container mx-auto px-4 relative z-10 max-md:px-3 max-sm:px-3">
                 {/* Section Heading Centered */}
-                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12">
+                <h2 className="text-5xl font-bold text-gray-900 text-center mb-12 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-lg:mb-10 max-md:mb-8 max-sm:mb-6">
                     Why Choose Us
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
                     {/* Left Content */}
-                    <div className="space-y-6 flex flex-col">
-                        <p className="text-lg text-gray-700 leading-relaxed">
+                    <div className="space-y-6 flex flex-col max-sm:space-y-3">
+                        <p className="text-lg text-gray-700 leading-relaxed max-lg:text-base max-md:text-base max-sm:text-sm">
                             We work towards making this world a healthier place. Working over the years in the pharmaceutical sector, we understand the requirements of our clients and hence deliver an exclusive range of medicine. Our clients trust us for quality, ethical business practices and our commitment.
                         </p>
 
