@@ -3,7 +3,19 @@ import Link from "next/link";
 import { MapPin, Phone, Mail, Globe, ChevronRight, Building2, Factory } from "lucide-react";
 
 const Footer = () => {
-    const quickLinks = ["Home", "About Us", "Products", "Manufacturing", "R&D", "Domestic Customers", "Career", "Contact Us"];
+    const quickLinks = [
+        { name: "Home", path: "/" },
+        { name: "About Us", path: "/about" },
+        { name: "Products", path: "/carbapenem-injection" },
+        { name: "Manufacturing", path: "/manufacturing" },
+        { name: "R&D", path: "/research-and-development" },
+        { name: "Domestic Customers", path: "/domestic-customers" },
+        { name: "Career", path: "/career" },
+        { name: "Contact Us", path: "/contact" }
+    ];
+
+    const headOfficeLocation = "11, Industrial Area, Katha Bhatoli khalan, Baddi (H.P.), India";
+    const manufacturingPlantLocation = "Khasra No - 471/2011, Bhatoli Kalan, Baddi (H.P.), India";
 
     return (
         <footer className="relative bg-gradient-tertiary text-white overflow-hidden">
@@ -25,9 +37,9 @@ const Footer = () => {
                             <ul className="space-y-3">
                                 {quickLinks.map((link, idx) => (
                                     <li key={idx}>
-                                        <Link href="#" className="group flex items-center text-gray-300 hover:text-white transition-all duration-300 text-sm">
+                                        <Link href={link.path} className="group flex items-center text-gray-300 hover:text-white transition-all duration-300 text-sm">
                                             <ChevronRight className="w-3 h-3 mr-2 text-secondary group-hover:translate-x-1 transition-transform duration-300" />
-                                            <span className="group-hover:text-secondary">{link}</span>
+                                            <span className="group-hover:text-secondary">{link.name}</span>
                                         </Link>
                                     </li>
                                 ))}
@@ -44,15 +56,19 @@ const Footer = () => {
                                 <div className="w-12 h-0.5 bg-gradient-primary mb-6"></div>
                             </div>
                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-secondary/30 transition-colors">
-                                <div className="aspect-video bg-primary/20 rounded-lg flex items-center justify-center mb-3">
-                                    <div className="text-center text-gray-400">
-                                        <MapPin className="w-8 h-8 mx-auto mb-2 text-secondary" />
-                                        <p className="text-xs">Interactive Map</p>
-                                    </div>
+                                <div className="aspect-video bg-primary/20 rounded-lg overflow-hidden mb-3">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.755656179026!2d76.7934153151365!3d31.21590298145872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905a5a3a6e5a6a9%3A0x3b0d5e5e5e5e5e5e!2sBaddi%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen
+                                        loading="lazy"
+                                        className="rounded-lg"
+                                    ></iframe>
                                 </div>
                                 <p className="text-sm text-gray-300">
-                                    11, Industrial Area, Katha Bhatoli khalan<br />
-                                    Baddi (H.P.), India
+                                    {headOfficeLocation}
                                 </p>
                             </div>
                         </div>
@@ -67,15 +83,19 @@ const Footer = () => {
                                 <div className="w-12 h-0.5 bg-gradient-primary mb-6"></div>
                             </div>
                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-secondary/30 transition-colors">
-                                <div className="aspect-video bg-primary/20 rounded-lg flex items-center justify-center mb-3">
-                                    <div className="text-center text-gray-400">
-                                        <Factory className="w-8 h-8 mx-auto mb-2 text-secondary" />
-                                        <p className="text-xs">Plant Location</p>
-                                    </div>
+                                <div className="aspect-video bg-primary/20 rounded-lg overflow-hidden mb-3">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.755656179026!2d76.7934153151365!3d31.21590298145872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905a5a3a6e5a6a9%3A0x3b0d5e5e5e5e5e5e!2sBaddi%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                        width="100%"
+                                        height="100%"
+                                        style={{ border: 0 }}
+                                        allowFullScreen
+                                        loading="lazy"
+                                        className="rounded-lg"
+                                    ></iframe>
                                 </div>
                                 <p className="text-sm text-gray-300">
-                                    11, Industrial Area, Katha Bhatoli khalan<br />
-                                    Baddi (H.P.), India
+                                    {manufacturingPlantLocation}
                                 </p>
                             </div>
                         </div>
@@ -95,8 +115,7 @@ const Footer = () => {
                                         <div className="flex items-start gap-3">
                                             <MapPin className="w-4 h-4 mt-0.5 text-secondary flex-shrink-0" />
                                             <p className="text-gray-300">
-                                               khasra no -471/2011, Bhatoli kalan  <br />
-                                                BADDI – (HP), India
+                                                {manufacturingPlantLocation}
                                             </p>
                                         </div>
 
@@ -104,15 +123,13 @@ const Footer = () => {
                                             <Phone className="w-4 h-4 text-secondary flex-shrink-0" />
                                             <div className="text-gray-300">
                                                 <p>+91 99103 09423</p>
-                                              
                                             </div>
                                         </div>
 
                                         <div className="flex items-start gap-3">
                                             <Mail className="w-4 h-4 mt-0.5 text-secondary flex-shrink-0" />
                                             <div className="text-gray-300 space-y-1">
-                                                <p>info@gyginelifesciences.com</p>
-                                               
+                                                <p>info@hyginelifesciences.com</p>
                                             </div>
                                         </div>
 
@@ -121,6 +138,8 @@ const Footer = () => {
                                             <Link 
                                                 href="https://www.hygine-lifesciences.in" 
                                                 className="text-secondary hover:text-primary transition-colors duration-300 underline decoration-dotted underline-offset-2"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
                                             >
                                                 hygine-lifesciences.in
                                             </Link>
@@ -144,6 +163,8 @@ const Footer = () => {
                                     <Link 
                                         href="https://brandshow.in/" 
                                         className="text-secondary hover:text-white transition-colors duration-300 underline decoration-dotted underline-offset-2"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                     >
                                         BrandShow
                                     </Link>
