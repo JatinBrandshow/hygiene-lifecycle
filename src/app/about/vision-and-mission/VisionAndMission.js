@@ -7,7 +7,7 @@ const VisionMission = () => {
       <div className="relative bg-gradient-to-br from-primary to-tertiary text-white py-28 px-6">
         <div className="absolute inset-0 bg-[url('/images/medical-pattern.png')] opacity-10"></div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Shamshree Pharmaceuticals</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Hygiene Lifesciences</h1>
           <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto leading-relaxed">
             Pioneering Ethical Healthcare Innovation Worldwide
           </p>
@@ -176,7 +176,7 @@ const VisionMission = () => {
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8 rounded-full"></div>
           <p className="text-xl leading-relaxed mb-8 max-w-3xl mx-auto">
-            At Shamshree Pharmaceuticals, we are dedicated to making quality healthcare 
+            At Hygiene Lifesciences, we are dedicated to making quality healthcare 
             accessible worldwide through innovative medicines, education, and community partnerships.
           </p>
           <div className="grid sm:grid-cols-3 gap-8 mt-12">
@@ -226,7 +226,7 @@ const VisionMission = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
-            The foundation of every decision we make at Shamshree Pharmaceuticals
+            The foundation of every decision we make at Hygiene Lifesciences
           </p>
         </div>
         
@@ -235,7 +235,7 @@ const VisionMission = () => {
             {
               icon: <FaHeartbeat className="text-primary text-2xl" />,
               title: "Patient-Centric Approach",
-              desc: "Shamshree products are designed for maximum efficiency in treating patients, with their well-being as our ultimate benchmark for success. We prioritize patient outcomes in every formulation and delivery system.",
+              desc: "Hygiene Lifesciences products are designed for maximum efficiency in treating patients, with their well-being as our ultimate benchmark for success. We prioritize patient outcomes in every formulation and delivery system.",
               color: "primary"
             },
             {

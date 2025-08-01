@@ -137,7 +137,7 @@ const OurStrengths = () => {
               <div className="relative rounded-xl overflow-hidden h-full min-h-[400px] shadow-lg">
                 <Image
                   src="/img/our-strength/strength_img2.png"
-                  alt="Shamshree Team"
+                  alt="Hygiene Team"
                   fill
                   className="object-cover"
                   quality={90}

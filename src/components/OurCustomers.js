@@ -129,7 +129,7 @@ const OurCustomers = () => {
 
                             {/* Description */}
                             <p className="max-w-4xl text-lg text-gray-600 leading-relaxed">
-                                Shamshree Lifesciences serves a diverse set of customers worldwide. Our customers include healthcare providers, hospitals, pharmaceutical distributors, and government healthcare agencies. With commitment to
+                                Hygiene Lifesciences serves a diverse set of customers worldwide. Our customers include healthcare providers, hospitals, pharmaceutical distributors, and government healthcare agencies. With commitment to
                                 quality and affordability, we ensure our Dry powder Injectable products meet the stringent requirements of our valued customers across various regions of India and the world.
                             </p>
                         </div>

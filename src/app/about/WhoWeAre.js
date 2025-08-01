@@ -214,7 +214,7 @@ export default function WhoWeAre() {
             </h3>
             <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto" />
             <p className="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">
-              Shamshree Lifesciences proudly exports its products to over 25 countries,
+              Hygiene Lifesciences proudly exports its products to over 25 countries,
               improving lives across multiple continents.
             </p>
           </div>

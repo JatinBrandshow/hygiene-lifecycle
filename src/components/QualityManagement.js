@@ -41,7 +41,7 @@ const QualityManagement = () => {
                             Quality <span className="text-teal-600">Management</span>
                         </h2>
                         <p className="mt-3 text-lg max-md:text-base max-sm:text-sm">
-                            We are committed to the Highest Quality standards. At Shamshree we believe in excellence through Quality and are committed to Quality in all our operations.
+                            We are committed to the Highest Quality standards. At Hygiene Lifesciences we believe in excellence through Quality and are committed to Quality in all our operations.
                         </p>
                     </div>
 
