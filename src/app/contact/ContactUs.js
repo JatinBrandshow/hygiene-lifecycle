@@ -17,8 +17,8 @@ export default function Contact() {
     },
     {
       title: "MARKETING OFFICE",
-      location: "Gurugram",
-      address: "Plot No. 88, Sector 44, Gurugram, India",
+      location: "Chandigarh",
+      address: "11, Industrial Area, Katha Bhatoli khalan, Baddi (H.P.), India",
       phone: "+91 99103 09423",
       icon: <FaMapMarkerAlt />,
       hours: "Mon-Sat: 9:30 AM - 7:00 PM",
