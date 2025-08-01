@@ -15,9 +15,9 @@ const OurStrengths = () => {
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">Core Strengths</span>
             </h1>
             <p className="text-xl text-blue-100 mb-8">
-              The pillars that make Shamshree a trusted partner in global healthcare
+              The pillars that make Hygine Lifecycle a trusted partner in global healthcare
             </p>
-            <div className="w-32 h-1.5 bg-gradient-to-r from-white to-blue-100 rounded-full" />
+            <div className="w-32 h-1.5 bg-secondary rounded-full" />
           </div>
         </div>
 
@@ -127,7 +127,7 @@ const OurStrengths = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--tertiary)] mb-4">
-              Why <span className="text-[var(--primary)]">Shamshree</span> Stands Out
+              Why <span className="text-[var(--primary)]">Hygine Lifecycle</span> Stands Out
             </h2>
             <div className="w-24 h-1 bg-[var(--primary)] mx-auto" />
           </div>
@@ -229,7 +229,7 @@ const OurStrengths = () => {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl font-bold text-[var(--tertiary)] mb-4">
-            Ready to Experience the <span className="text-[var(--primary)]">Shamshree Difference</span>?
+            Ready to Experience the <span className="text-[var(--primary)]">Hygine Lifecycle  Difference</span>?
           </h2>
           <p className="text-gray-600 mb-6 text-sm">
             Partner with a pharmaceutical company that combines quality, innovation, and reliability.

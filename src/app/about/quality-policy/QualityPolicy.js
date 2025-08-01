@@ -21,7 +21,7 @@ const QualityPolicy = () => {
         <div className="bg-white shadow-xl rounded-lg p-8 md:p-12 text-center border border-gray-100">
           <FaRegCheckCircle className="text-6xl text-[var(--primary)] mx-auto mb-6" />
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            <span className="text-[var(--primary)]">Shamshree's</span> Quality Mantra
+            <span className="text-[var(--primary)]">Hygine Lifecycle</span> Quality Mantra
           </h2>
           <div className="prose prose-lg max-w-3xl mx-auto text-gray-700">
             <p className="text-xl leading-relaxed">
@@ -162,7 +162,7 @@ const QualityPolicy = () => {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              The <span className="text-[var(--primary)]">Shamshree Promise</span>
+              The <span className="text-[var(--primary)]">Hygine Lifecycle Promise</span>
             </h2>
             <div className="w-20 h-1 bg-[var(--primary)] mx-auto"></div>
           </div>
