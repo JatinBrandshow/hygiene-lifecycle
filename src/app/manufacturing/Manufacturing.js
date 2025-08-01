@@ -16,42 +16,42 @@ const Manufacturing = () => {
 
   const capabilities = [
     {
-      icon: <FaIndustry className="text-blue-600 text-3xl" />,
+      icon: <FaIndustry className="text-[#173C96] text-3xl" />,
       title: "State-of-the-Art Facilities",
       description: "Modern manufacturing units equipped with cutting-edge technology"
     },
     {
-      icon: <FaFlask className="text-green-600 text-3xl" />,
+      icon: <FaFlask className="text-[#EB006F] text-3xl" />,
       title: "R&D Integration",
       description: "Seamless transition from research to production"
     },
     {
-      icon: <FaShieldAlt className="text-red-600 text-3xl" />,
+      icon: <FaShieldAlt className="text-[#173C96] text-3xl" />,
       title: "Quality Assurance",
       description: "Stringent quality control at every production stage"
     },
     {
-      icon: <FaCogs className="text-amber-600 text-3xl" />,
+      icon: <FaCogs className="text-[#031B4E] text-3xl" />,
       title: "Automation",
       description: "Advanced automation for precision and efficiency"
     },
     {
-      icon: <FaChartLine className="text-purple-600 text-3xl" />,
+      icon: <FaChartLine className="text-[#EB006F] text-3xl" />,
       title: "Process Optimization",
       description: "Continuous improvement for maximum productivity"
     },
     {
-      icon: <FaLeaf className="text-emerald-600 text-3xl" />,
+      icon: <FaLeaf className="text-[#173C96] text-3xl" />,
       title: "Sustainable Practices",
       description: "Eco-friendly manufacturing processes"
     },
     {
-      icon: <FaGlobe className="text-indigo-600 text-3xl" />,
+      icon: <FaGlobe className="text-[#031B4E] text-3xl" />,
       title: "Global Standards",
       description: "Compliance with international regulatory requirements"
     },
     {
-      icon: <FaUsers className="text-teal-600 text-3xl" />,
+      icon: <FaUsers className="text-[#EB006F] text-3xl" />,
       title: "Skilled Workforce",
       description: "Highly trained professionals ensuring excellence"
     }
@@ -70,18 +70,18 @@ const Manufacturing = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
           <div className="max-w-3xl">
             <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                Pharmaceutical Manufacturing
+              <span className="inline-block px-4 py-2 bg-[#EB006F]/10 text-[#EB006F] rounded-full text-sm font-medium">
+                Hygine Lifecycle Manufacturing
               </span>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Precision <span className="text-blue-600">Manufacturing</span> Excellence
+              Precision <span className="text-[#173C96]">Manufacturing</span> Excellence
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl">
               Delivering world-class pharmaceutical products through cutting-edge technology and uncompromising quality standards.
             </p>
             <div className="flex gap-4">
-              <button className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-all">
+              <button className="px-6 py-3 bg-[#173C96] text-white rounded-lg font-medium hover:bg-[#031B4E] transition-all">
                 Explore Capabilities
               </button>
               <button className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-all">
@@ -110,12 +110,12 @@ const Manufacturing = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Our <span className="text-blue-600">Manufacturing</span> Excellence
+              Our <span className="text-[#173C96]">Manufacturing</span> Excellence
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               A visual journey through our state-of-the-art production facilities
             </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto mt-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#173C96] to-[#EB006F] mx-auto mt-6"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -140,25 +140,25 @@ const Manufacturing = () => {
       </section>
 
       {/* Capabilities Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section className="py-20 bg-gradient-to-br from-[#173C96]/10 to-[#031B4E]/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Manufacturing <span className="text-blue-600">Capabilities</span>
+              Manufacturing <span className="text-[#173C96]">Capabilities</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive pharmaceutical manufacturing solutions
             </p>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto mt-6"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#173C96] to-[#EB006F] mx-auto mt-6"></div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {capabilities.map((capability, index) => (
               <div 
                 key={index} 
-                className="bg-white p-8 rounded-xl border border-gray-100 hover:border-blue-200 transition-all hover:-translate-y-2"
+                className="bg-white p-8 rounded-xl border border-gray-100 hover:border-[#173C96]/50 transition-all hover:-translate-y-2 shadow-sm hover:shadow-md"
               >
-                <div className="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-[#173C96]/10 rounded-xl flex items-center justify-center mb-6">
                   {capability.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{capability.title}</h3>
@@ -169,8 +169,8 @@ const Manufacturing = () => {
         </div>
       </section>
 
-        {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+      {/* Stats Section */}
+      <section className="py-20 bg-gradient-to-r from-[#031B4E] to-[#173C96] text-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             {[
@@ -184,7 +184,7 @@ const Manufacturing = () => {
                   <span className="mr-2">{stat.icon}</span>
                   {stat.value}
                 </div>
-                <p className="text-xl text-blue-200">{stat.label}</p>
+                <p className="text-xl text-[#EB006F]/80">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -208,7 +208,7 @@ const Manufacturing = () => {
 
             <div className="lg:w-1/2">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Our <span className="text-blue-600">Quality-Centric</span> Process
+                Our <span className="text-[#173C96]">Quality-Centric</span> Process
               </h2>
               <div className="space-y-6">
                 {[
@@ -222,8 +222,8 @@ const Manufacturing = () => {
                   "Distribution"
                 ].map((step, index) => (
                   <div key={index} className="flex items-start">
-                    <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
-                      <div className="w-5 h-5 bg-blue-600 rounded-full"></div>
+                    <div className="bg-[#173C96]/10 p-2 rounded-full mr-4 mt-1">
+                      <div className="w-5 h-5 bg-[#173C96] rounded-full"></div>
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-gray-800">{step}</h3>
@@ -235,8 +235,6 @@ const Manufacturing = () => {
           </div>
         </div>
       </section>
-
-    
     </div>
   );
 };
