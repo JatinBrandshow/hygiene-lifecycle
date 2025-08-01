@@ -34,15 +34,15 @@ const ContactUs = () => {
                         <div className="grid grid-cols-2 gap-8 mb-16">
                             <div>
                                 <h3 className="text-sm font-medium text-slate-500 mb-2">Head Office</h3>
-                                <p>Deventerstraat 11</p>
-                                <p>7575 EM, Oldenzaal</p>
-                                <p>The Netherlands</p>
+                                <p>11, Industrial Area, Katha</p>
+                                <p>Bhatoli khalan, Baddi</p>
+                                <p>(H.P.), India</p>
                             </div>
                             <div>
                                 <h3 className="text-sm font-medium text-slate-500 mb-2">Mail</h3>
-                                <p>info@palmer-dinnerware.com</p>
+                                <p>info@hyginelifesciences.com</p>
                                 <h3 className="text-sm font-medium text-slate-500 mt-4 mb-2">Phone</h3>
-                                <p>+31 541 581 600</p>
+                                <p>+91 99103 09423</p>
                             </div>
                         </div>
                         <div className="grid md:grid-cols-2 gap-6">
