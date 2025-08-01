@@ -51,8 +51,8 @@ const Footer = () => {
                                     </div>
                                 </div>
                                 <p className="text-sm text-gray-300">
-                                    S.C.O: 1136-37, Sector 22 – B<br />
-                                    Chandigarh – 160 022 (UT), India
+                                    11, Industrial Area, Katha Bhatoli khalan<br />
+                                    Baddi (H.P.), India
                                 </p>
                             </div>
                         </div>
@@ -74,7 +74,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                                 <p className="text-sm text-gray-300">
-                                    11, Industrial Area, Katha Bhatolikhalan<br />
+                                    11, Industrial Area, Katha Bhatoli khalan<br />
                                     Baddi (H.P.), India
                                 </p>
                             </div>
@@ -95,25 +95,24 @@ const Footer = () => {
                                         <div className="flex items-start gap-3">
                                             <MapPin className="w-4 h-4 mt-0.5 text-secondary flex-shrink-0" />
                                             <p className="text-gray-300">
-                                                S.C.O: 1136-37, Sector 22 – B<br />
-                                                Chandigarh – 160 022 (UT), India
+                                               khasra no -471/2011, Bhatoli kalan  <br />
+                                                BADDI – (HP), India
                                             </p>
                                         </div>
 
                                         <div className="flex items-center gap-3">
                                             <Phone className="w-4 h-4 text-secondary flex-shrink-0" />
                                             <div className="text-gray-300">
-                                                <p>+91 172 271 2039</p>
-                                                <p>+91 92 1615 5412</p>
+                                                <p>+91 99103 09423</p>
+                                              
                                             </div>
                                         </div>
 
                                         <div className="flex items-start gap-3">
                                             <Mail className="w-4 h-4 mt-0.5 text-secondary flex-shrink-0" />
                                             <div className="text-gray-300 space-y-1">
-                                                <p>corporate@hyginelifecycle.com</p>
-                                                <p>marketing@hyginelifecycle.com</p>
-                                                <p>operations@hyginelifecycle.com</p>
+                                                <p>info@gyginelifesciences.com</p>
+                                               
                                             </div>
                                         </div>
 

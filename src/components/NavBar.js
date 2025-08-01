@@ -86,17 +86,17 @@ const NavBar = () => {
                                         <>
                                             <Link 
                                                 href={item.href} 
-                                                className="relative px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary transition group"
+                                                className="relative px-4 py-2 text-sm font-medium text-gray-600 hover:text-secondary transition group"
                                             >
                                                 {item.name}
-                                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
                                             </Link>
                                             <div className="absolute top-full left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md z-50 w-56 border border-gray-200">
                                                 {item.submenu.map((subItem) => (
                                                     <Link 
                                                         key={subItem.name} 
                                                         href={subItem.href} 
-                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-secondary"
                                                     >
                                                         {subItem.name}
                                                     </Link>
@@ -106,10 +106,10 @@ const NavBar = () => {
                                     ) : (
                                         <Link 
                                             href={item.href} 
-                                            className="relative px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary transition group"
+                                            className="relative px-4 py-2 text-sm font-medium text-gray-600 hover:text-secondary transition group"
                                         >
                                             {item.name}
-                                            <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                                            <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
                                         </Link>
                                     )}
                                 </div>
@@ -118,7 +118,7 @@ const NavBar = () => {
 
                         {/* CTA - Desktop */}
                         <div className="hidden lg:flex">
-                            <button className="bg-gradient-primary hover:opacity-90 text-white px-4 py-2 rounded-md shadow transition-all">
+                            <button className="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md shadow transition-all">
                                 Get Started
                             </button>
                         </div>
@@ -194,7 +194,7 @@ const NavBar = () => {
                         ))}
 
                         <div className="pt-4 mt-auto border-t border-gray-200">
-                            <button className="w-full bg-gradient-primary hover:opacity-90 text-white px-4 py-2 rounded-md shadow transition">
+                            <button className="w-full bg-primary hover:bg-primary text-white px-4 py-2 rounded-md shadow transition">
                                 Get Started
                             </button>
                         </div>

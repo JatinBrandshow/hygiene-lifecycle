@@ -9,30 +9,29 @@ export default function Contact() {
     {
       title: "CORPORATE OFFICE",
       location: "Chandigarh",
-      address: "Sco 1136-37, Sector 22-B, Chandigarh, India",
-      phone: "+91 172 271 2039",
-      phone2: "+91 92 1615 5412",
+      address: "11, Industrial Area, Katha Bhatoli khalan, Baddi (H.P.), India",
+      phone: "+91 99103 09423",
       icon: <FaBuilding />,
       hours: "Mon-Fri: 9:00 AM - 6:00 PM",
-      email: "corporate@hyginelifecycle.com"
+      email: "info@hyginelifesciences.com"
     },
     {
       title: "MARKETING OFFICE",
       location: "Gurugram",
       address: "Plot No. 88, Sector 44, Gurugram, India",
-      phone: "+91 99 1520 1441",
+      phone: "+91 99103 09423",
       icon: <FaMapMarkerAlt />,
       hours: "Mon-Sat: 9:30 AM - 7:00 PM",
-      email: "marketing@hyginelifecycle.com"
+      email: "info@hyginelifesciences.com"
     },
     {
       title: "MANUFACTURING PLANT",
       location: "Baddi",
-      address: "11, Industrial Area, Katha Bhatolikhalan, Baddi (H.P.), India",
-      phone: "+91 99152 52244",
+      address: "11, Industrial Area, Katha Bhatoli khalan, Baddi (H.P.), India",
+      phone: "+91 99103 09423",
       icon: <FaMapMarkerAlt />,
       hours: "Mon-Sat: 8:00 AM - 5:00 PM",
-      email: "operations@hyginelifecycle.com"
+      email: "info@hyginelifesciences.com"
     }
   ];
 
