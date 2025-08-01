@@ -27,22 +27,19 @@ const VisionMissionValues = () => {
 
     return (
         <>
-            <section className="py-16 bg-white">
-                <div className="max-w-[1400px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <section className="py-14 bg-indigo-950 max-lg:py-10 max-md:py-10 max-sm:py-10">
+                <div className="max-w-[1400px] mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 max-md:gap-y-14 max-sm:gap-y-16">
                     {items.map((item, index) => (
                         <div key={index} className="relative flex items-center justify-center group">
                             {/* Outer semi-circle ring */}
-                            <div
-  className={`absolute w-[380px] h-[380px] rounded-full border-[10px] ${item.ringColor}
-    border-t-transparent border-b-transparent transition-transform duration-500
-    ${index % 2 === 0 ? "rotate-[135deg]" : "-rotate-[135deg]"}
-    spin-on-hover`}  // note: no group-hover here
-/>
+                            {/* <div
+                                className={`absolute w-[400px] h-[400px] rounded-full border-[10px] ${item.ringColor} border-t-transparent border-b-transparent transition-transform duration-500 ${index % 2 === 0 ? "rotate-[135deg]" : "-rotate-[135deg]"} spin-on-hover`} // note: no group-hover here
+                            /> */}
 
                             {/* Inner white circle content */}
-                            <div className="w-80 h-80 bg-white rounded-full shadow-lg z-10 flex flex-col items-center justify-center text-center px-4">
+                            <div className="w-[360px] h-[360px] bg-white rounded-full shadow-[rgba(13,_38,_76,_0.19)_0px_0px_10px] z-10 flex flex-col items-center justify-center text-center px-4">
                                 <div className="mb-3">{item.icon}</div>
-                                <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+                                <h3 className="text-xl font-bold mb-2 max-lg:text-lg max-md:text-base max-sm:text-sm">{item.title}</h3>
                                 <p className="text-sm text-gray-600">{item.description}</p>
                             </div>
                         </div>

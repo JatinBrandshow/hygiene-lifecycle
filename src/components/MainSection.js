@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const slides = [
     {
@@ -31,6 +32,7 @@ const slides = [
 
 const MainSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const contentRef = useRef(null);
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -39,12 +41,24 @@ const MainSection = () => {
         return () => clearInterval(timer);
     }, []);
 
-    const goToSlide = (index) => {
-        setCurrentSlide(index);
-    };
+    useEffect(() => {
+        if (contentRef.current) {
+            gsap.fromTo(
+                contentRef.current.children,
+                { x: -560, opacity: 0 },
+                {
+                    x: 0,
+                    opacity: 1,
+                    duration: 1,
+                    stagger: 0.15,
+                    ease: "power3.out",
+                }
+            );
+        }
+    }, [currentSlide]);
 
     return (
-        <section className="relative w-full h-[90vh] overflow-hidden">
+        <section className="relative w-full h-[85vh] overflow-hidden">
             {/* Slides */}
             <div className="relative w-full h-full">
                 {slides.map((slide, index) => (
@@ -57,9 +71,9 @@ const MainSection = () => {
                         {/* Centered Content */}
                         <div className="relative z-10 flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
                             <div className="w-full max-w-[1500px] mx-auto">
-                                <div className="w-full md:w-6/12 text-white px-2.5">
+                                <div className="w-full md:w-6/12 text-white px-2.5" ref={index === currentSlide ? contentRef : null}>
                                     <h1 className="text-4xl font-bold mb-6 leading-tight max-lg:text-3xl max-md:text-2xl max-sm:text-xl max-lg:mb-5 max-md:mb-4 max-sm:mb-3">{slide.title}</h1>
-                                    <p className="text-xl mb-6 opacity-90  max-lg:text-lg max-md:text-base max-sm:text-sm max-lg:mb-5 max-md:mb-4 max-sm:mb-3">{slide.description}</p>
+                                    <p className="text-xl mb-6 opacity-90 max-lg:text-lg max-md:text-base max-sm:text-sm max-lg:mb-5 max-md:mb-4 max-sm:mb-3">{slide.description}</p>
                                     <div className="flex flex-wrap gap-4 max-md:gap-3 max-sm:gap-2.5">
                                         <button className="group relative overflow-hidden text-[17px] tracking-[1px] uppercase font-semibold px-6 py-3 max-lg:px-5 max-md:px-4 max-sm:px-3 max-md:text-base max-sm:text-sm border-2 border-black text-black rounded-xl transition-all duration-300 ease-in-out hover:text-white focus:text-white active:scale-90">
                                             {slide.Primarybutton}
