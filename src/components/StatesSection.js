@@ -12,22 +12,22 @@ export default function FluidStatsSection() {
       icon: <FaGlobe />,
       number: "25+",
       label: "Global Presence",
-      color: "text-blue-500",
-      gradient: "bg-gradient-to-br from-blue-400 to-blue-600"
+      color: "text-primary",
+      bg: "bg-primary"
     },
     {
       icon: <FaClipboardList />,
       number: "125+",
       label: "Products Registered",
-      color: "text-emerald-500",
-      gradient: "bg-gradient-to-br from-emerald-400 to-emerald-600"
+      color: "text-secondary",
+      bg: "bg-secondary"
     },
     {
       icon: <FaHandshake />,
       number: "100+",
       label: "Satisfied Clients",
-      color: "text-violet-500",
-      gradient: "bg-gradient-to-br from-violet-400 to-violet-600"
+      color: "text-primary",
+      bg: "bg-primary"
     }
   ];
 
@@ -51,7 +51,7 @@ export default function FluidStatsSection() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute -top-1/4 -left-1/4 w-[150%] h-[150%] bg-gradient-to-r from-blue-100/30 via-emerald-100/30 to-violet-100/30 rounded-full"
+          className="absolute -top-1/4 -left-1/4 w-[150%] h-[150%] bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 rounded-full"
         />
       </motion.div>
 
@@ -64,9 +64,9 @@ export default function FluidStatsSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-violet-500">Impact</span> in Motion
+            Our <span className="text-primary">Impact</span> in Motion
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-violet-400 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
         </motion.div>
 
         {/* Fluid stats container */}
@@ -89,9 +89,9 @@ export default function FluidStatsSection() {
             />
             <defs>
               <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stopColor="#3b82f6" />
-                <stop offset="50%" stopColor="#10b981" />
-                <stop offset="100%" stopColor="#8b5cf6" />
+                <stop offset="0%" stopColor="var(--primary)" />
+                <stop offset="50%" stopColor="var(--secondary)" />
+                <stop offset="100%" stopColor="var(--primary)" />
               </linearGradient>
             </defs>
           </svg>
@@ -118,7 +118,7 @@ export default function FluidStatsSection() {
                       repeat: Infinity,
                       delay: index * 0.3
                     }}
-                    className={`absolute -top-6 -left-6 w-12 h-12 rounded-full ${stat.gradient} flex items-center justify-center text-white shadow-lg`}
+                    className={`absolute -top-6 -left-6 w-12 h-12 rounded-full ${stat.bg} flex items-center justify-center text-white shadow-lg`}
                   >
                     {stat.icon}
                   </motion.div>
