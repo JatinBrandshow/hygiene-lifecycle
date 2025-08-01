@@ -1,4 +1,3 @@
-
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -14,7 +13,8 @@ export default function WhoWeAre() {
     <div className="bg-white text-gray-800 overflow-hidden">
       {/* === Hero Section === */}
       <section className="relative w-full h-[80vh] min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-purple-900/80 z-10" />
+        {/* Only gradient kept in the entire page (on hero image) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-tertiary/80 z-10" />
         <Image
           src="/img/Plant1.webp"
           alt="Who We Are"
@@ -27,7 +27,7 @@ export default function WhoWeAre() {
           <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
             Who We Are
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mb-8" />
+          <div className="w-24 h-1 bg-secondary mb-8" />
           <p className="text-xl md:text-2xl text-white max-w-2xl opacity-90">
             Pioneering pharmaceutical excellence with global impact
           </p>
@@ -41,7 +41,7 @@ export default function WhoWeAre() {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
           }`}
         >
-          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-10 w-10 text-white"
@@ -58,20 +58,20 @@ export default function WhoWeAre() {
             </svg>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-10">
             <span className="relative inline-block">
               Empowering Global Health
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-400 transform translate-y-2" />
+              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-secondary transform translate-y-2" />
             </span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10">
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="bg-gradient-to-r from-blue-100 to-purple-100 p-2 rounded-full mr-4 mt-1">
+                <div className="bg-primary/10 p-2 rounded-full mr-4 mt-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-blue-600"
+                    className="h-6 w-6 text-primary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -85,18 +85,18 @@ export default function WhoWeAre() {
                   </svg>
                 </div>
                 <p className="text-lg md:text-xl leading-relaxed">
-                  <strong className="text-blue-800">Shamshree Lifesciences</strong> is a{" "}
-                  <strong className="text-purple-800">WHO GMP-GLP</strong> certified pharmaceutical
+                  <strong className="text-primary">Shamshree Lifesciences</strong> is a{" "}
+                  <strong className="text-tertiary">WHO GMP-GLP</strong> certified pharmaceutical
                   company with a world-class manufacturing plant in{" "}
-                  <strong className="text-blue-800">Baddi (H.P.), India</strong>.
+                  <strong className="text-primary">Baddi (H.P.), India</strong>.
                 </p>
               </div>
               
               <div className="flex items-start">
-                <div className="bg-gradient-to-r from-blue-100 to-purple-100 p-2 rounded-full mr-4 mt-1">
+                <div className="bg-secondary/10 p-2 rounded-full mr-4 mt-1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-purple-600"
+                    className="h-6 w-6 text-secondary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -110,24 +110,24 @@ export default function WhoWeAre() {
                   </svg>
                 </div>
                 <p className="text-lg md:text-xl leading-relaxed">
-                  We specialize in <strong className="text-blue-800">Dry Powder Injectables</strong> – 
+                  We specialize in <strong className="text-primary">Dry Powder Injectables</strong> – 
                   Carbapenems & Cephalosporins, ensuring global standards, strict quality protocols, 
                   and high efficacy.
                 </p>
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border-l-4 border-blue-600">
-              <h3 className="text-2xl font-semibold text-blue-800 mb-4">Global Reach</h3>
+            <div className="bg-primary/5 rounded-xl p-6 border-l-4 border-primary">
+              <h3 className="text-2xl font-semibold text-primary mb-4">Global Reach</h3>
               <p className="text-lg leading-relaxed mb-6">
-                Exporting across <strong className="text-blue-700">Africa</strong>,{" "}
-                <strong className="text-purple-700">Latin America</strong>,{" "}
-                <strong className="text-blue-700">Southeast Asia</strong>, and{" "}
-                <strong className="text-purple-700">CIS</strong> nations.
+                Exporting across <strong className="text-primary">Africa</strong>,{" "}
+                <strong className="text-secondary">Latin America</strong>,{" "}
+                <strong className="text-primary">Southeast Asia</strong>, and{" "}
+                <strong className="text-tertiary">CIS</strong> nations.
               </p>
               <div className="flex flex-wrap gap-2">
                 {['Africa', 'Latin America', 'Southeast Asia', 'CIS', 'Middle East'].map((region) => (
-                  <span key={region} className="bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                  <span key={region} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">
                     {region}
                   </span>
                 ))}
@@ -138,7 +138,7 @@ export default function WhoWeAre() {
       </section>
 
       {/* === Why Choose Us Section === */}
-      <section className="py-20 px-6 md:px-10 bg-gradient-to-b from-white to-gray-50 relative">
+      <section className="py-20 px-6 md:px-10 bg-gray-50 relative">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[url('/assets/pattern.svg')] bg-repeat" />
         </div>
@@ -147,7 +147,7 @@ export default function WhoWeAre() {
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Why Choose Shamshree?
             </h3>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto" />
+            <div className="w-20 h-1 bg-primary mx-auto" />
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -182,13 +182,13 @@ export default function WhoWeAre() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-100 hover:border-blue-200 transition-all duration-300 group relative overflow-hidden"
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-100 hover:border-primary/30 transition-all duration-300 group relative overflow-hidden"
               >
-                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
-                <div className="bg-gradient-to-r from-blue-100 to-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 text-blue-600 group-hover:from-blue-600 group-hover:to-purple-600 group-hover:text-white transition-colors">
+                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
+                <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
                   {item.icon}
                 </div>
-                <h4 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-700 transition-colors">
+                <h4 className="text-xl font-bold mb-3 text-gray-800 group-hover:text-primary transition-colors">
                   {item.title}
                 </h4>
                 <p className="text-gray-600">{item.desc}</p>
@@ -199,16 +199,16 @@ export default function WhoWeAre() {
       </section>
 
       {/* === Global Presence Section === */}
-      <section className="py-20 px-6 md:px-10 bg-gray-50 relative overflow-hidden">
-        <div className="absolute -right-20 -top-20 w-64 h-64 bg-blue-200 rounded-full opacity-20" />
-        <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-purple-200 rounded-full opacity-20" />
+      <section className="py-20 px-6 md:px-10 bg-white relative overflow-hidden">
+        <div className="absolute -right-20 -top-20 w-64 h-64 bg-primary/10 rounded-full opacity-20" />
+        <div className="absolute -left-20 -bottom-20 w-64 h-64 bg-tertiary/10 rounded-full opacity-20" />
         
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Our Global Presence
             </h3>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto" />
+            <div className="w-20 h-1 bg-primary mx-auto" />
             <p className="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">
               Shamshree Lifesciences proudly exports its products to over 25 countries,
               improving lives across multiple continents.
@@ -237,8 +237,8 @@ export default function WhoWeAre() {
                 { region: "CIS Nations", countries: "6 countries" },
               ].map((item, index) => (
                 <div key={index} className="p-6 text-center group relative overflow-hidden">
-                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
-                  <h4 className="text-xl font-bold text-blue-700 mb-2 group-hover:text-purple-700 transition-colors">
+                  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
+                  <h4 className="text-xl font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
                     {item.region}
                   </h4>
                   <p className="text-gray-600">{item.countries}</p>
@@ -250,41 +250,40 @@ export default function WhoWeAre() {
       </section>
 
       {/* === Our Expertise Section === */}
-      <section className="py-20 px-6 md:px-10 bg-white">
+      <section className="py-20 px-6 md:px-10 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Our Core Expertise
             </h3>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto" />
+            <div className="w-20 h-1 bg-primary mx-auto" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 border border-blue-100">
+            <div className="bg-primary/5 rounded-xl p-8 border border-primary/20">
               <div className="flex items-center mb-6">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-3 rounded-lg mr-6">
+                <div className="bg-primary text-white p-3 rounded-lg mr-6">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h4 className="text-2xl font-bold text-blue-800">Manufacturing Excellence</h4>
+                <h4 className="text-2xl font-bold text-primary">Manufacturing Excellence</h4>
               </div>
               <ul className="space-y-4">
-               
                 <li className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-600 mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Specialized in Dry Powder Injectables (Carbapenems & Cephalosporins)</span>
                 </li>
                 <li className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-600 mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">State-of-the-art aseptic processing and lyophilization capabilities</span>
                 </li>
                 <li className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-600 mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Strict quality control measures at every production stage</span>
@@ -292,36 +291,36 @@ export default function WhoWeAre() {
               </ul>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 border border-purple-100">
+            <div className="bg-tertiary/5 rounded-xl p-8 border border-tertiary/20">
               <div className="flex items-center mb-6">
-                <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-3 rounded-lg mr-6">
+                <div className="bg-tertiary text-white p-3 rounded-lg mr-6">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
                 </div>
-                <h4 className="text-2xl font-bold text-purple-800">Research & Development</h4>
+                <h4 className="text-2xl font-bold text-tertiary">Research & Development</h4>
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-600 mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-tertiary mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Dedicated R&D team focused on formulation development</span>
                 </li>
                 <li className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-600 mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-tertiary mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Continuous process optimization and technology upgrades</span>
                 </li>
                 <li className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-600 mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-tertiary mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Focus on bioequivalence and therapeutic effectiveness</span>
                 </li>
                 <li className="flex items-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-purple-600 mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-tertiary mt-1 mr-3" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
                   <span className="text-gray-700">Collaborations with research institutions and industry experts</span>
@@ -331,9 +330,6 @@ export default function WhoWeAre() {
           </div>
         </div>
       </section>
-
-    
-    
     </div>
   );
 }

@@ -1,15 +1,14 @@
 @import "tailwindcss";
 
 :root {
+  /* Light theme colors */
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Your custom theme colors */
+  --primary: #3E4095;
+  --secondary: #65BC50;
+  --tertiary: #033B4A;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -19,12 +18,72 @@
   }
 } */
 
+@theme inline {
+  /* Base colors */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Theme colors */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(to right, var(--primary), var(--secondary));
+  --gradient-secondary: linear-gradient(to right, var(--secondary), var(--tertiary));
+  --gradient-tertiary: linear-gradient(to right, var(--primary), var(--tertiary));
+  
+  /* Fonts */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Custom gradient classes */
+.bg-gradient-primary {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(to right, var(--secondary), var(--tertiary));
+}
+
+.bg-gradient-tertiary {
+  background: linear-gradient(to right, var(--primary), var(--tertiary));
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-tertiary {
+  color: var(--tertiary);
+}
+
+/* Border colors */
+.border-primary {
+  border-color: var(--primary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.border-tertiary {
+  border-color: var(--tertiary);
+}
+
+/* Animation */
 @keyframes rotate360 {
   from {
     transform: rotate(0deg);
