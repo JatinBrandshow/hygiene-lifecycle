@@ -15,86 +15,86 @@ const ProductGallery = () => {
             id: 1,
             name: "Zetro-1000",
             image: "img/products/carbapenem-product--01.webp",
-            url: "https://www.shamshree.com/carbapenem-injection.php",
+            url: "/carbapenem-injection",
         },
         {
             id: 2,
             name: "DorPen-500",
             image: "img/products/carbapenem-product--02.webp",
-            url: "https://www.shamshree.com/carbapenem-injection.php",
+            url: "/carbapenem-injection",
         },
         {
             id: 3,
             name: "IMICILASH-500",
             image: "img/products/carbapenem-product--03.webp",
-            url: "https://www.shamshree.com/carbapenem-injection.php",
+            url: "/carbapenem-injection",
         },
         {
             id: 4,
             name: "MERONASH-1000",
             image: "img/products/carbapenem-product--04.webp",
-            url: "https://www.shamshree.com/carbapenem-injection.php",
+            url: "/carbapenem-injection",
         },
         {
             id: 5,
             name: "MERONASH-S",
             image: "img/products/carbapenem-product--05.webp",
-            url: "https://www.shamshree.com/carbapenem-injection.php",
+            url: "/carbapenem-injection",
         },
         {
             id: 6,
             name: "CEFEPASH-1000",
             image: "img/products/cephalosporin-product--01.webp",
-            url: "https://www.shamshree.com/cephalosporin-injection.php",
+            url: "/carbapenem-injection",
         },
 
         {
             id: 7,
             name: "FOTAX-1000",
             image: "img/products/cephalosporin-product--02.webp",
-            url: "https://www.shamshree.com/cephalosporin-injection.php",
+            url: "/cephalosporin-injection",
         },
         {
             id: 8,
             name: "SHAMCEF-750",
             image: "img/products/cephalosporin-product--03.webp",
-            url: "https://www.shamshree.com/cephalosporin-injection.php",
+            url: "/cephalosporin-injection",
         },
         {
             id: 9,
             name: "CEFEPASH-TZ 1125",
             image: "img/products/cephalosporin-product--04.webp",
-            url: "https://www.shamshree.com/cephalosporin-injection.php",
+            url: "/cephalosporin-injection",
         },
         {
             id: 10,
             name: "CEFSULASH-1000",
             image: "img/products/cephalosporin-product--05.webp",
-            url: "https://www.shamshree.com/cephalosporin-injection.php",
+            url: "/cephalosporin-injection",
         },
         {
             id: 11,
             name: "CEFTRASH-1000",
             image: "img/products/cephalosporin-product--06.webp",
-            url: "https://www.shamshree.com/cephalosporin-injection.php",
+            url: "/cephalosporin-injection",
         },
         {
             id: 12,
             name: "CEFTRIBACTAM",
             image: "img/products/cephalosporin-product--07.webp",
-            url: "https://www.shamshree.com/cephalosporin-injection.php",
+            url: "/cephalosporin-injection",
         },
     ];
 
     const getItemsPerView = () => {
-    if (typeof window !== "undefined") {
-        const width = window.innerWidth;
-        if (width <= 640) return 1; // max-sm
-        if (width <= 768) return 2; // max-md
-        if (width <= 1024) return 3; // max-lg
-    }
-    return 4; // default (xl and beyond)
-};
+        if (typeof window !== "undefined") {
+            const width = window.innerWidth;
+            if (width <= 640) return 1; // max-sm
+            if (width <= 768) return 2; // max-md
+            if (width <= 1024) return 3; // max-lg
+        }
+        return 4; // default (xl and beyond)
+    };
 
     const [itemsVisible, setItemsVisible] = useState(1);
 
