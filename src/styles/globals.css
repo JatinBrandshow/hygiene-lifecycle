@@ -5,10 +5,10 @@
   --background: #ffffff;
   --foreground: #171717;
   
-  /* Your custom theme colors */
-  --primary: #3E4095;
-  --secondary: #65BC50;
-  --tertiary: #033B4A;
+  /* New Vibrant Color Theme */
+  --primary: #173C96;    /* Deep blue */
+  --secondary: #EB006F;  /* Vibrant pink */
+  --tertiary: #031B4E;   /* Navy blue */
 }
 
 /* @media (prefers-color-scheme: dark) {

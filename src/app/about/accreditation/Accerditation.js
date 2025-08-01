@@ -44,11 +44,11 @@ const AccreditationPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-24">
+      {/* Hero Section - Using primary and tertiary colors */}
+      <div className="relative bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)] text-white py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Global Accreditations</h1>
-          <div className="w-24 h-1.5 bg-blue-400 mx-auto mb-6 rounded-full"></div>
+          <div className="w-24 h-1.5 bg-[var(--secondary)] mx-auto mb-6 rounded-full"></div>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Recognized certifications across multiple regions
           </p>
@@ -65,7 +65,7 @@ const AccreditationPage = () => {
                 onClick={() => setActiveRegion(region)}
                 className={`px-5 py-2.5 rounded-full text-sm md:text-base font-medium transition-all duration-300 ${
                   activeRegion === region
-                    ? 'bg-blue-600 text-white shadow-md'
+                    ? 'bg-[var(--primary)] text-white shadow-md'
                     : 'bg-gray-50 text-gray-700 hover:bg-gray-100 border border-gray-200'
                 }`}
               >

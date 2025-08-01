@@ -6,73 +6,77 @@ const QualityPractices = () => {
   return (
     <div className="font-sans bg-gray-50">
       {/* Hero Section with Lab Background */}
-      <div className="relative h-[500px] bg-blue-900 overflow-hidden">
+      <div className="relative h-[500px] bg-[var(--primary)] overflow-hidden">
         <div className="absolute inset-0 bg-[url('/img/Plant1.jpg')] bg-cover bg-center opacity-80"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/95 to-indigo-900/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--primary)]/95 to-[var(--tertiary)]/90"></div>
         <div className="relative z-10 max-w-6xl mx-auto px-6 h-full flex flex-col justify-center">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
-              Precision Crafted <span className="text-cyan-300">Quality</span>
+              Precision Crafted <span className="text-[var(--secondary)]">Quality</span>
             </h1>
-            <p className="text-xl text-blue-200 mb-8">
+            <p className="text-xl text-blue-100 mb-8">
               Where scientific rigor meets uncompromising standards in pharmaceutical excellence
             </p>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full"></div>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-[var(--secondary)] to-[var(--primary-light)] rounded-full"></div>
           </div>
         </div>
       </div>
 
-      {/* Quality Pillars */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
-              OUR APPROACH
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              The <span className="text-blue-600">Four Pillars</span> of Quality
-            </h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto"></div>
-          </div>
+     {/* Quality Pillars */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <span className="inline-block px-4 py-2 bg-[var(--primary)]/10 text-[var(--primary)] rounded-full text-sm font-semibold mb-4">
+        OUR APPROACH
+      </span>
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        The <span className="text-[var(--primary)]">Four Pillars</span> of Quality
+      </h2>
+      <div className="w-20 h-1 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] mx-auto"></div>
+    </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                icon: <FaFlask className="text-blue-500 text-3xl" />,
-                title: "Material Excellence",
-                description: "200+ quality checks on all incoming raw materials",
-                color: "blue"
-              },
-              {
-                icon: <FaChartLine className="text-green-500 text-3xl" />,
-                title: "Process Control",
-                description: "Real-time monitoring at 50+ production checkpoints",
-                color: "green"
-              },
-              {
-                icon: <FaCheckCircle className="text-purple-500 text-3xl" />,
-                title: "Product Verification",
-                description: "Comprehensive finished product analysis",
-                color: "purple"
-              },
-              {
-                icon: <FaClipboardCheck className="text-amber-500 text-3xl" />,
-                title: "Stability Assurance",
-                description: "ICH-compliant environmental testing",
-                color: "amber"
-              }
-            ].map((pillar, index) => (
-              <div key={index} className={`bg-gradient-to-br from-${pillar.color}-50 to-white p-8 rounded-2xl shadow-md border-t-4 border-${pillar.color}-500 hover:shadow-lg transition-all`}>
-                <div className={`w-16 h-16 bg-${pillar.color}-100 rounded-xl flex items-center justify-center mb-6`}>
-                  {pillar.icon}
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{pillar.title}</h3>
-                <p className="text-gray-600">{pillar.description}</p>
-              </div>
-            ))}
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {[
+        {
+          icon: <FaFlask className="text-white text-3xl" />,
+          title: "Material Excellence",
+          description: "200+ quality checks on all incoming raw materials",
+          bg: "bg-[var(--primary)]",
+          border: "border-[var(--primary)]"
+        },
+        {
+          icon: <FaChartLine className="text-white text-3xl" />,
+          title: "Process Control",
+          description: "Real-time monitoring at 50+ production checkpoints",
+          bg: "bg-[var(--secondary)]",
+          border: "border-[var(--secondary)]"
+        },
+        {
+          icon: <FaCheckCircle className="text-white text-3xl" />,
+          title: "Product Verification",
+          description: "Comprehensive finished product analysis",
+          bg: "bg-[var(--tertiary)]",
+          border: "border-[var(--tertiary)]"
+        },
+        {
+          icon: <FaClipboardCheck className="text-white text-3xl" />,
+          title: "Stability Assurance",
+          description: "ICH-compliant environmental testing",
+          bg: "bg-[var(--primary)]",
+          border: "border-[var(--primary)]"
+        }
+      ].map((pillar, index) => (
+        <div key={index} className={`bg-white p-6 rounded-xl shadow-sm border-t-4 ${pillar.border} hover:shadow-md transition-all h-full`}>
+          <div className={`w-14 h-14 ${pillar.bg} rounded-lg flex items-center justify-center mb-4`}>
+            {pillar.icon}
           </div>
+          <h3 className="text-xl font-bold text-gray-800 mb-3">{pillar.title}</h3>
+          <p className="text-gray-600">{pillar.description}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Validation Master Plan */}
       <section className="py-20 bg-gray-50">
@@ -84,53 +88,43 @@ const QualityPractices = () => {
                 alt="Validation Process"
                 width={600}
                 height={400}
-                className="rounded-xl shadow-xl"
+                className="rounded-xl shadow-lg"
+                priority
               />
             </div>
             <div className="lg:w-1/2">
-              <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+              <span className="inline-block px-4 py-2 bg-[var(--primary)]/10 text-[var(--primary)] rounded-full text-sm font-semibold mb-4">
                 VALIDATION FRAMEWORK
               </span>
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Comprehensive <span className="text-blue-600">Validation Master Plan</span>
+                Comprehensive <span className="text-[var(--primary)]">Validation Master Plan</span>
               </h2>
               
               <div className="space-y-6">
-                <div className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-4 flex-shrink-0">
-                    <FaCheckCircle className="text-blue-600 text-xl" />
+                {[
+                  {
+                    title: "Systematic Qualification",
+                    description: "Coordinates all validation activities across facilities and systems"
+                  },
+                  {
+                    title: "Critical System Validation",
+                    description: "Ensures all critical manufacturing systems meet global standards"
+                  },
+                  {
+                    title: "Stability Protocols",
+                    description: "ICH guideline-compliant environmental testing procedures"
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="flex items-start">
+                    <div className="bg-[var(--primary)]/10 p-2 rounded-full mr-4 flex-shrink-0">
+                      <FaCheckCircle className="text-[var(--primary)] text-xl" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-gray-800 mb-2">{item.title}</h3>
+                      <p className="text-gray-600">{item.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Systematic Qualification</h3>
-                    <p className="text-gray-600">
-                      Coordinates all validation activities across facilities and systems
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-4 flex-shrink-0">
-                    <FaCheckCircle className="text-blue-600 text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Critical System Validation</h3>
-                    <p className="text-gray-600">
-                      Ensures all critical manufacturing systems meet global standards
-                    </p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-blue-100 p-2 rounded-full mr-4 flex-shrink-0">
-                    <FaCheckCircle className="text-blue-600 text-xl" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Stability Protocols</h3>
-                    <p className="text-gray-600">
-                      ICH guideline-compliant environmental testing procedures
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -142,11 +136,11 @@ const QualityPractices = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 order-2 lg:order-1">
-              <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">
+              <span className="inline-block px-4 py-2 bg-[var(--primary)]/10 text-[var(--primary)] rounded-full text-sm font-semibold mb-4">
                 OUR TEAM
               </span>
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                <span className="text-blue-600">Quality Guardians</span> at Work
+                <span className="text-[var(--primary)]">Quality Guardians</span> at Work
               </h2>
               
               <div className="space-y-6">
@@ -155,25 +149,26 @@ const QualityPractices = () => {
                 </p>
                 
                 <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="bg-gray-50 p-6 rounded-xl">
-                    <div className="flex items-center mb-3">
-                      <FaUserShield className="text-blue-500 text-2xl mr-3" />
-                      <h3 className="text-lg font-semibold">24/7 Monitoring</h3>
+                  {[
+                    {
+                      icon: <FaUserShield className="text-[var(--primary)] text-2xl mr-3" />,
+                      title: "24/7 Monitoring",
+                      description: "Round-the-clock quality oversight across all operations"
+                    },
+                    {
+                      icon: <FaGlobe className="text-[var(--primary)] text-2xl mr-3" />,
+                      title: "Global Standards",
+                      description: "Expertise in WHO-GMP, ICH, and FDA regulations"
+                    }
+                  ].map((feature, index) => (
+                    <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                      <div className="flex items-center mb-3">
+                        {feature.icon}
+                        <h3 className="text-lg font-semibold">{feature.title}</h3>
+                      </div>
+                      <p className="text-gray-600">{feature.description}</p>
                     </div>
-                    <p className="text-gray-600">
-                      Round-the-clock quality oversight across all operations
-                    </p>
-                  </div>
-                  
-                  <div className="bg-gray-50 p-6 rounded-xl">
-                    <div className="flex items-center mb-3">
-                      <FaGlobe className="text-blue-500 text-2xl mr-3" />
-                      <h3 className="text-lg font-semibold">Global Standards</h3>
-                    </div>
-                    <p className="text-gray-600">
-                      Expertise in WHO-GMP, ICH, and FDA regulations
-                    </p>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -184,7 +179,7 @@ const QualityPractices = () => {
                 alt="Quality Assurance Team"
                 width={600}
                 height={400}
-                className="rounded-xl shadow-xl"
+                className="rounded-xl shadow-lg"
               />
             </div>
           </div>
@@ -192,19 +187,19 @@ const QualityPractices = () => {
       </section>
 
       {/* Certifications */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+      <section className="py-20 bg-[var(--primary)] text-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 bg-white/20 text-white rounded-full text-sm font-semibold mb-4">
               RECOGNITIONS
             </span>
             <h2 className="text-3xl font-bold mb-4">
-              Globally <span className="text-cyan-300">Recognized</span> Excellence
+              Globally <span className="text-[var(--secondary)]">Recognized</span> Excellence
             </h2>
-            <div className="w-20 h-1 bg-cyan-400 mx-auto"></div>
+            <div className="w-20 h-1 bg-[var(--secondary)] mx-auto"></div>
           </div>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 name: "WHO-GMP Certified",
@@ -227,10 +222,10 @@ const QualityPractices = () => {
                 icon: "🇪🇺"
               }
             ].map((cert, index) => (
-              <div key={index} className="bg-white/10 p-8 rounded-xl backdrop-blur-sm border border-white/10 hover:border-white/20 transition-all text-center">
-                <span className="text-4xl mb-4 block">{cert.icon}</span>
+              <div key={index} className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all text-center">
+                <span className="text-3xl mb-3 block">{cert.icon}</span>
                 <h3 className="text-xl font-semibold mb-2">{cert.name}</h3>
-                <p className="text-blue-200">{cert.description}</p>
+                <p className="text-blue-100">{cert.description}</p>
               </div>
             ))}
           </div>
@@ -240,16 +235,16 @@ const QualityPractices = () => {
       {/* Quality Commitment */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-3xl p-12 shadow-inner">
-            <FaCheckCircle className="text-5xl text-blue-600 mx-auto mb-6" />
+          <div className="bg-[var(--primary)]/5 rounded-2xl p-8 md:p-12 border border-[var(--primary)]/20">
+            <FaCheckCircle className="text-5xl text-[var(--primary)] mx-auto mb-6" />
             <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              Our <span className="text-blue-600">Unwavering</span> Commitment
+              Our <span className="text-[var(--primary)]">Unwavering</span> Commitment
             </h2>
-            <div className="w-24 h-1 bg-blue-500 mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-[var(--primary)] mx-auto mb-8"></div>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
               "At Shamshree, we believe quality isn't just measured in test results, but in the trust we build with every dose we produce. We would rather be the best than the biggest."
             </p>
-            <button className="px-8 py-3 bg-blue-600 text-white font-medium rounded-full hover:bg-blue-700 transition-colors">
+            <button className="px-8 py-3 bg-[var(--primary)] text-white font-medium rounded-full hover:bg-[var(--primary-dark)] transition-colors">
               Download Quality Policy
             </button>
           </div>

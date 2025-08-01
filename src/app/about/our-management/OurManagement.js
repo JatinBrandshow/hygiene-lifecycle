@@ -1,4 +1,4 @@
-// components/OurManagement.js
+
 import { FaLinkedin, FaBriefcase, FaUniversity, FaUsers, FaUserFriends } from 'react-icons/fa';
 import Image from 'next/image';
 
@@ -6,7 +6,7 @@ const OurManagement = () => {
     return (
         <div className="font-sans bg-gray-50">
             {/* Hero Section */}
-            <div className="relative bg-gradient-to-br from-blue-900 to-indigo-900 text-white py-28 px-6">
+            <div className="relative bg-gradient-tertiary text-white py-28 px-6">
                 <div className="absolute inset-0 bg-[url('/images/dots-pattern.png')] opacity-10"></div>
                 <div className="relative z-10 max-w-4xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Our Leadership Team</h1>
@@ -14,7 +14,7 @@ const OurManagement = () => {
                         Driving Innovation in Pharmaceutical Excellence
                     </p>
                     <div className="mt-8 flex justify-center">
-                        <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-green-400 rounded-full"></div>
+                        <div className="w-24 h-1 bg-gradient-to-r from-[var(--secondary)] to-[var(--primary-light)] rounded-full"></div>
                     </div>
                 </div>
             </div>
@@ -37,19 +37,19 @@ const OurManagement = () => {
                         <div className="p-8 text-center">
                             <div className="flex justify-center items-center gap-4 mb-4">
                                 <h3 className="text-2xl font-bold text-gray-800">Mr. Jatinder Kumar Jain</h3>
-                                <a href="#" className="text-blue-500 hover:text-blue-700">
+                                <a href="#" className="text-primary hover:text-primary-dark">
                                     <FaLinkedin className="text-2xl" />
                                 </a>
                             </div>
-                            <p className="text-blue-600 font-medium mb-6">Founder & CEO</p>
+                            <p className="text-primary font-medium mb-6">Founder & CEO</p>
 
                             <div className="space-y-4 text-gray-600 text-left max-w-md mx-auto">
                                 <div className="flex items-start">
-                                    <FaBriefcase className="mt-1 mr-3 text-blue-500 flex-shrink-0" />
+                                    <FaBriefcase className="mt-1 mr-3 text-primary flex-shrink-0" />
                                     <p>25+ years in pharmaceutical industry, founded Shamshree Lifesciences</p>
                                 </div>
                                 <div className="flex items-start">
-                                    <FaUniversity className="mt-1 mr-3 text-blue-500 flex-shrink-0" />
+                                    <FaUniversity className="mt-1 mr-3 text-primary flex-shrink-0" />
                                     <p>B.Com from Punjab University, Chartered Accountant</p>
                                 </div>
                             </div>
@@ -82,19 +82,19 @@ const OurManagement = () => {
                                 <div className="flex justify-between items-start">
                                     <div>
                                         <h3 className="text-xl font-bold text-gray-800">Mrs. Alka Jain</h3>
-                                        <p className="text-purple-600 font-medium">Director, HR & Admin</p>
+                                        <p className="text-secondary font-medium">Director, HR & Admin</p>
                                     </div>
-                                    <a href="#" className="text-purple-500 hover:text-purple-700">
+                                    <a href="#" className="text-secondary hover:text-secondary-dark">
                                         <FaLinkedin className="text-xl" />
                                     </a>
                                 </div>
                                 <div className="mt-4 text-gray-600 space-y-2">
                                     <p className="flex items-start">
-                                        <FaBriefcase className="mt-1 mr-2 text-purple-500 flex-shrink-0" />
+                                        <FaBriefcase className="mt-1 mr-2 text-secondary flex-shrink-0" />
                                         <span>16+ years with Shamshree, oversees human capital</span>
                                     </p>
                                     <p className="flex items-start">
-                                        <FaUniversity className="mt-1 mr-2 text-purple-500 flex-shrink-0" />
+                                        <FaUniversity className="mt-1 mr-2 text-secondary flex-shrink-0" />
                                         <span>B.A. & L.L.B from Punjab University</span>
                                     </p>
                                 </div>
@@ -119,19 +119,19 @@ const OurManagement = () => {
                                 <div className="flex justify-between items-start">
                                     <div>
                                         <h3 className="text-xl font-bold text-gray-800">Mr. Akhil Jain</h3>
-                                        <p className="text-green-600 font-medium">VP, Operations</p>
+                                        <p className="text-tertiary font-medium">VP, Operations</p>
                                     </div>
-                                    <a href="#" className="text-green-500 hover:text-green-700">
+                                    <a href="#" className="text-tertiary hover:text-tertiary-dark">
                                         <FaLinkedin className="text-xl" />
                                     </a>
                                 </div>
                                 <div className="mt-4 text-gray-600 space-y-2">
                                     <p className="flex items-start">
-                                        <FaBriefcase className="mt-1 mr-2 text-green-500 flex-shrink-0" />
+                                        <FaBriefcase className="mt-1 mr-2 text-tertiary flex-shrink-0" />
                                         <span>Ex-Goldman Sachs, handles production planning</span>
                                     </p>
                                     <p className="flex items-start">
-                                        <FaUniversity className="mt-1 mr-2 text-green-500 flex-shrink-0" />
+                                        <FaUniversity className="mt-1 mr-2 text-tertiary flex-shrink-0" />
                                         <span>B.E. (IT) & MBA (Finance)</span>
                                     </p>
                                 </div>
@@ -146,9 +146,9 @@ const OurManagement = () => {
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                            Our <span className="text-blue-600">Dedicated Team</span>
+                            Our <span className="text-primary">Dedicated Team</span>
                         </h2>
-                        <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-6"></div>
+                        <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
                         <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
                             200+ professionals united in our mission to deliver exceptional healthcare solutions
                         </p>
@@ -198,7 +198,7 @@ const OurManagement = () => {
                             }
                         ].map((stat, index) => (
                             <div key={index} className="bg-gray-50 p-6 rounded-xl">
-                                <p className="text-3xl font-bold text-blue-600 mb-2">{stat.number}</p>
+                                <p className="text-3xl font-bold text-primary mb-2">{stat.number}</p>
                                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{stat.title}</h3>
                                 <p className="text-gray-600">{stat.description}</p>
                             </div>
@@ -206,8 +206,6 @@ const OurManagement = () => {
                     </div>
                 </div>
             </section>
-
-
         </div>
     );
 };

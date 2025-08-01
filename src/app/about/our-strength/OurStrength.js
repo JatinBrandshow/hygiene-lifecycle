@@ -5,20 +5,19 @@ import Image from 'next/image';
 const OurStrengths = () => {
   return (
     <div className="font-sans bg-white">
-      {/* Hero Section - Abstract Design */}
-      <div className="relative h-[600px] bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-        </div>
+      {/* Hero Section with Gradient */}
+      <div className="relative h-[600px] bg-gradient-to-br from-[var(--primary)] to-[var(--tertiary)] overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/images/dots-pattern.png')] opacity-10" />
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Core Strengths</span>
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">Core Strengths</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-blue-100 mb-8">
               The pillars that make Shamshree a trusted partner in global healthcare
             </p>
-            <div className="w-32 h-1.5 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full"></div>
+            <div className="w-32 h-1.5 bg-gradient-to-r from-white to-blue-100 rounded-full" />
           </div>
         </div>
 
@@ -30,82 +29,92 @@ const OurStrengths = () => {
               fill
               className="object-contain"
               style={{ objectPosition: 'right center' }}
+              priority
             />
           </div>
         </div>
       </div>
 
-      {/* Strengths Grid - Modern Minimal Design */}
+      {/* Strengths Grid with Solid Colors */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                icon: <FaRocket className=" text-3xl" />,
+                icon: <FaRocket className="text-3xl" />,
                 title: "Vision Driven",
                 description: "Committed to providing quality, accessible healthcare through strict GMP compliance",
-                color: "from-blue-500 to-blue-700"
+                color: "bg-[var(--primary)]",
+                text: "text-white"
               },
               {
-                icon: <FaFlask className=" text-3xl" />,
+                icon: <FaFlask className="text-3xl" />,
                 title: "Innovation Focused",
                 description: "Research-driven company creating novel solutions for global health challenges",
-                color: "from-green-500 to-green-700"
+                color: "bg-[var(--secondary)]",
+                text: "text-white"
               },
               {
-                icon: <FaHeadphones className=" text-3xl" />,
+                icon: <FaHeadphones className="text-3xl" />,
                 title: "Customer-Centric",
                 description: "We listen and deliver bespoke solutions tailored to customer needs",
-                color: "from-purple-500 to-purple-700"
+                color: "bg-[var(--tertiary)]",
+                text: "text-white"
               },
               {
-                icon: <FaBoxOpen className=" text-3xl" />,
+                icon: <FaBoxOpen className="text-3xl" />,
                 title: "Reliable Delivery",
                 description: "Nearly 100% on-time delivery performance across all orders",
-                color: "from-amber-500 to-amber-700"
+                color: "bg-[var(--primary)]",
+                text: "text-white"
               },
               {
-                icon: <FaChartLine className=" text-3xl" />,
+                icon: <FaChartLine className="text-3xl" />,
                 title: "Value Creation",
                 description: "High-quality, cost-effective formulations across therapeutic categories",
-                color: "from-red-500 to-red-700"
+                color: "bg-[var(--secondary)]",
+                text: "text-white"
               },
               {
-                icon: <FaUsers className=" text-3xl" />,
+                icon: <FaUsers className="text-3xl" />,
                 title: "People First",
                 description: "Team of experts committed to quality and mutual growth",
-                color: "from-indigo-500 to-indigo-700"
+                color: "bg-[var(--tertiary)]",
+                text: "text-white"
               },
               {
-                icon: <FaHandshake className=" text-3xl" />,
+                icon: <FaHandshake className="text-3xl" />,
                 title: "Partnership Approach",
                 description: "Long-term client relationships with exceptional retention",
-                color: "from-teal-500 to-teal-700"
+                color: "bg-[var(--primary)]",
+                text: "text-white"
               },
               {
-                icon: <FaLeaf className=" text-3xl" />,
+                icon: <FaLeaf className="text-3xl" />,
                 title: "Eco-Conscious",
                 description: "Minimal environmental footprint with sustainable practices",
-                color: "from-emerald-500 to-emerald-700"
+                color: "bg-[var(--secondary)]",
+                text: "text-white"
               },
               {
-                icon: <FaChartLine className=" text-3xl" />,
+                icon: <FaChartLine className="text-3xl" />,
                 title: "Operational Excellence",
                 description: "Lean, efficient model with cutting-edge technologies",
-                color: "from-cyan-500 to-cyan-700"
+                color: "bg-[var(--tertiary)]",
+                text: "text-white"
               }
             ].map((strength, index) => (
               <div 
-                key={index} 
-                className="group relative"
+                key={index}
+                className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
               >
-                <div className="absolute -inset-1 bg-gradient-to-r opacity-0 group-hover:opacity-20 blur transition-opacity duration-300 rounded-lg" />
-                <div className="relative p-8 bg-white rounded-lg border border-gray-100 hover:border-transparent transition-all h-full">
-                  <div className={`w-14 h-14 mb-6 flex items-center justify-center rounded-lg bg-gradient-to-br ${strength.color} text-white`}>
+                <div className={`absolute inset-0 ${strength.color} opacity-95`} />
+                <div className="relative p-6 h-full flex flex-col">
+                  <div className={`w-12 h-12 mb-4 flex items-center justify-center rounded-lg ${strength.text} bg-white/20`}>
                     {strength.icon}
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">{strength.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{strength.description}</p>
+                  <h3 className={`text-xl font-bold ${strength.text} mb-3`}>{strength.title}</h3>
+                  <p className={`${strength.text} opacity-90 text-sm leading-relaxed`}>{strength.description}</p>
                 </div>
               </div>
             ))}
@@ -114,32 +123,33 @@ const OurStrengths = () => {
       </section>
 
       {/* Differentiator Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Why <span className="text-blue-600">Shamshree</span> Stands Out
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[var(--tertiary)] mb-4">
+              Why <span className="text-[var(--primary)]">Shamshree</span> Stands Out
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto"></div>
+            <div className="w-24 h-1 bg-[var(--primary)] mx-auto" />
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-12">
+          <div className="flex flex-col lg:flex-row gap-8">
             <div className="lg:w-1/2">
-              <div className="relative rounded-2xl overflow-hidden h-full min-h-[400px]">
+              <div className="relative rounded-xl overflow-hidden h-full min-h-[400px] shadow-lg">
                 <Image
-                  src="/img/domestic-customer/strength_img2.webp"
+                  src="/img/our-strength/strength_img2.png"
                   alt="Shamshree Team"
                   fill
-                  className="object-cover rounded-2xl"
+                  className="object-cover"
+                  quality={90}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent flex flex-col justify-end p-8">
-                  <h3 className="text-2xl font-bold text-white mb-4">People-Powered Excellence</h3>
-                  <p className="text-gray-200 mb-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--tertiary)]/80 to-transparent flex flex-col justify-end p-6">
+                  <h3 className="text-2xl font-bold text-white mb-3">People-Powered Excellence</h3>
+                  <p className="text-blue-100 mb-4 text-sm">
                     Our greatest strength lies in our team of passionate professionals who bring together scientific expertise and operational excellence.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {['GMP Experts', 'Research Scientists', 'Quality Specialists', 'Logistics Pros'].map((role, i) => (
-                      <span key={i} className="px-3 py-1.5 bg-white/20 text-white rounded-full text-sm font-medium backdrop-blur-sm">
+                      <span key={i} className="px-3 py-1 bg-white/20 text-white rounded-full text-xs font-medium">
                         {role}
                       </span>
                     ))}
@@ -149,48 +159,45 @@ const OurStrengths = () => {
             </div>
 
             <div className="lg:w-1/2">
-              <div className="space-y-8">
-                <div className="p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-white/20 shadow-sm">
-                  <div className="flex items-start">
-                    <div className="bg-green-100 p-3 rounded-full mr-4 flex-shrink-0">
-                      <FaFlask className="text-green-600 text-2xl" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-800 mb-2">Innovation Engine</h3>
-                      <p className="text-gray-600">
-                        Our R&D investment drives continuous improvement and novel formulations that address unmet medical needs.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-white/20 shadow-sm">
-                  <div className="flex items-start">
-                    <div className="bg-purple-100 p-3 rounded-full mr-4 flex-shrink-0">
-                      <FaHandshake className="text-purple-600 text-2xl" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-800 mb-2">Partnership Philosophy</h3>
-                      <p className="text-gray-600">
-                        We view every client relationship as a long-term partnership, evidenced by our 95%+ customer retention rate.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="p-6 rounded-2xl bg-white/80 backdrop-blur-sm border border-white/20 shadow-sm">
-                  <div className="flex items-start">
-                    <div className="bg-amber-100 p-3 rounded-full mr-4 flex-shrink-0">
-                      <FaLeaf className="text-amber-600 text-2xl" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-800 mb-2">Sustainable Operations</h3>
-                      <p className="text-gray-600">
-                        Our green initiatives reduce environmental impact while maintaining product quality and efficiency.
-                      </p>
+              <div className="space-y-6">
+                {[
+                  {
+                    icon: <FaFlask className="text-xl" />,
+                    title: "Innovation Engine",
+                    description: "Our R&D investment drives continuous improvement and novel formulations that address unmet medical needs.",
+                    color: "text-[var(--secondary)]",
+                    border: "border-[var(--secondary)]"
+                  },
+                  {
+                    icon: <FaHandshake className="text-xl" />,
+                    title: "Partnership Philosophy",
+                    description: "We view every client relationship as a long-term partnership, evidenced by our 95%+ customer retention rate.",
+                    color: "text-[var(--primary)]",
+                    border: "border-[var(--primary)]"
+                  },
+                  {
+                    icon: <FaLeaf className="text-xl" />,
+                    title: "Sustainable Operations",
+                    description: "Our green initiatives reduce environmental impact while maintaining product quality and efficiency.",
+                    color: "text-[var(--tertiary)]",
+                    border: "border-[var(--tertiary)]"
+                  }
+                ].map((item, index) => (
+                  <div 
+                    key={index} 
+                    className={`p-6 rounded-xl bg-white shadow-sm border-l-4 ${item.border} hover:shadow-md transition-shadow`}
+                  >
+                    <div className="flex items-start">
+                      <div className={`p-2 rounded-full mr-4 ${item.color} bg-[${item.color}]/10`}>
+                        {item.icon}
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-800 mb-2">{item.title}</h3>
+                        <p className="text-gray-600 text-sm">{item.description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -198,21 +205,20 @@ const OurStrengths = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
+      <section className="py-16 bg-[var(--primary)] text-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
               { value: "100%", label: "GMP Compliance", icon: "✓" },
               { value: "95%+", label: "Customer Retention", icon: "🤝" },
               { value: "99.7%", label: "On-Time Delivery", icon: "⏱️" },
               { value: "200+", label: "Quality Checks", icon: "🔍" }
             ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-5xl font-bold mb-3 flex items-center justify-center">
-                  <span className="mr-2">{stat.icon}</span>
+              <div key={index} className="text-center p-4">
+                <div className="text-4xl font-bold mb-2">
                   {stat.value}
                 </div>
-                <p className="text-xl text-blue-200">{stat.label}</p>
+                <p className="text-blue-100 text-sm">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -220,15 +226,15 @@ const OurStrengths = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            Ready to Experience the <span className="text-blue-600">Shamshree Difference</span>?
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-2xl font-bold text-[var(--tertiary)] mb-4">
+            Ready to Experience the <span className="text-[var(--primary)]">Shamshree Difference</span>?
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-600 mb-6 text-sm">
             Partner with a pharmaceutical company that combines quality, innovation, and reliability.
           </p>
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium text-lg hover:shadow-xl transition-all hover:scale-105 transform">
+          <button className="px-6 py-3 bg-[var(--primary)] text-white rounded-lg font-medium hover:bg-[var(--primary-dark)] transition-colors">
             Contact Our Team
           </button>
         </div>
