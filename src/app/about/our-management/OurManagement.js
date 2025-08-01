@@ -1,4 +1,3 @@
-
 import { FaLinkedin, FaBriefcase, FaUniversity, FaUsers, FaUserFriends } from 'react-icons/fa';
 import Image from 'next/image';
 
@@ -11,7 +10,7 @@ const OurManagement = () => {
                 <div className="relative z-10 max-w-4xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Our Leadership Team</h1>
                     <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto leading-relaxed">
-                        Driving Innovation in Pharmaceutical Excellence
+                        Pioneering Pharmaceutical Innovation and Quality
                     </p>
                     <div className="mt-8 flex justify-center">
                         <div className="w-24 h-1 bg-gradient-to-r from-[var(--secondary)] to-[var(--primary-light)] rounded-full"></div>
@@ -25,18 +24,20 @@ const OurManagement = () => {
                     {/* Founder - Left Side */}
                     <div className="lg:w-1/2 bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col">
                         <div className="flex justify-center pt-8 px-8">
-                            <div className="relative w-48 h-48 rounded-full border-4 border-white shadow-lg overflow-hidden">
-                                <Image
-                                    src="/img/our-management/jatinder_kumar.webp"
-                                    alt="Mr. Jatinder Kumar Jain"
-                                    fill
-                                    className="object-cover"
-                                />
+                            <div className="relative w-48 h-48 rounded-full border-4 border-white shadow-lg overflow-hidden bg-gray-100">
+                                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+                                    <Image
+                                            src="/img/our-management/founder.webp"
+                                            alt="Mr. Akhil Jain"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                </div>
                             </div>
                         </div>
                         <div className="p-8 text-center">
                             <div className="flex justify-center items-center gap-4 mb-4">
-                                <h3 className="text-2xl font-bold text-gray-800">Mr. Jatinder Kumar Jain</h3>
+                                <h3 className="text-2xl font-bold text-gray-800">Dr. Michael Anderson</h3>
                                 <a href="#" className="text-primary hover:text-primary-dark">
                                     <FaLinkedin className="text-2xl" />
                                 </a>
@@ -46,17 +47,17 @@ const OurManagement = () => {
                             <div className="space-y-4 text-gray-600 text-left max-w-md mx-auto">
                                 <div className="flex items-start">
                                     <FaBriefcase className="mt-1 mr-3 text-primary flex-shrink-0" />
-                                    <p>25+ years in pharmaceutical industry, founded Shamshree Lifesciences</p>
+                                    <p>28+ years in pharmaceutical industry with global leadership experience</p>
                                 </div>
                                 <div className="flex items-start">
                                     <FaUniversity className="mt-1 mr-3 text-primary flex-shrink-0" />
-                                    <p>B.Com from Punjab University, Chartered Accountant</p>
+                                    <p>Ph.D in Pharmaceutical Sciences, MBA in Healthcare Management</p>
                                 </div>
                             </div>
 
                             <div className="mt-8 pt-6 border-t border-gray-100">
                                 <p className="text-gray-700 italic">
-                                    "Our vision is to redefine healthcare standards through ethical practices and innovation."
+                                    "We are committed to developing life-saving medicines through scientific excellence and ethical practices."
                                 </p>
                             </div>
                         </div>
@@ -64,24 +65,22 @@ const OurManagement = () => {
 
                     {/* Other Leaders - Right Side */}
                     <div className="lg:w-1/2 space-y-8">
-                        {/* Mrs. Alka Jain */}
+                        {/* HR Director */}
                         <div className="flex flex-col sm:flex-row bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <div className="sm:w-1/3 h-full min-h-[200px] relative">
-                                <div className="absolute inset-0 flex items-center justify-center p-6">
-                                    <div className="relative w-full h-full max-w-[150px] max-h-[150px] rounded-full border-4 border-white shadow-md overflow-hidden">
-                                        <Image
-                                            src="/img/our-management/alka.webp"
-                                            alt="Mrs. Alka Jain"
+                            <div className="sm:w-1/3 h-full min-h-[200px] relative bg-gray-100">
+                                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+                                  <Image
+                                            src="/img/our-management/director.webp"
+                                            alt="Mr. Akhil Jain"
                                             fill
                                             className="object-cover"
                                         />
-                                    </div>
                                 </div>
                             </div>
                             <div className="sm:w-2/3 p-6">
                                 <div className="flex justify-between items-start">
                                     <div>
-                                        <h3 className="text-xl font-bold text-gray-800">Mrs. Alka Jain</h3>
+                                        <h3 className="text-xl font-bold text-gray-800">Sarah Williams</h3>
                                         <p className="text-secondary font-medium">Director, HR & Admin</p>
                                     </div>
                                     <a href="#" className="text-secondary hover:text-secondary-dark">
@@ -91,34 +90,32 @@ const OurManagement = () => {
                                 <div className="mt-4 text-gray-600 space-y-2">
                                     <p className="flex items-start">
                                         <FaBriefcase className="mt-1 mr-2 text-secondary flex-shrink-0" />
-                                        <span>16+ years with Shamshree, oversees human capital</span>
+                                        <span>18+ years in pharmaceutical HR leadership roles</span>
                                     </p>
                                     <p className="flex items-start">
                                         <FaUniversity className="mt-1 mr-2 text-secondary flex-shrink-0" />
-                                        <span>B.A. & L.L.B from Punjab University</span>
+                                        <span>Master's in Organizational Psychology</span>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Mr. Akhil Jain */}
+                        {/* Operations VP */}
                         <div className="flex flex-col sm:flex-row bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <div className="sm:w-1/3 h-full min-h-[200px] relative">
-                                <div className="absolute inset-0 flex items-center justify-center p-6">
-                                    <div className="relative w-full h-full max-w-[150px] max-h-[150px] rounded-full border-4 border-white shadow-md overflow-hidden">
-                                        <Image
-                                            src="/img/our-management/akhil.webp"
+                            <div className="sm:w-1/3 h-full min-h-[200px] relative bg-gray-100">
+                                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+                                   <Image
+                                            src="/img/our-management/vp.webp"
                                             alt="Mr. Akhil Jain"
                                             fill
                                             className="object-cover"
                                         />
-                                    </div>
                                 </div>
                             </div>
                             <div className="sm:w-2/3 p-6">
                                 <div className="flex justify-between items-start">
                                     <div>
-                                        <h3 className="text-xl font-bold text-gray-800">Mr. Akhil Jain</h3>
+                                        <h3 className="text-xl font-bold text-gray-800">Robert Chen</h3>
                                         <p className="text-tertiary font-medium">VP, Operations</p>
                                     </div>
                                     <a href="#" className="text-tertiary hover:text-tertiary-dark">
@@ -128,11 +125,11 @@ const OurManagement = () => {
                                 <div className="mt-4 text-gray-600 space-y-2">
                                     <p className="flex items-start">
                                         <FaBriefcase className="mt-1 mr-2 text-tertiary flex-shrink-0" />
-                                        <span>Ex-Goldman Sachs, handles production planning</span>
+                                        <span>Former operations leader at top pharmaceutical companies</span>
                                     </p>
                                     <p className="flex items-start">
                                         <FaUniversity className="mt-1 mr-2 text-tertiary flex-shrink-0" />
-                                        <span>B.E. (IT) & MBA (Finance)</span>
+                                        <span>B.E. in Chemical Engineering, MBA in Operations</span>
                                     </p>
                                 </div>
                             </div>
@@ -150,24 +147,26 @@ const OurManagement = () => {
                         </h2>
                         <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
                         <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
-                            200+ professionals united in our mission to deliver exceptional healthcare solutions
+                            350+ professionals committed to delivering exceptional healthcare solutions
                         </p>
                     </div>
 
                     {/* Group Photo */}
                     <div className="mb-16 rounded-2xl overflow-hidden shadow-xl">
-                        <div className="aspect-video relative">
-                            <Image
-                                src="/img/our-management/team1111.webp"
-                                alt="Shamshree Pharmaceuticals Team"
-                                fill
-                                className="object-cover"
-                            />
+                        <div className="aspect-video relative bg-gray-100">
+                            <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+                                <Image
+                                            src="/img/our-management/team.webp"
+                                            alt="Mr. Akhil Jain"
+                                            fill
+                                            className="object-cover"
+                                        />
+                            </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end p-8">
                                 <div className="text-white">
                                     <FaUserFriends className="text-4xl mb-4" />
-                                    <h3 className="text-2xl font-bold">The Shamshree Family</h3>
-                                    <p className="text-white/90">Working together for better healthcare</p>
+                                    <h3 className="text-2xl font-bold">Our Pharmaceutical Family</h3>
+                                    <p className="text-white/90">United in our mission to improve global health</p>
                                 </div>
                             </div>
                         </div>
@@ -177,24 +176,24 @@ const OurManagement = () => {
                     <div className="grid md:grid-cols-4 gap-6">
                         {[
                             {
-                                number: "200+",
+                                number: "350+",
                                 title: "Team Members",
-                                description: "Dedicated professionals across all departments"
+                                description: "Experts across research, manufacturing, and quality"
+                            },
+                            {
+                                number: "30+",
+                                title: "Years Experience",
+                                description: "Collective pharmaceutical expertise"
+                            },
+                            {
+                                number: "75+",
+                                title: "Products",
+                                description: "Developed and brought to market"
                             },
                             {
                                 number: "25+",
-                                title: "Years Experience",
-                                description: "Collective industry knowledge"
-                            },
-                            {
-                                number: "50+",
-                                title: "Products",
-                                description: "Developed and manufactured"
-                            },
-                            {
-                                number: "10+",
                                 title: "Countries",
-                                description: "Where our products reach patients"
+                                description: "Where our medicines make an impact"
                             }
                         ].map((stat, index) => (
                             <div key={index} className="bg-gray-50 p-6 rounded-xl">
