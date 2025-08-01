@@ -44,7 +44,7 @@ const NavBar = () => {
         },
         {
             name: "Market",
-            href: "/global-presence", // Added default href for the parent item
+            href: "/global-presence",
             submenu: [
                 { name: "Domestic Customers", href: "/domestic-customers" },
                 { name: "Global Presence", href: "/global-presence" },
@@ -62,13 +62,19 @@ const NavBar = () => {
 
     return (
         <>
-            <header className="sticky top-0 z-50 w-full border-b bg-white">
+            <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white shadow-sm">
                 <div className="container mx-auto px-4">
                     <div className="flex h-16 items-center justify-between">
                         {/* Logo */}
                         <Link href="/" className="flex items-center space-x-2">
                             <div className="h-14 w-14 rounded-xl overflow-hidden bg-white flex items-center justify-center">
-                                <Image src="/img/logo-hygiene-lifecycle.webp" alt="Logo" width={100} height={100} />
+                                <Image 
+                                    src="/img/logo-hygiene-lifecycle.webp" 
+                                    alt="Logo" 
+                                    width={100} 
+                                    height={100} 
+                                    className="object-contain"
+                                />
                             </div>
                         </Link>
 
@@ -80,17 +86,17 @@ const NavBar = () => {
                                         <>
                                             <Link 
                                                 href={item.href} 
-                                                className="relative px-4 py-2 text-sm font-medium text-gray-500 hover:text-black transition group"
+                                                className="relative px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary transition group"
                                             >
                                                 {item.name}
-                                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                                                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
                                             </Link>
-                                            <div className="absolute top-full left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md z-50 w-56">
+                                            <div className="absolute top-full left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md z-50 w-56 border border-gray-200">
                                                 {item.submenu.map((subItem) => (
                                                     <Link 
                                                         key={subItem.name} 
                                                         href={subItem.href} 
-                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary"
                                                     >
                                                         {subItem.name}
                                                     </Link>
@@ -100,10 +106,10 @@ const NavBar = () => {
                                     ) : (
                                         <Link 
                                             href={item.href} 
-                                            className="relative px-4 py-2 text-sm font-medium text-gray-500 hover:text-black transition group"
+                                            className="relative px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary transition group"
                                         >
                                             {item.name}
-                                            <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                                            <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
                                         </Link>
                                     )}
                                 </div>
@@ -112,12 +118,17 @@ const NavBar = () => {
 
                         {/* CTA - Desktop */}
                         <div className="hidden lg:flex">
-                            <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 py-2 rounded-md shadow-lg transition">Get Started</button>
+                            <button className="bg-gradient-primary hover:opacity-90 text-white px-4 py-2 rounded-md shadow transition-all">
+                                Get Started
+                            </button>
                         </div>
 
                         {/* Mobile Menu Toggle */}
                         <div className="lg:hidden">
-                            <button onClick={() => setIsOpen(true)} className="p-2 rounded-md hover:bg-gray-100 transition">
+                            <button 
+                                onClick={() => setIsOpen(true)} 
+                                className="p-2 rounded-md hover:bg-gray-50 transition text-gray-600 hover:text-primary"
+                            >
                                 <Menu className="h-6 w-6" />
                                 <span className="sr-only">Open menu</span>
                             </button>
@@ -131,14 +142,23 @@ const NavBar = () => {
                 <div className="fixed inset-0 z-50 bg-black/50">
                     <div className="fixed top-0 right-0 h-full w-72 bg-white shadow-lg p-6 flex flex-col space-y-4">
                         {/* Close Button */}
-                        <button onClick={() => setIsOpen(false)} className="self-end text-gray-500 hover:text-black">
+                        <button 
+                            onClick={() => setIsOpen(false)} 
+                            className="self-end text-gray-500 hover:text-primary"
+                        >
                             ✕
                         </button>
 
                         {/* Logo */}
                         <div className="flex items-center space-x-3 border-b pb-4">
                             <div className="h-14 w-14 rounded-xl overflow-hidden bg-white flex items-center justify-center">
-                                <Image src="/img/logo-hygiene-lifecycle.webp" alt="Logo" width={100} height={100} />
+                                <Image 
+                                    src="/img/logo-hygiene-lifecycle.webp" 
+                                    alt="Logo" 
+                                    width={100} 
+                                    height={100} 
+                                    className="object-contain"
+                                />
                             </div>
                             <div className="leading-tight">
                                 <span className="block font-bold text-lg text-gray-800">Hygine</span>
@@ -152,7 +172,7 @@ const NavBar = () => {
                                 <Link
                                     href={item.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="px-2 py-2 rounded-md text-gray-600 hover:bg-gray-100 hover:text-black transition"
+                                    className="px-2 py-2 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary transition"
                                 >
                                     {item.name}
                                 </Link>
@@ -163,7 +183,7 @@ const NavBar = () => {
                                                 key={subItem.name}
                                                 href={subItem.href}
                                                 onClick={() => setIsOpen(false)}
-                                                className="px-2 py-1 rounded-md text-gray-500 hover:bg-gray-100 hover:text-black transition text-sm"
+                                                className="px-2 py-1 rounded-md text-gray-500 hover:bg-gray-50 hover:text-primary transition text-sm"
                                             >
                                                 {subItem.name}
                                             </Link>
@@ -173,8 +193,10 @@ const NavBar = () => {
                             </div>
                         ))}
 
-                        <div className="pt-4 mt-auto border-t">
-                            <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 py-2 rounded-md shadow-lg transition">Get Started</button>
+                        <div className="pt-4 mt-auto border-t border-gray-200">
+                            <button className="w-full bg-gradient-primary hover:opacity-90 text-white px-4 py-2 rounded-md shadow transition">
+                                Get Started
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -40,11 +40,11 @@ const GlobalPresence = () => {
     return (
         <div className="bg-gray-50">
             {/* Hero Section */}
-            <div className="relative bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-20">
+            <div className="relative bg-gradient-to-r from-[#031B4E] to-[#173C96] text-white py-20">
                 <div className="max-w-7xl mx-auto px-6 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Global Presence</h1>
-                    <div className="w-24 h-1.5 bg-blue-400 mx-auto mb-6 rounded-full"></div>
-                    <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+                    <div className="w-24 h-1.5 bg-[#EB006F] mx-auto mb-6 rounded-full"></div>
+                    <p className="text-xl text-white/90 max-w-3xl mx-auto">
                         Serving healthcare needs worldwide with quality pharmaceutical solutions
                     </p>
                 </div>
@@ -52,7 +52,7 @@ const GlobalPresence = () => {
 
             {/* World Map Section */}
             <div className="max-w-7xl mx-auto px-6 py-16">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
                     <div className="relative h-[650px] w-auto">
                         <Image
                             src="/img/global-presence/global-presence1111.webp"
@@ -63,8 +63,8 @@ const GlobalPresence = () => {
                             priority
                         />
                     </div>
-                    <div className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border-t border-gray-200">
-                        <p className="text-center text-gray-700">
+                    <div className="p-6 bg-gradient-to-r from-[#173C96]/5 to-[#031B4E]/5 border-t border-gray-200">
+                        <p className="text-center text-gray-700 font-medium">
                             Our worldwide distribution network ensures timely delivery to healthcare providers across continents
                         </p>
                     </div>
@@ -79,8 +79,8 @@ const GlobalPresence = () => {
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {stats.map((stat, index) => (
-                            <div key={index} className="bg-gray-50 rounded-lg p-6 text-center">
-                                <div className="text-4xl font-bold text-blue-600 mb-2">{stat.value}</div>
+                            <div key={index} className="bg-gray-50 rounded-lg p-6 text-center border border-gray-100 hover:border-[#173C96]/50 transition-all hover:-translate-y-1">
+                                <div className="text-4xl font-bold text-secondary mb-2">{stat.value}</div>
                                 <div className="text-gray-600 font-medium">{stat.label}</div>
                             </div>
                         ))}
@@ -94,7 +94,7 @@ const GlobalPresence = () => {
                     <h2 className="text-3xl font-bold text-center text-gray-800 mb-12 relative">
                         <span className="relative z-10 px-4 bg-gray-50 inline-block">
                             Regional Operations
-                            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></div>
+                            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gradient-to-r from-[#173C96] to-[#EB006F] rounded-full"></div>
                         </span>
                         <div className="absolute top-1/2 left-0 right-0 h-px bg-gray-200 z-0"></div>
                     </h2>
@@ -105,16 +105,16 @@ const GlobalPresence = () => {
                                 key={index}
                                 className="group relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
                             >
-                                {/* Header with gradient */}
-                                <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-5 relative overflow-hidden">
+                                {/* Header with solid primary color */}
+                                <div className="bg-[#173C96] p-5 relative overflow-hidden">
                                     <div className="absolute inset-0 opacity-20 bg-[url('/img/dots-pattern.svg')] bg-center"></div>
                                     <h3 className="text-xl font-bold text-white relative z-10 flex items-center">
-                                        <svg className="w-5 h-5 mr-2 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
+                                        <svg className="w-5 h-5 mr-2 text-[#EB006F]" fill="currentColor" viewBox="0 0 20 20">
                                             <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                                         </svg>
                                         {region.name}
                                     </h3>
-                                    <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-blue-400 to-purple-400"></div>
+                                    <div className="absolute bottom-0 left-0 h-1 w-full bg-[#EB006F]"></div>
                                 </div>
 
                                 {/* Content */}
@@ -128,10 +128,10 @@ const GlobalPresence = () => {
                                         {region.countries.map((country, i) => (
                                             <span
                                                 key={i}
-                                                className="inline-flex items-center bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-50 group-hover:to-purple-50 group-hover:shadow-sm"
+                                                className="inline-flex items-center bg-[#173C96]/10 text-[#173C96] px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-300 group-hover:bg-[#EB006F]/10 group-hover:text-[#EB006F] group-hover:shadow-sm"
                                             >
                                                 <svg
-                                                    className="w-4 h-4 mr-1.5 text-purple-600 transition-transform duration-300 group-hover:rotate-[-360deg]"
+                                                    className="w-4 h-4 mr-1.5 text-[#EB006F] transition-transform duration-300 group-hover:rotate-[-360deg]"
                                                     fill="currentColor"
                                                     viewBox="0 0 20 20"
                                                 >
@@ -142,9 +142,9 @@ const GlobalPresence = () => {
                                         ))}
                                     </div>
 
-                                    {/* Floating decoration */}
+                                    {/* Floating decoration - using secondary color */}
                                     <div className="absolute right-4 bottom-4 opacity-10 group-hover:opacity-30 transition-opacity duration-500">
-                                        <svg className="w-10 h-10 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                        <svg className="w-10 h-10 text-[#EB006F]" fill="currentColor" viewBox="0 0 20 20">
                                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clipRule="evenodd" />
                                         </svg>
                                     </div>
@@ -154,8 +154,6 @@ const GlobalPresence = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
 };

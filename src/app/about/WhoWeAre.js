@@ -85,7 +85,7 @@ export default function WhoWeAre() {
                   </svg>
                 </div>
                 <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-                  <strong className="text-primary font-semibold">Shamshree Lifesciences</strong> is a{" "}
+                  <strong className="text-primary font-semibold">Hygine Lifecycle</strong> is a{" "}
                   <strong className="text-secondary font-semibold">WHO GMP-GLP</strong> certified pharmaceutical
                   company with a world-class manufacturing plant in{" "}
                   <strong className="text-primary font-semibold">Baddi (H.P.), India</strong>.
@@ -145,9 +145,9 @@ export default function WhoWeAre() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Shamshree?
+              Why Choose Hygine Lifecycle?
             </h3>
-            <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto" />
+            <div className="w-20 h-1.5 bg-secondary mx-auto" />
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">

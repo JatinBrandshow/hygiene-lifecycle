@@ -20,7 +20,7 @@ const DomesticCustomers = () => {
   return (
     <div className="font-sans bg-white">
       {/* Enhanced Hero Section */}
-      <div className="relative h-[500px] bg-gradient-to-br from-blue-900 to-indigo-900 text-white overflow-hidden">
+      <div className="relative h-[500px] bg-gradient-to-br from-[#031B4E] to-[#173C96] text-white overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('/img/dot-grid-pattern.svg')] bg-[size:100px_100px]"></div>
@@ -44,25 +44,24 @@ const DomesticCustomers = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
           <div className="max-w-2xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Trusted By <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-300">India's Top</span> Pharma Brands
+              Trusted By <span className="text-white">India's Top</span> Pharma Brands
             </h1>
-            <p className="text-xl text-blue-100 max-w-2xl mb-8">
+            <p className="text-xl text-white/90 max-w-2xl mb-8">
               Partnering with India's most respected pharmaceutical companies to deliver exceptional healthcare solutions
             </p>
-            <div className="w-32 h-1.5 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full"></div>
+            <div className="w-32 h-1.5 bg-secondary rounded-full"></div>
           </div>
         </div>
       </div>
-
       {/* Enhanced Logo Showcase Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <div className="inline-block relative">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3 relative z-10">
-                Our <span className="text-blue-600">Valued Partners</span>
+                Our <span className="text-[#173C96]">Valued Partners</span>
               </h2>
-              <div className="absolute -bottom-2 left-0 right-0 h-3 bg-blue-100/50 z-0"></div>
+              <div className="absolute -bottom-2 left-0 right-0 h-3 bg-[#173C96]/10 z-0"></div>
             </div>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-6">
               Collaborating with India's most trusted pharmaceutical brands to advance healthcare innovation
@@ -73,7 +72,7 @@ const DomesticCustomers = () => {
             {companyLogos.map((logo, index) => (
               <div 
                 key={index} 
-                className="group relative flex items-center justify-center p-6 bg-white rounded-xl border border-gray-100 hover:border-blue-200 transition-all duration-300 hover:-translate-y-2 shadow-sm hover:shadow-lg"
+                className="group relative flex items-center justify-center p-6 bg-white rounded-xl border border-gray-100 hover:border-[#173C96]/50 transition-all duration-300 hover:-translate-y-2 shadow-sm hover:shadow-lg"
               >
                 <div className="relative w-full h-16">
                   <Image
@@ -91,7 +90,7 @@ const DomesticCustomers = () => {
       </section>
 
       {/* Enhanced Testimonials Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50 relative overflow-hidden">
+      <section className="py-20 bg-gradient-to-br from-[#173C96]/5 to-[#031B4E]/5 relative overflow-hidden">
         {/* Background pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-[url('/img/circle-pattern.svg')] bg-[size:150px_150px]"></div>
@@ -100,15 +99,15 @@ const DomesticCustomers = () => {
         <div className="max-w-6xl mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Voices of <span className="text-blue-600">Trust</span>
+              Voices of <span className="text-[#173C96]">Trust</span>
             </h2>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-blue-400 to-indigo-400 mx-auto rounded-full"></div>
+            <div className="w-24 h-1.5 bg-secondary mx-auto rounded-full"></div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                quote: "Shamshree has been instrumental in helping us scale our production while maintaining uncompromising quality standards.",
+                quote: "Hygine Lifecycle has been instrumental in helping us scale our production while maintaining uncompromising quality standards.",
                 company: "Leading Pharma Company",
                 role: "Production Head"
               },
@@ -118,7 +117,7 @@ const DomesticCustomers = () => {
                 role: "Chief Technology Officer"
               },
               {
-                quote: "Consistent quality and reliable deliveries make Shamshree our preferred manufacturing partner.",
+                quote: "Consistent quality and reliable deliveries make Hygine Lifecycle our preferred manufacturing partner.",
                 company: "Established Medicine Manufacturer",
                 role: "Procurement Manager"
               }
@@ -127,7 +126,7 @@ const DomesticCustomers = () => {
                 key={index} 
                 className="bg-white p-8 rounded-xl shadow-sm border border-gray-100/50 hover:shadow-md transition-all hover:-translate-y-1"
               >
-                <div className="text-blue-500 text-4xl mb-4">"</div>
+                <div className="text-[#173C96] text-4xl mb-4">"</div>
                 <p className="text-gray-600 italic mb-6 text-lg leading-relaxed">{testimonial.quote}</p>
                 <div className="border-t border-gray-100 pt-4">
                   <p className="font-semibold text-gray-800">{testimonial.company}</p>
@@ -155,11 +154,11 @@ const DomesticCustomers = () => {
               </div>
             </div>
             <div className="lg:w-1/2">
-              <div className="inline-block mb-4 px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
+              <div className="inline-block mb-4 px-4 py-2 bg-[#173C96]/10 text-[#173C96] rounded-full text-sm font-medium">
                 Partnership Benefits
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Grow With <span className="text-blue-600">Shamshree</span>
+                Grow With <span className="text-[#173C96]">Hygine Lifecycle</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Join India's premier pharmaceutical network and leverage our expertise to accelerate your business growth.
@@ -174,8 +173,8 @@ const DomesticCustomers = () => {
                   "End-to-end regulatory compliance support"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <div className="flex-shrink-0 bg-blue-100 p-2 rounded-full mr-4">
-                      <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="flex-shrink-0 bg-[#173C96]/10 p-2 rounded-full mr-4">
+                      <svg className="w-5 h-5 text-[#173C96]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                       </svg>
                     </div>
@@ -185,7 +184,7 @@ const DomesticCustomers = () => {
               </ul>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:shadow-lg transition-all hover:-translate-y-0.5">
+                <button className="px-8 py-3.5 bg-primary text-white rounded-lg font-medium hover:shadow-lg transition-all hover:-translate-y-0.5">
                   Contact Sales Team
                 </button>
                 <button className="px-8 py-3.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-all">
@@ -196,25 +195,6 @@ const DomesticCustomers = () => {
           </div>
         </div>
       </section>
-
-      {/* Stats Banner */}
-      {/* <section className="py-16 bg-gradient-to-r from-blue-900 to-indigo-900 text-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            {[
-              { value: "100+", label: "Years Combined Experience" },
-              { value: "500+", label: "Products Manufactured" },
-              { value: "98%", label: "Customer Retention" },
-              { value: "24/7", label: "Support Available" }
-            ].map((stat, index) => (
-              <div key={index} className="p-4">
-                <div className="text-4xl font-bold mb-2">{stat.value}</div>
-                <div className="text-blue-200">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
     </div>
   );
 };
