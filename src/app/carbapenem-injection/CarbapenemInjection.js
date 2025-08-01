@@ -76,7 +76,6 @@ const CarbapenemInjection = () => {
                     </div>
                 </div>
             </div>
-
             {/* Product Showcase */}
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-6">
@@ -100,7 +99,7 @@ const CarbapenemInjection = () => {
                                         damping: 10
                                     }
                                 }}
-                                className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-primary/30 relative"
+                                className="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-primary/30 relative hover:-translate-y-3"
                             >
                                 {/* Image Container */}
                                 <motion.div

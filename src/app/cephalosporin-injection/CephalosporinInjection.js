@@ -194,14 +194,14 @@ const CephalosporinInjection = () => {
                     <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
                         Product <span className="text-[var(--primary)]">Specifications</span>
                     </h2>
-                    <div className="bg-white rounded-xl shadow-sm overflow-hidden p-6 border border-gray-100">
+                    <div className="bg-white rounded-xl shadow-sm overflow-hidden p-6 border border-gray-100 hover:shadow-md transition-shadow duration-300">
                         <div className="relative w-full h-auto">
                             <Image
                                 src="/img/ceophalosporin/Cephalosporin-product-List111.jpg"
                                 alt="Cephalosporin Product Strengths"
                                 width={1200}
                                 height={800}
-                                className="w-full h-auto rounded-lg"
+                                className="w-full h-auto rounded-lg hover:scale-[1.01] transition-transform duration-300"
                                 priority
                             />
                         </div>
@@ -222,12 +222,24 @@ const CephalosporinInjection = () => {
                             ].map((item, index) => (
                                 <motion.div
                                     key={index}
-                                    className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10"
-                                    whileHover={{ y: -5 }}
-                                    transition={{ type: "spring", stiffness: 300 }}
+                                    className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10 hover:shadow-lg hover:border-[var(--primary)]/20 transition-all duration-300"
+                                    whileHover={{
+                                        y: -8,
+                                        scale: 1.03,
+                                        backgroundColor: "rgba(var(--primary-rgb), 0.08)"
+                                    }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 300,
+                                        damping: 10
+                                    }}
                                 >
-                                    <h3 className="font-bold text-[var(--primary)] mb-2">{item.title}</h3>
-                                    <p className="text-sm text-gray-600">{item.description}</p>
+                                    <h3 className="font-bold text-[var(--primary)] mb-2 group-hover:text-[var(--primary-dark)] transition-colors duration-300">
+                                        {item.title}
+                                    </h3>
+                                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
+                                        {item.description}
+                                    </p>
                                 </motion.div>
                             ))}
                         </div>
