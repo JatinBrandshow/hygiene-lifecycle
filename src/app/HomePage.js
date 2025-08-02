@@ -8,11 +8,13 @@ import React from "react";
 import OurCustomers from "@/components/OurCustomers";
 import StatsSection from "@/components/StatesSection";
 import OurProductRange from "@/components/OurProductRange";
+import HygieneIntroduction from "@/components/HygieneIntroduction";
 
 const HomePage = () => {
     return (
         <>
             <MainSection />
+            <HygieneIntroduction />
             <VisionMissionValues />
             <QualityManagement />
             <ProductGallery />
