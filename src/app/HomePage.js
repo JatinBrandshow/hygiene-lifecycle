@@ -7,6 +7,7 @@ import ProductGallery from "@/components/ProductGallery";
 import React from "react";
 import OurCustomers from "@/components/OurCustomers";
 import StatsSection from "@/components/StatesSection";
+import OurProductRange from "@/components/OurProductRange";
 
 const HomePage = () => {
     return (
@@ -15,6 +16,7 @@ const HomePage = () => {
             <VisionMissionValues />
             <QualityManagement />
             <ProductGallery />
+            <OurProductRange />
             <StatsSection />
             <WhyChooseUs />
             <OurCustomers />
