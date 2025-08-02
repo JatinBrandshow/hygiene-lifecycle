@@ -43,23 +43,23 @@ const WhyChooseUs = () => {
                             We work towards making this world a healthier place. Working over the years in the pharmaceutical sector, we understand the requirements of our clients and hence deliver an exclusive range of medicine. Our clients trust us for quality, ethical business practices and our commitment.
                         </p>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+                        <div className="grid grid-cols-2 gap-6 mt-6 max-sm:grid-cols-1 max-lg:gap-5 max-md:gap-4 max-sm:gap-3 max-lg:mt-5 max-md:mt-4 max-sm:mt-3">
                             {features.map((feature, index) => (
-                                <div key={index} className="flex items-start gap-4">
+                                <div key={index} className="flex items-start gap-4 max-md:gap-3 max-sm:gap-2.5 max-sm:items-center">
                                     <div>{feature.icon}</div>
                                     <div>
-                                        <h4 className="text-lg font-semibold text-gray-800">{feature.title}</h4>
-                                        <p className="text-gray-600 text-sm">{feature.description}</p>
+                                        <h4 className="text-lg font-semibold text-gray-800 max-sm:text-base">{feature.title}</h4>
+                                        <p className="text-gray-600 text-sm max-sm:text-xs">{feature.description}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
 
-                        <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-                            <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow hover:shadow-lg transition-all">
+                        <div className="flex flex-row gap-4 mt-auto max-sm:gap-2">
+                            <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow hover:shadow-lg transition-all max-sm:px-3 max-sm:py-2.5 max-sm:w-1/2">
                                 Contact Now
                             </button>
-                            <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-100 transition">
+                            <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-100 transition max-sm:px-3 max-sm:py-2.5 max-sm:w-1/2">
                                 Learn More
                             </button>
                         </div>
