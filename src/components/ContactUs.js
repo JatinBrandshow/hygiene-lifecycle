@@ -66,6 +66,14 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
+            {formVisible && (
+                <button
+                    onClick={() => setFormVisible(false)}
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-200 z-[60]"
+                >
+                    &times;
+                </button>
+            )}
 
             {/* Right Column - Image Slider */}
             <div className="relative h-full overflow-hidden bg-slate-100">
@@ -95,15 +103,6 @@ const ContactUs = () => {
 
                 {/* Slide-in Form */}
                 <div className={`absolute top-0 right-0 h-full w-full z-30 bg-black bg-opacity-90 text-white p-8 transition-transform duration-700 ease-in-out flex flex-col ${formVisible ? "translate-x-0" : "translate-x-full"}`}>
-                    {formVisible && (
-                        <button
-                            onClick={() => setFormVisible(false)}
-                            className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-200 z-50"
-                        >
-                            &times;
-                        </button>
-                    )}
-
                     <div className="max-w-3xl mx-auto mt-16 space-y-6 flex-grow overflow-y-auto">
                         <h3 className="text-4xl font-bold mb-6 leading-snug">
                             Leave a message <br /> and we will contact you soon
