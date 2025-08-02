@@ -80,14 +80,11 @@ const OurProductRange = () => {
         }
         .product-image-container {
           transition: all 0.5s ease;
-          height: 280px; /* Increased height for mobile */
-          position: relative;
-          overflow: hidden;
+          height: 220px;
         }
         @media (min-width: 768px) {
           .product-image-container {
             height: auto;
-            min-height: 300px;
           }
         }
         .product-card:hover .product-image-container {
@@ -117,15 +114,15 @@ const OurProductRange = () => {
               ref={el => productCardsRef.current[index] = el}
               className={`product-card opacity-0 ${product.bgColor} rounded-xl shadow-sm border border-gray-200/50 overflow-hidden`}
             >
-              <div className="flex flex-col h-full">
-                {/* Image Section - Now full width on mobile with increased height */}
-                <div className="w-full relative product-image-container">
+              <div className="flex flex-col md:flex-row h-full">
+                {/* Image Section - Fixed height on mobile */}
+                <div className="w-full md:w-2/5 relative product-image-container">
                   <Image
                     src={product.image}
                     alt={product.title}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                    width={400}
+                    height={300}
+                    className="object-contain w-full h-full"
                     style={{
                       objectPosition: 'center'
                     }}
@@ -133,7 +130,7 @@ const OurProductRange = () => {
                 </div>
 
                 {/* Content Section */}
-                <div className="w-full p-5 md:p-8 flex flex-col justify-center">
+                <div className="w-full md:w-3/5 p-5 md:p-8 flex flex-col justify-center">
                   <h3 className="text-xl md:text-2xl font-bold text-[var(--tertiary)] mb-2 md:mb-3">
                     {product.title}
                   </h3>
