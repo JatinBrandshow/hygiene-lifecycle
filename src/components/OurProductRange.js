@@ -117,12 +117,12 @@ const OurProductRange = () => {
               <div className="flex flex-col md:flex-row h-full">
                 {/* Image Section - Fixed height on mobile */}
                 <div className="w-full md:w-2/5 relative product-image-container">
-                  <Image
+                 <Image
                     src={product.image}
                     alt={product.title}
                     width={400}
                     height={300}
-                    className="object-contain w-full h-full"
+                    className="object-contain w-full h-full max-sm:object-cover"
                     style={{
                       objectPosition: 'center'
                     }}
