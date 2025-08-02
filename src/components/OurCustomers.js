@@ -109,7 +109,7 @@ const OurCustomers = () => {
     };
     return (
         <>
-            <section className="relative bg-blue-200 py-16 md:py-24 overflow-hidden">
+            <section className="relative bg-blue-200 py-16 overflow-hidden max-lg:py-10 max-md:py-8 max-sm:py-6">
                 {/* Animated Background Capsules */}
                 <div className="absolute inset-0 overflow-hidden">
                     <AnimatedCapsule delay={0} duration={15} size="medium" pathType="linear" />
@@ -120,15 +120,15 @@ const OurCustomers = () => {
                     <AnimatedCapsule delay={25} duration={15} size="large" pathType="diagonal" />
                 </div>
 
-                <div className="relative z-10 mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:gap-12">
+                <div className="relative z-10 mx-auto max-w-[1400px] px-8 max-lg:px-6 max-md:px-4 max-sm:px-2">
+                    <div className="flex flex-row lg:items-start gap-8 max-lg:flex-col max-md:flex-col max-sm:flex-col max-lg:gap-0 max-md:gap-0 max-sm:gap-0">
                         {/* First Column - 4/6 width - Heading and Paragraph */}
-                        <div className="w-full lg:w-7/12 mb-12 lg:mb-0">
+                        <div className="w-full lg:w-7/12 mb-0 max-lg:mb-8 max-md:mb-6 max-sm:mb-4">
                             {/* Heading */}
-                            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl mb-6">Our Customers</h2>
+                            <h2 className="text-5xl font-bold tracking-tight text-gray-900 mb-6 max-md:text-3xl max-lg:text-4xl max-sm:text-2xl max-lg:mb-5 max-md:mb-4 max-sm:mb-3">Our Customers</h2>
 
                             {/* Description */}
-                            <p className="max-w-4xl text-lg text-gray-600 leading-relaxed">
+                            <p className="max-w-4xl text-lg text-gray-800 leading-relaxed max-md:text-base max-sm:text-sm">
                                 Hygiene Lifesciences serves a diverse set of customers worldwide. Our customers include healthcare providers, hospitals, pharmaceutical distributors, and government healthcare agencies. With commitment to
                                 quality and affordability, we ensure our Dry powder Injectable products meet the stringent requirements of our valued customers across various regions of India and the world.
                             </p>
@@ -137,10 +137,10 @@ const OurCustomers = () => {
                         {/* Second Column - 2/6 width - Customer Logos */}
                         <div className="w-full lg:w-5/12">
                             {/* Customer Logos Grid - 3 columns, multiple rows */}
-                            <div className="grid grid-cols-4 gap-4 lg:gap-3">
+                            <div className="grid grid-cols-4 gap-4 max-md:gap-3 max-sm:gap-2">
                                 {customerLogos.map((customer) => (
-                                    <div key={customer.id} className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 p-2">
-                                        <img src={customer.src || "/placeholder.svg"} alt={customer.name} className="h-12 lg:h-10 w-32 object-contain" />
+                                    <div key={customer.id} className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 p-2 max-sm:p-0.5">
+                                        <img src={customer.src || "/placeholder.svg"} alt={customer.name} className="h-12 w-32 object-contain" />
                                     </div>
                                 ))}
                             </div>
