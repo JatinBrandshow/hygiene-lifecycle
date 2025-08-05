@@ -17,6 +17,20 @@ const ContactUs = () => {
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+        const isMobile = window.innerWidth <= 640; // Tailwind's sm breakpoint
+
+        if (formVisible && isMobile) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        return () => {
+            document.body.classList.remove("overflow-hidden");
+        };
+    }, [formVisible]);
+
     return (
         <section className="flex max-sm:flex-col text-slate-800 relative h-[75vh] max-sm:h-screen">
             {/* Left Column */}
@@ -25,13 +39,13 @@ const ContactUs = () => {
                 {formVisible && <div className="absolute inset-0 bg-black/60 z-20 transition-opacity duration-500 pointer-events-none" />}
 
                 {/* Content */}
-                <div className="relative z-10 flex flex-col h-full p-20 max-lg:p-12 max-md:p-9 max-sm:p-6">
-                    <div className="flex-grow overflow-y-auto">
+                <div className="relative z-10 flex flex-col h-full p-16 max-lg:p-12 max-md:p-9 max-sm:p-6">
+                    <div className="flex-grow">
                         <div className="space-y-4 mb-8 max-md:space-y-3 max-sm:space-y-2 max-lg:mb-6 max-md:mb-4 max-sm:mb-3">
                             <h2 className="text-5xl font-bold text-slate-900 leading-tight max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">Contact Us</h2>
                             <p className="text-lg text-slate-600 max-w-md max-md:text-base max-sm:text-sm">We're here to help with any questions or inquiries. Whether you're a consumer or a reseller, we've got you covered.</p>
                         </div>
-                        <div className="grid grid-cols-2 gap-7 mb-16 max-sm:grid-cols-1 max-lg:gap-6 max-md:gap-5 max-sm:gap-3 max-lg:mb-10 max-md:mb-8 max-sm:mb-6">
+                        <div className="grid grid-cols-2 gap-7 mb-12 max-sm:grid-cols-1 max-lg:gap-6 max-md:gap-5 max-sm:gap-3 max-lg:mb-10 max-md:mb-8 max-sm:mb-6">
                             <div>
                                 <h3 className="text-sm font-medium text-slate-500 mb-2 max-sm:text-xs">Head Office</h3>
                                 <p className="text-base max-sm:text-sm">11, Industrial Area, Katha</p>
@@ -69,7 +83,7 @@ const ContactUs = () => {
             {formVisible && (
                 <button
                     onClick={() => setFormVisible(false)}
-                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-200 z-[60]"
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-200 z-[60] max-sm:hidden"
                 >
                     &times;
                 </button>
@@ -95,28 +109,38 @@ const ContactUs = () => {
                 </div>
 
                 {/* Slide-in Form */}
-                <div className={`absolute top-0 right-0 h-full w-full z-30 bg-black bg-opacity-90 text-white p-8 transition-transform duration-700 ease-in-out flex flex-col ${formVisible ? "translate-x-0" : "translate-x-full"}`}>
-                    <div className="max-w-3xl mx-auto mt-16 space-y-6 flex-grow overflow-y-auto">
-                        <h3 className="text-4xl font-bold mb-6 leading-snug">
+                <div
+                    className={`${
+                        formVisible ? "right-0 translate-x-0" : "translate-x-full"
+                    } absolute top-0 h-full w-full z-30 bg-black bg-opacity-90 text-white p-8 transition-transform duration-700 ease-in-out flex flex-col max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:w-screen max-sm:h-full max-lg:p-7 max-md:p-6 max-sm:p-5`}
+                >
+                    <div className="max-w-3xl mx-auto space-y-6 flex-grow flex flex-col justify-center overflow-y-auto">
+                        <h3 className="text-4xl font-bold mb-6 leading-snug max-lg:text-3xl max-md:text-2xl max-sm:text-2xl max-lg:mb-5 max-md:mb-4 max-sm:mb-3">
                             Leave a message <br /> and we will contact you soon
                         </h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {/* Close button for mobile screens */}
+                        <button onClick={() => setFormVisible(false)} className="absolute top-20 right-4 text-white text-2xl z-50 max-sm:block hidden">
+                            &times;
+                        </button>
+                        <div className="grid grid-cols-2 gap-4 max-md:gap-3 max-sm:gap-2.5">
                             <input type="text" placeholder="First name" className="bg-black border border-gray-600 p-3 rounded" />
                             <input type="text" placeholder="Last name" className="bg-black border border-gray-600 p-3 rounded" />
                             <input type="email" placeholder="example@mail.com" className="bg-black border border-gray-600 p-3 rounded md:col-span-2" />
                             <input type="tel" placeholder="+31 644 666 888" className="bg-black border border-gray-600 p-3 rounded md:col-span-2" />
                         </div>
-                        <textarea placeholder="Type a message..." className="bg-black border border-gray-600 p-3 rounded w-full h-28" />
-                        <label className="flex items-center space-x-2 text-sm">
-                            <input type="checkbox" className="accent-indigo-500" />
-                            <span>
-                                Accept the{" "}
-                                <a href="#" className="underline">
-                                    Terms and Conditions
-                                </a>
-                            </span>
-                        </label>
-                        <button className="bg-white text-black font-semibold py-2 px-6 rounded hover:bg-gray-200">Send message →</button>
+                        <textarea placeholder="Type a message..." className="bg-black border border-gray-600 p-3 rounded w-full h-28 max-sm:h-72" />
+                        <div className="flex items-center justify-between">
+                            <label className="flex items-center space-x-2 text-sm max-sm:text-xs">
+                                <input type="checkbox" className="accent-indigo-500" />
+                                <span>
+                                    Accept the{" "}
+                                    <a href="#" className="underline">
+                                        Terms and Conditions
+                                    </a>
+                                </span>
+                            </label>
+                            <button className="text-base bg-white text-black font-semibold py-2 px-6 rounded hover:bg-gray-200 max-md:text-sm max-sm:text-xs max-sm:py-1.5 max-lg:px-5 max-md:px-4 max-sm:px-3">Send message →</button>
+                        </div>
                     </div>
                 </div>
 
