@@ -18,45 +18,45 @@ const ContactUs = () => {
     }, []);
 
     return (
-        <section className="grid lg:grid-cols-2 bg-[#f5f6ee] text-slate-800 relative h-[75vh]">
+        <section className="flex max-sm:flex-col text-slate-800 relative h-[75vh] max-sm:h-screen">
             {/* Left Column */}
-            <div className="relative h-full">
+            <div className="flex-1 relative bg-[#f5f6ee] h-full max-sm:h-fit">
                 {/* Black overlay */}
                 {formVisible && <div className="absolute inset-0 bg-black/60 z-20 transition-opacity duration-500 pointer-events-none" />}
 
                 {/* Content */}
-                <div className="relative z-10 flex flex-col h-full p-8 md:p-12 lg:p-20">
+                <div className="relative z-10 flex flex-col h-full p-20 max-lg:p-12 max-md:p-9 max-sm:p-6">
                     <div className="flex-grow overflow-y-auto">
-                        <div className="space-y-4 mb-8">
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">Contact Us</h2>
-                            <p className="text-lg text-slate-600 max-w-md">We're here to help with any questions or inquiries. Whether you're a consumer or a reseller, we've got you covered.</p>
+                        <div className="space-y-4 mb-8 max-md:space-y-3 max-sm:space-y-2 max-lg:mb-6 max-md:mb-4 max-sm:mb-3">
+                            <h2 className="text-5xl font-bold text-slate-900 leading-tight max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">Contact Us</h2>
+                            <p className="text-lg text-slate-600 max-w-md max-md:text-base max-sm:text-sm">We're here to help with any questions or inquiries. Whether you're a consumer or a reseller, we've got you covered.</p>
                         </div>
-                        <div className="grid grid-cols-2 gap-8 mb-16">
+                        <div className="grid grid-cols-2 gap-7 mb-16 max-sm:grid-cols-1 max-lg:gap-6 max-md:gap-5 max-sm:gap-3 max-lg:mb-10 max-md:mb-8 max-sm:mb-6">
                             <div>
-                                <h3 className="text-sm font-medium text-slate-500 mb-2">Head Office</h3>
-                                <p>11, Industrial Area, Katha</p>
-                                <p>Bhatoli khalan, Baddi</p>
-                                <p>(H.P.), India</p>
+                                <h3 className="text-sm font-medium text-slate-500 mb-2 max-sm:text-xs">Head Office</h3>
+                                <p className="text-base max-sm:text-sm">11, Industrial Area, Katha</p>
+                                <p className="text-base max-sm:text-sm">Bhatoli khalan, Baddi</p>
+                                <p className="text-base max-sm:text-sm">(H.P.), India</p>
                             </div>
                             <div>
-                                <h3 className="text-sm font-medium text-slate-500 mb-2">Mail</h3>
-                                <p>info@hyginelifesciences.com</p>
-                                <h3 className="text-sm font-medium text-slate-500 mt-4 mb-2">Phone</h3>
-                                <p>+91 99103 09423</p>
+                                <h3 className="text-sm font-medium text-slate-500 mb-2 max-sm:text-xs">Mail</h3>
+                                <p className="text-base max-sm:text-sm">info@hyginelifesciences.com</p>
+                                <h3 className="text-sm font-medium text-slate-500 mt-4 mb-2 max-sm:text-xs">Phone</h3>
+                                <p className="text-base max-sm:text-sm">+91 99103 09423</p>
                             </div>
                         </div>
-                        <div className="grid md:grid-cols-2 gap-6">
-                            <button onClick={() => setFormVisible(true)} className="p-6 bg-white rounded-xl flex flex-col justify-between transition text-left w-full">
+                        <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1 max-sm:grid-cols-1 max-lg:gap-0 max-md:gap-4 max-sm:gap-3">
+                            <button onClick={() => setFormVisible(true)} className="p-6 bg-white rounded-xl flex flex-col justify-between transition text-left w-full max-lg:p-5 max-md:p-3.5 max-sm:p-2.5">
                                 <div className="space-y-2">
-                                    <p className="text-sm text-slate-400">Questions?</p>
-                                    <h3 className="text-2xl font-semibold text-slate-900">Fill in the form</h3>
+                                    <p className="text-sm text-slate-400 max-sm:text-xs">Questions?</p>
+                                    <h3 className="text-2xl font-semibold text-slate-900 max-lg:text-xl max-md:text-lg max-sm:text-lg">Fill in the form</h3>
                                 </div>
                                 <ArrowRight className="w-6 h-6 self-end mt-4 text-indigo-600" />
                             </button>
 
-                            <div className="p-6 bg-white rounded-xl flex flex-col justify-between transition">
+                            <div className="p-6 bg-white rounded-xl flex flex-col justify-between transition max-lg:p-5 max-md:p-3.5 max-sm:p-2.5">
                                 <div className="space-y-2">
-                                    <h3 className="text-2xl font-semibold text-slate-900">Support</h3>
+                                    <h3 className="text-2xl font-semibold text-slate-900 max-lg:text-xl max-md:text-lg max-sm:text-lg">Support</h3>
                                 </div>
                                 <Link href="#" className="self-end mt-4 text-indigo-600">
                                     <ArrowRight className="w-6 h-6" />
@@ -76,8 +76,8 @@ const ContactUs = () => {
             )}
 
             {/* Right Column - Image Slider */}
-            <div className="relative h-full overflow-hidden bg-slate-100">
-                <div className="flex h-full w-full transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
+            <div className="flex-1 relative bg-slate-100 h-full overflow-hidden">
+                <div className="flex w-full h-full transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}>
                     {images.map((img, index) => (
                         <div key={index} className="relative min-w-full h-full">
                             <Image src={img || "/placeholder.svg"} alt={`Slide ${index + 1}`} fill className="object-cover" priority={index === currentImageIndex} />
@@ -87,16 +87,9 @@ const ContactUs = () => {
 
                 {/* Progress Bars */}
                 <div className="absolute top-4 right-4 flex space-x-2 z-10">
-                    {images.map((_, index) => (
-                        <div key={index} onClick={() => setCurrentImageIndex(index)} className="w-10 h-1 bg-white/40 rounded overflow-hidden cursor-pointer">
-                            {index === currentImageIndex && (
-                                <div
-                                    className="h-full bg-indigo-500"
-                                    style={{
-                                        animation: "progressBar 4s linear forwards",
-                                    }}
-                                />
-                            )}
+                    {images.map((img, index) => (
+                        <div key={index} className="relative min-w-full h-full">
+                            <Image src={img || "/placeholder.svg"} alt={`Slide ${index + 1}`} fill className="object-cover" priority={index === currentImageIndex} />
                         </div>
                     ))}
                 </div>
