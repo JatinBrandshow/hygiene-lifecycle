@@ -18,7 +18,7 @@ const ContactUs = () => {
     }, []);
 
     useEffect(() => {
-        const isMobile = window.innerWidth <= 640; // Tailwind's sm breakpoint
+        const isMobile = window.innerWidth <= 640; // Tailwind's lg breakpoint
 
         if (formVisible && isMobile) {
             document.body.classList.add("overflow-hidden");
@@ -32,14 +32,14 @@ const ContactUs = () => {
     }, [formVisible]);
 
     return (
-        <section className="flex max-sm:flex-col text-slate-800 relative h-[75vh] max-sm:h-screen">
+        <section className="flex max-lg:flex-col max-md:flex-col max-sm:flex-col text-slate-800 relative h-[75vh] max-lg:h-[120vh] max-md:h-screen max-sm:h-screen">
             {/* Left Column */}
             <div className="flex-1 relative bg-[#f5f6ee] h-full max-sm:h-fit">
                 {/* Black overlay */}
                 {formVisible && <div className="absolute inset-0 bg-black/60 z-20 transition-opacity duration-500 pointer-events-none" />}
 
                 {/* Content */}
-                <div className="relative z-10 flex flex-col h-full p-16 max-lg:p-12 max-md:p-9 max-sm:p-6">
+                <div className="relative z-10 flex flex-col h-full p-16 max-xl:p-10 max-lg:p-12 max-md:p-9 max-sm:p-6">
                     <div className="flex-grow">
                         <div className="space-y-4 mb-8 max-md:space-y-3 max-sm:space-y-2 max-lg:mb-6 max-md:mb-4 max-sm:mb-3">
                             <h2 className="text-5xl font-bold text-slate-900 leading-tight max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">Contact Us</h2>
@@ -59,8 +59,8 @@ const ContactUs = () => {
                                 <p className="text-base max-sm:text-sm">+91 99103 09423</p>
                             </div>
                         </div>
-                        <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1 max-sm:grid-cols-1 max-lg:gap-0 max-md:gap-4 max-sm:gap-3">
-                            <button onClick={() => setFormVisible(true)} className="p-6 bg-white rounded-xl flex flex-col justify-between transition text-left w-full max-lg:p-5 max-md:p-3.5 max-sm:p-2.5">
+                        <div className="grid grid-cols-2 gap-6 max-md:grid-cols-2 max-sm:grid-cols-1 max-xl:gap-3 max-lg:gap-4 max-md:gap-4 max-sm:gap-3">
+                            <button onClick={() => setFormVisible(true)} className="p-6 bg-white rounded-xl flex flex-col justify-between transition text-left w-full max-xl:p-3.5 max-lg:p-5 max-md:p-3.5 max-sm:p-2.5">
                                 <div className="space-y-2">
                                     <p className="text-sm text-slate-400 max-sm:text-xs">Questions?</p>
                                     <h3 className="text-2xl font-semibold text-slate-900 max-lg:text-xl max-md:text-lg max-sm:text-lg">Fill in the form</h3>
@@ -83,7 +83,7 @@ const ContactUs = () => {
             {formVisible && (
                 <button
                     onClick={() => setFormVisible(false)}
-                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-200 z-[60] max-sm:hidden"
+                    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-200 z-[60] max-lg:hidden max-md:hidden max-sm:hidden"
                 >
                     &times;
                 </button>
@@ -119,9 +119,10 @@ const ContactUs = () => {
                             Leave a message <br /> and we will contact you soon
                         </h3>
                         {/* Close button for mobile screens */}
-                        <button onClick={() => setFormVisible(false)} className="absolute top-20 right-4 text-white text-2xl z-50 max-sm:block hidden">
+                        <button onClick={() => setFormVisible(false)} className="absolute max-sm:top-20 right-4 text-white text-2xl z-50 border border-white max-lg:top-4 max-lg:block hidden max-md:top-10 px-2">
                             &times;
                         </button>
+
                         <div className="grid grid-cols-2 gap-4 max-md:gap-3 max-sm:gap-2.5">
                             <input type="text" placeholder="First name" className="bg-black border border-gray-600 p-3 rounded" />
                             <input type="text" placeholder="Last name" className="bg-black border border-gray-600 p-3 rounded" />
