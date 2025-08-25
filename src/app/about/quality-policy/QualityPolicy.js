@@ -21,7 +21,7 @@ const QualityPolicy = () => {
         <div className="bg-white shadow-xl rounded-lg p-8 md:p-12 text-center border border-gray-100">
           <FaRegCheckCircle className="text-6xl text-[var(--primary)] mx-auto mb-6" />
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
-            <span className="text-[var(--primary)]">Hygine Lifecycle</span> Quality Mantra
+            <span className="text-[var(--primary)]">Hygine Lifesciences</span> Quality Mantra
           </h2>
           <div className="prose prose-lg max-w-3xl mx-auto text-gray-700">
             <p className="text-xl leading-relaxed">
