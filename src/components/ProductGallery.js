@@ -185,14 +185,13 @@ const ProductGallery = () => {
                                 style={{ width: `${100 / itemsVisible}%` }}
                             >
                                 <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                                    <div className="relative overflow-hidden p-4">
+                                    <div className="relative overflow-hidden">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-60 object-contain group-hover:scale-105 transition-transform duration-300 rounded-lg bg-white"
+                                            className="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-300"
                                         />
                                     </div>
-
                                     <div className="p-6 max-lg:p-4 max-md:p-3.5 max-sm:p-2.5">
                                         <h3 className="text-xl font-semibold text-gray-900 mb-4 line-clamp-2 max-lg:text-lg max-md:text-base max-sm:text-base max-md:mb-3 max-sm:mb-2">
                                             {product.name}
