@@ -58,7 +58,7 @@ const CarbapenemInjection = () => {
                         </p>
                         <div className="w-32 h-1.5 bg-gradient-to-r from-[var(--secondary)] to-[var(--primary-light)] rounded-full mb-8"></div>
                         <p className="text-blue-100 max-w-xl">
-                            Hygine Lifecycle's complete carbapenem portfolio includes seven specialized formulations for
+                            Hygine Lifesciences complete carbapenem portfolio includes seven specialized formulations for
                             treating serious infections with enhanced efficacy and safety profiles.
                         </p>
                     </div>
