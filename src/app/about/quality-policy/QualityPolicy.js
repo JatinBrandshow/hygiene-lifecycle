@@ -162,7 +162,7 @@ const QualityPolicy = () => {
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              The <span className="text-[var(--primary)]">Hygine Lifecycle Promise</span>
+              The <span className="text-[var(--primary)]">Hygine Lifesciences Promise</span>
             </h2>
             <div className="w-20 h-1 bg-[var(--primary)] mx-auto"></div>
           </div>
