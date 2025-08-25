@@ -13,77 +13,77 @@ const ProductGallery = () => {
     const products = [
         {
             id: 1,
-            name: "Zetro-1000",
-            image: "img/products/carbapenem-product--01.webp",
+            name: "HYGIMER",
+            image: "img/products/img_1.webp",
             url: "/carbapenem-injection",
         },
         {
             id: 2,
-            name: "DorPen-500",
-            image: "img/products/carbapenem-product--02.webp",
+            name: "HYGIPIP",
+            image: "img/products/img_2.webp",
             url: "/carbapenem-injection",
         },
         {
             id: 3,
-            name: "IMICILASH-500",
-            image: "img/products/carbapenem-product--03.webp",
+            name: "Hygicef-SB",
+            image: "img/products/img_3.webp",
             url: "/carbapenem-injection",
         },
         {
             id: 4,
-            name: "MERONASH-1000",
-            image: "img/products/carbapenem-product--04.webp",
+            name: "Hyceftra",
+            image: "img/products/img_4.webp",
             url: "/carbapenem-injection",
         },
         {
             id: 5,
-            name: "MERONASH-S",
-            image: "img/products/carbapenem-product--05.webp",
+            name: "HYCEFU",
+            image: "img/products/img_5.webp",
             url: "/carbapenem-injection",
         },
         {
             id: 6,
-            name: "CEFEPASH-1000",
-            image: "img/products/cephalosporin-product--01.webp",
+            name: "HYCEFU - 1.5gm",
+            image: "img/products/img_6.webp",
             url: "/carbapenem-injection",
         },
 
         {
             id: 7,
-            name: "FOTAX-1000",
-            image: "img/products/cephalosporin-product--02.webp",
+            name: "HYTAXIME 1gm",
+            image: "img/products/img_7.webp",
             url: "/cephalosporin-injection",
         },
         {
             id: 8,
-            name: "SHAMCEF-750",
-            image: "img/products/cephalosporin-product--03.webp",
+            name: "HYCEFTA 1gm",
+            image: "img/products/img_8.webp",
             url: "/cephalosporin-injection",
         },
         {
             id: 9,
-            name: "CEFEPASH-TZ 1125",
-            image: "img/products/cephalosporin-product--04.webp",
+            name: "HYTAZO 1.125gm",
+            image: "img/products/img_9.webp",
             url: "/cephalosporin-injection",
         },
         {
             id: 10,
-            name: "CEFSULASH-1000",
-            image: "img/products/cephalosporin-product--05.webp",
+            name: "HYGICEFE 1g",
+            image: "img/products/img_10.webp",
             url: "/cephalosporin-injection",
         },
-        {
-            id: 11,
-            name: "CEFTRASH-1000",
-            image: "img/products/cephalosporin-product--06.webp",
-            url: "/cephalosporin-injection",
-        },
-        {
-            id: 12,
-            name: "CEFTRIBACTAM",
-            image: "img/products/cephalosporin-product--07.webp",
-            url: "/cephalosporin-injection",
-        },
+        // {
+        //     id: 11,
+        //     name: "CEFTRASH-1000",
+        //     image: "img/products/cephalosporin-product--06.webp",
+        //     url: "/cephalosporin-injection",
+        // },
+        // {
+        //     id: 12,
+        //     name: "CEFTRIBACTAM",
+        //     image: "img/products/cephalosporin-product--07.webp",
+        //     url: "/cephalosporin-injection",
+        // },
     ];
 
     const getItemsPerView = () => {
@@ -185,13 +185,14 @@ const ProductGallery = () => {
                                 style={{ width: `${100 / itemsVisible}%` }}
                             >
                                 <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
-                                    <div className="relative overflow-hidden">
+                                    <div className="relative overflow-hidden p-4">
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                                            className="w-full h-60 object-contain group-hover:scale-105 transition-transform duration-300 rounded-lg bg-white"
                                         />
                                     </div>
+
                                     <div className="p-6 max-lg:p-4 max-md:p-3.5 max-sm:p-2.5">
                                         <h3 className="text-xl font-semibold text-gray-900 mb-4 line-clamp-2 max-lg:text-lg max-md:text-base max-sm:text-base max-md:mb-3 max-sm:mb-2">
                                             {product.name}
