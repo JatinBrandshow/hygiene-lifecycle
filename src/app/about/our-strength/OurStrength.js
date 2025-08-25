@@ -127,7 +127,7 @@ const OurStrengths = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--tertiary)] mb-4">
-              Why <span className="text-[var(--primary)]">Hygine Lifecycle</span> Stands Out
+              Why <span className="text-[var(--primary)]">Hygine Lifesciences</span> Stands Out
             </h2>
             <div className="w-24 h-1 bg-[var(--primary)] mx-auto" />
           </div>
