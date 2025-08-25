@@ -229,7 +229,7 @@ const OurStrengths = () => {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl font-bold text-[var(--tertiary)] mb-4">
-            Ready to Experience the <span className="text-[var(--primary)]">Hygine Lifecycle  Difference</span>?
+            Ready to Experience the <span className="text-[var(--primary)]">Hygine Lifesciences Difference</span>?
           </h2>
           <p className="text-gray-600 mb-6 text-sm">
             Partner with a pharmaceutical company that combines quality, innovation, and reliability.
