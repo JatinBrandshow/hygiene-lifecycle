@@ -5,40 +5,30 @@ import { motion } from 'framer-motion';
 const CephalosporinInjection = () => {
     const products = [
         {
-            name: "CEFPASH-100",
+            name: "HYCEFU",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--01.webp"
+            image: "/img/ceophalosporin/img_6.webp"
         },
         {
-            name: "FOTAX-1000",
+            name: "HYTAXIME",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--02.webp"
+            image: "/img/ceophalosporin/img_7.webp"
         },
         {
-            name: "SHAMCEF-750",
+            name: "HYCEFTA",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--03.webp"
+            image: "/img/ceophalosporin/img_8.webp"
         },
         {
-            name: "CEFEPASH-TZ 1125",
+            name: "HYTAZO",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--04.webp"
+            image: "/img/ceophalosporin/img_9.webp"
         },
         {
-            name: "CEFSULASH-1000",
+            name: "HYGICEFE",
             presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--05.webp"
+            image: "/img/ceophalosporin/img_10.webp"
         },
-        {
-            name: "CEFTRASH-1000",
-            presentation: "Injection",
-            image: "/img/ceophalosporin/cephalosporin-product--06.webp"
-        },
-        {
-            name: "CEFRIBACTAM",
-            presentation: "Capsule",
-            image: "/img/ceophalosporin/cephalosporin-product--07.webp"
-        }
     ];
 
     return (
@@ -60,14 +50,14 @@ const CephalosporinInjection = () => {
                         </p>
                     </div>
                     <div className="md:w-1/2 flex justify-center w-full mt-8 md:mt-0">
-                        <div className="relative w-full h-48 sm:h-64 md:h-80 aspect-video">
+                        <div className="relative w-full h-58 sm:h-64 md:h-80 aspect-video">
                             <Image
                                 src="/img/Carbapenem1.webp"
                                 alt="Cephalosporin Injection Range"
                                 fill
                                 className="object-contain"
                                 priority
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                                sizes="(max-width: 770px) 100vw, (max-width: 1200px) 50vw, 40vw"
                             />
                         </div>
                     </div>

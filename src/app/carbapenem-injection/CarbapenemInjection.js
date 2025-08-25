@@ -5,43 +5,43 @@ import Image from 'next/image';
 const CarbapenemInjection = () => {
     const products = [
         {
-            name: "ZETRO-1000",
+            name: "HYGIMER",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--01.webp"
+            image: "/img/carbapenem/img_1.webp"
         },
         {
-            name: "DORPEN-500",
+            name: "HYGIPIP",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--02.webp"
+            image: "/img/carbapenem/img_2.webp"
         },
         {
-            name: "IMICILASH-500",
+            name: "Hygicef-SB",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--03.webp"
+            image: "/img/carbapenem/img_3.webp"
         },
         {
-            name: "MERONASH-1000",
+            name: "Hyceftra",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--04.webp"
+            image: "/img/carbapenem/img_4.webp"
         },
         {
-            name: "MERONASH-S",
+            name: "HYCEFU",
             description: "Ertapenem sodium IP equivalent to Ertapenem 1g",
             presentation: "Vial",
-            image: "/img/carbapenem/carbapenem-product--05.webp"
+            image: "/img/carbapenem/img_5.webp"
         },
-        {
-            name: "CEFTRASH-1000",
-            description: "Meropenem 1g + Vaborbactam 1g",
-            presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--06.webp"
-        },
-        {
-            name: "IMIPENEM + CILASTATIN + RELEBACTAM",
-            description: "Imipenem 500mg + Cilastatin 500mg + Relebactam 250mg",
-            presentation: "Vial",
-            image: "/img/ceophalosporin/cephalosporin-product--07.webp"
-        }
+        // {
+        //     name: "CEFTRASH-1000",
+        //     description: "Meropenem 1g + Vaborbactam 1g",
+        //     presentation: "Vial",
+        //     image: "/img/ceophalosporin/cephalosporin-product--06.webp"
+        // },
+        // {
+        //     name: "IMIPENEM + CILASTATIN + RELEBACTAM",
+        //     description: "Imipenem 500mg + Cilastatin 500mg + Relebactam 250mg",
+        //     presentation: "Vial",
+        //     image: "/img/ceophalosporin/cephalosporin-product--07.webp"
+        // }
     ];
 
     return (
