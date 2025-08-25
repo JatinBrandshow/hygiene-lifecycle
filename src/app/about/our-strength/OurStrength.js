@@ -15,7 +15,7 @@ const OurStrengths = () => {
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">Core Strengths</span>
             </h1>
             <p className="text-xl text-blue-100 mb-8">
-              The pillars that make Hygine Lifecycle a trusted partner in global healthcare
+              The pillars that make Hygine Lifesciences a trusted partner in global healthcare
             </p>
             <div className="w-32 h-1.5 bg-secondary rounded-full" />
           </div>
