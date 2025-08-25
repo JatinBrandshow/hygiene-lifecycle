@@ -87,7 +87,7 @@ const ResearchDevelopment = () => {
                                 In India, we are committed to accelerating discovery of drugs and bringing new medicines to market. We offer our expertise in analyzing trends in the market, developing innovative products for research and managing the roadblocks that pharmaceutical researchers may face in laboratory research across diverse therapeutic areas.
                             </p>
                             <p className="text-xl text-gray-600">
-                                Bringing new therapies to market is challenging and complex. At Hygine Lifecycle we remain committed to accelerating drug discovery by powering innovation in pharmaceutical solutions. Our expertise in evaluating market trends, managing laboratory related challenges and developing state-of-the-art research products benefit our customers, who leverage our solutions across diverse therapeutic areas.
+                                Bringing new therapies to market is challenging and complex. At Hygine Lifesciences we remain committed to accelerating drug discovery by powering innovation in pharmaceutical solutions. Our expertise in evaluating market trends, managing laboratory related challenges and developing state-of-the-art research products benefit our customers, who leverage our solutions across diverse therapeutic areas.
                             </p>
                         </div>
                         <div className="lg:w-1/2">

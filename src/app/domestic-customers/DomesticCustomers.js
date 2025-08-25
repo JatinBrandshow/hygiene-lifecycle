@@ -89,7 +89,7 @@ const DomesticCustomers = () => {
         </div>
       </section>
 
-      {/* Enhanced Testimonials Section */}
+      {/*  Testimonials Section */}
       <section className="py-20 bg-gradient-to-br from-[#173C96]/5 to-[#031B4E]/5 relative overflow-hidden">
         {/* Background pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -107,7 +107,7 @@ const DomesticCustomers = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                quote: "Hygine Lifecycle has been instrumental in helping us scale our production while maintaining uncompromising quality standards.",
+                quote: "Hygine Lifesciences has been instrumental in helping us scale our production while maintaining uncompromising quality standards.",
                 company: "Leading Pharma Company",
                 role: "Production Head"
               },
@@ -117,7 +117,7 @@ const DomesticCustomers = () => {
                 role: "Chief Technology Officer"
               },
               {
-                quote: "Consistent quality and reliable deliveries make Hygine Lifecycle our preferred manufacturing partner.",
+                quote: "Consistent quality and reliable deliveries make Hygine Lifesciences our preferred manufacturing partner.",
                 company: "Established Medicine Manufacturer",
                 role: "Procurement Manager"
               }
@@ -138,7 +138,7 @@ const DomesticCustomers = () => {
         </div>
       </section>
 
-      {/* Enhanced Partnership Section */}
+      {/*  Partnership Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
