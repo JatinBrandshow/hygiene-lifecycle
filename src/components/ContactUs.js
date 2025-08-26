@@ -68,14 +68,13 @@ const ContactUs = () => {
                                 <ArrowRight className="w-6 h-6 self-end mt-4 text-indigo-600" />
                             </button>
 
-                            <div className="p-6 bg-white rounded-xl flex flex-col justify-between transition max-lg:p-5 max-md:p-3.5 max-sm:p-2.5">
+                            <button onClick={() => setFormVisible(true)} className="p-6 bg-white rounded-xl flex flex-col justify-between transition text-left w-full max-xl:p-3.5 max-lg:p-5 max-md:p-3.5 max-sm:p-2.5">
                                 <div className="space-y-2">
+                                    <p className="text-sm text-slate-400 max-sm:text-xs">Need help?</p>
                                     <h3 className="text-2xl font-semibold text-slate-900 max-lg:text-xl max-md:text-lg max-sm:text-lg">Support</h3>
                                 </div>
-                                <Link href="#" className="self-end mt-4 text-indigo-600">
-                                    <ArrowRight className="w-6 h-6" />
-                                </Link>
-                            </div>
+                                <ArrowRight className="w-6 h-6 self-end mt-4 text-indigo-600" />
+                            </button>
                         </div>
                     </div>
                 </div>
