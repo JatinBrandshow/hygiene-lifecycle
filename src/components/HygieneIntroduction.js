@@ -45,7 +45,7 @@ const HygieneIntroduction = () => {
                     <div className="lg:w-1/2 space-y-6 animate-fadeInUp flex flex-col justify-center">
                         <div className="animate-slideInRight">
                             <h2 className="text-3xl md:text-4xl font-bold text-[var(--tertiary)] mb-4">
-                                <span className="text-[var(--primary)]">Welcome to</span> Hygiene Lifesciences Pvt Ltd
+                                <span className="text-[var(--primary)]">Welcome to</span> Hygine Lifesciences Pvt Ltd
                             </h2>
                             <p className="text-lg text-gray-600 border-l-4 border-[var(--primary)] pl-4 py-1 animate-pulse">
                                 Comprehensive quality management from raw materials to finished products
@@ -55,7 +55,7 @@ const HygieneIntroduction = () => {
                         {/* Content Section */}
                         <div className="space-y-4 animate-fadeIn delay-100">
                             <p className="text-gray-700 leading-relaxed animate-slideInUp">
-                                Founded in 2022, Hygiene Lifesciences Pvt Ltd has State-of-the-Art World Class WHO GMP Certified Manufacturing facilities.
+                                Founded in 2022, Hygine Lifesciences Pvt Ltd has State-of-the-Art World Class WHO GMP Certified Manufacturing facilities.
                             </p>
 
                             <p className="text-gray-700 leading-relaxed animate-slideInUp delay-200">
@@ -67,7 +67,7 @@ const HygieneIntroduction = () => {
                             </p>
 
                             <p className="text-gray-700 leading-relaxed font-medium animate-slideInUp delay-400">
-                                Hygiene Lifesciences Pvt Ltd  is one of the fastest growing quality solutions providers in healthcare - Focused on Delivering Global Standard Systems at Competitive Prices.
+                                Hygine Lifesciences Pvt Ltd  is one of the fastest growing quality solutions providers in healthcare - Focused on Delivering Global Standard Systems at Competitive Prices.
                             </p>
                         </div>
 
@@ -109,7 +109,7 @@ const HygieneIntroduction = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-bold text-[var(--tertiary)] mb-1">Global Reach</h3>
-                                    <p className="text-gray-600 text-sm"> Hygiene Lifesciences Pvt Ltd.Serving clients across multiple continents</p>
+                                    <p className="text-gray-600 text-sm"> Hygine Lifesciences Pvt Ltd.Serving clients across multiple continents</p>
                                 </div>
                             </div>
                         </div>

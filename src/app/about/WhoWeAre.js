@@ -85,7 +85,7 @@ export default function WhoWeAre() {
                   </svg>
                 </div>
                 <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-                  <strong className="text-primary font-semibold">Hygiene Lifesciences Pvt Ltd</strong> is a{" "}
+                  <strong className="text-primary font-semibold">Hygine Lifesciences Pvt Ltd</strong> is a{" "}
                   <strong className="text-secondary font-semibold">WHO GMP</strong> certified pharmaceutical
                   company with a world-class manufacturing plant in{" "}
                   <strong className="text-primary font-semibold">Baddi (H.P.), India</strong>.
@@ -214,7 +214,7 @@ export default function WhoWeAre() {
             </h3>
             <div className="w-20 h-1.5 bg-gradient-to-r from-primary to-secondary mx-auto" />
             <p className="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">
-              Hygiene Lifesciences Pvt Ltd proudly exports its products to over 25 countries,
+              Hygine Lifesciences Pvt Ltd proudly exports its products to over 25 countries,
               improving lives across multiple continents.
             </p>
           </div>

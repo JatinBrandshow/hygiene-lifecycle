@@ -156,7 +156,7 @@ const Footer = () => {
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                             <div className="flex flex-col sm:flex-row items-center gap-4 text-sm text-gray-300">
-                                <p>© {new Date().getFullYear()} Hygine Lifesciences. All Rights Reserved.</p>
+                                <p>© {new Date().getFullYear()} Hygine Lifesciences Pvt Ltd. All Rights Reserved.</p>
                                 <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
                                 <p>
                                     Website Designed & Developed by{" "}

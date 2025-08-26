@@ -7,7 +7,7 @@ const VisionMission = () => {
       <div className="relative bg-gradient-to-br from-primary to-tertiary text-white py-28 px-6">
         <div className="absolute inset-0 bg-[url('/images/medical-pattern.png')] opacity-10"></div>
         <div className="relative z-10 max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Hygiene Lifesciences Pvt Ltd</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Hygine Lifesciences Pvt Ltd</h1>
           <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto leading-relaxed">
             Pioneering Ethical Healthcare Innovation Worldwide
           </p>
@@ -176,7 +176,7 @@ const VisionMission = () => {
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-8 rounded-full"></div>
           <p className="text-xl leading-relaxed mb-8 max-w-3xl mx-auto">
-            At Hygiene Lifesciences Pvt Ltd, we are dedicated to making quality healthcare 
+            At Hygine Lifesciences Pvt Ltd, we are dedicated to making quality healthcare 
             accessible worldwide through innovative medicines, education, and community partnerships.
           </p>
           <div className="grid sm:grid-cols-3 gap-8 mt-12">

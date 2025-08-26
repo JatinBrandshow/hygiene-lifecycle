@@ -154,7 +154,7 @@ const OurCustomers = () => {
 
                             {/* Description */}
                             <p className="max-w-4xl text-lg text-gray-800 leading-relaxed max-md:text-base max-sm:text-sm">
-                                Hygiene Lifesciences Pvt Ltd serves a diverse set of customers worldwide. Our customers include healthcare providers, hospitals, pharmaceutical distributors, and government healthcare agencies. With commitment to
+                                Hygine Lifesciences Pvt Ltd serves a diverse set of customers worldwide. Our customers include healthcare providers, hospitals, pharmaceutical distributors, and government healthcare agencies. With commitment to
                                 quality and affordability, we ensure our Dry powder Injectable products meet the stringent requirements of our valued customers across various regions of India and the world.
                             </p>
                         </div>

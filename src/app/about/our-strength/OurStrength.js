@@ -15,7 +15,7 @@ const OurStrengths = () => {
               Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-100">Core Strengths</span>
             </h1>
             <p className="text-xl text-blue-100 mb-8">
-              The pillars that make Hygiene Lifesciences Pvt Ltd a trusted partner in global healthcare
+              The pillars that make Hygine Lifesciences Pvt Ltd a trusted partner in global healthcare
             </p>
             <div className="w-32 h-1.5 bg-secondary rounded-full" />
           </div>
@@ -127,7 +127,7 @@ const OurStrengths = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[var(--tertiary)] mb-4">
-              Why <span className="text-[var(--primary)]">Hygiene Lifesciences Pvt Ltd</span> Stands Out
+              Why <span className="text-[var(--primary)]">Hygine Lifesciences Pvt Ltd</span> Stands Out
             </h2>
             <div className="w-24 h-1 bg-[var(--primary)] mx-auto" />
           </div>

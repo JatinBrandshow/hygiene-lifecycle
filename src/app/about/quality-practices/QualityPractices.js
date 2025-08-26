@@ -242,7 +242,7 @@ const QualityPractices = () => {
             </h2>
             <div className="w-24 h-1 bg-[var(--primary)] mx-auto mb-8"></div>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-              "At Hygiene Lifesciences Pvt Ltd, we believe quality isn't just measured in test results, but in the trust we build with every dose we produce. We would rather be the best than the biggest."
+              "At Hygine Lifesciences Pvt Ltd, we believe quality isn't just measured in test results, but in the trust we build with every dose we produce. We would rather be the best than the biggest."
             </p>
             <button className="px-8 py-3 bg-[var(--primary)] text-white font-medium rounded-full hover:bg-[var(--primary-dark)] transition-colors">
               Download Quality Policy

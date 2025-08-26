@@ -107,7 +107,7 @@ const DomesticCustomers = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                quote: "Hygiene Lifesciences Pvt Ltd has been instrumental in helping us scale our production while maintaining uncompromising quality standards.",
+                quote: "Hygine Lifesciences Pvt Ltd has been instrumental in helping us scale our production while maintaining uncompromising quality standards.",
                 company: "Leading Pharma Company",
                 role: "Production Head"
               },
@@ -117,7 +117,7 @@ const DomesticCustomers = () => {
                 role: "Chief Technology Officer"
               },
               {
-                quote: "Consistent quality and reliable deliveries make Hygiene Lifesciences Pvt Ltd our preferred manufacturing partner.",
+                quote: "Consistent quality and reliable deliveries make Hygine Lifesciences Pvt Ltd our preferred manufacturing partner.",
                 company: "Established Medicine Manufacturer",
                 role: "Procurement Manager"
               }
@@ -158,7 +158,7 @@ const DomesticCustomers = () => {
                 Partnership Benefits
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Grow With <span className="text-[#173C96]">Hygiene Lifesciences Pvt Ltd</span>
+                Grow With <span className="text-[#173C96]">Hygine Lifesciences Pvt Ltd</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 Join India's premier pharmaceutical network and leverage our expertise to accelerate your business growth.

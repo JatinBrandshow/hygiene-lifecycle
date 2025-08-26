@@ -127,7 +127,7 @@ export default function Contact() {
               className="w-16 h-1.5 bg-secondary mb-6 rounded-full"
             ></motion.div>
             <p className="text-tertiary text-lg">
-              At Hygiene Lifesciences Pvt Ltd, we're committed to excellence in pharmaceutical solutions across India and globally.
+              At Hygine Lifesciences Pvt Ltd, we're committed to excellence in pharmaceutical solutions across India and globally.
             </p>
 
             <div className="space-y-4">
