@@ -45,7 +45,7 @@ const CephalosporinInjection = () => {
                         </p>
                         <div className="w-32 h-1.5 bg-gradient-to-r from-[var(--secondary)] to-[var(--primary-light)] rounded-full mb-4 md:mb-8"></div>
                         <p className="text-sm sm:text-base text-blue-100 max-w-xl">
-                            Hygine Lifesciences complete cephalosporin portfolio includes specialized formulations for
+                            Hygiene Lifesciences Pvt Ltd complete cephalosporin portfolio includes specialized formulations for
                             treating a wide spectrum of bacterial infections.
                         </p>
                     </div>

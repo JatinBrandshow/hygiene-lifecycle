@@ -109,7 +109,7 @@ const Footer = () => {
 
                             <div className="space-y-4">
                                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-secondary/30 transition-colors">
-                                    <h4 className="font-semibold text-secondary mb-3">Hygine Lifesciences Ltd.</h4>
+                                    <h4 className="font-semibold text-secondary mb-3">Hygiene Lifesciences Pvt Ltd</h4>
 
                                     <div className="space-y-3 text-sm">
                                         <div className="flex items-start gap-3">

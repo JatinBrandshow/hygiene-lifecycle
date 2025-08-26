@@ -22,61 +22,61 @@ const QualityPractices = () => {
         </div>
       </div>
 
-     {/* Quality Pillars */}
-<section className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-6">
-    <div className="text-center mb-16">
-      <span className="inline-block px-4 py-2 bg-[var(--primary)]/10 text-[var(--primary)] rounded-full text-sm font-semibold mb-4">
-        OUR APPROACH
-      </span>
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-        The <span className="text-[var(--primary)]">Four Pillars</span> of Quality
-      </h2>
-      <div className="w-20 h-1 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] mx-auto"></div>
-    </div>
-
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {[
-        {
-          icon: <FaFlask className="text-white text-3xl" />,
-          title: "Material Excellence",
-          description: "200+ quality checks on all incoming raw materials",
-          bg: "bg-[var(--primary)]",
-          border: "border-[var(--primary)]"
-        },
-        {
-          icon: <FaChartLine className="text-white text-3xl" />,
-          title: "Process Control",
-          description: "Real-time monitoring at 50+ production checkpoints",
-          bg: "bg-[var(--secondary)]",
-          border: "border-[var(--secondary)]"
-        },
-        {
-          icon: <FaCheckCircle className="text-white text-3xl" />,
-          title: "Product Verification",
-          description: "Comprehensive finished product analysis",
-          bg: "bg-[var(--tertiary)]",
-          border: "border-[var(--tertiary)]"
-        },
-        {
-          icon: <FaClipboardCheck className="text-white text-3xl" />,
-          title: "Stability Assurance",
-          description: "ICH-compliant environmental testing",
-          bg: "bg-[var(--primary)]",
-          border: "border-[var(--primary)]"
-        }
-      ].map((pillar, index) => (
-        <div key={index} className={`bg-white p-6 rounded-xl shadow-sm border-t-4 ${pillar.border} hover:shadow-md transition-all h-full`}>
-          <div className={`w-14 h-14 ${pillar.bg} rounded-lg flex items-center justify-center mb-4`}>
-            {pillar.icon}
+      {/* Quality Pillars */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-2 bg-[var(--primary)]/10 text-[var(--primary)] rounded-full text-sm font-semibold mb-4">
+              OUR APPROACH
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              The <span className="text-[var(--primary)]">Four Pillars</span> of Quality
+            </h2>
+            <div className="w-20 h-1 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] mx-auto"></div>
           </div>
-          <h3 className="text-xl font-bold text-gray-800 mb-3">{pillar.title}</h3>
-          <p className="text-gray-600">{pillar.description}</p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: <FaFlask className="text-white text-3xl" />,
+                title: "Material Excellence",
+                description: "200+ quality checks on all incoming raw materials",
+                bg: "bg-[var(--primary)]",
+                border: "border-[var(--primary)]"
+              },
+              {
+                icon: <FaChartLine className="text-white text-3xl" />,
+                title: "Process Control",
+                description: "Real-time monitoring at 50+ production checkpoints",
+                bg: "bg-[var(--secondary)]",
+                border: "border-[var(--secondary)]"
+              },
+              {
+                icon: <FaCheckCircle className="text-white text-3xl" />,
+                title: "Product Verification",
+                description: "Comprehensive finished product analysis",
+                bg: "bg-[var(--tertiary)]",
+                border: "border-[var(--tertiary)]"
+              },
+              {
+                icon: <FaClipboardCheck className="text-white text-3xl" />,
+                title: "Stability Assurance",
+                description: "ICH-compliant environmental testing",
+                bg: "bg-[var(--primary)]",
+                border: "border-[var(--primary)]"
+              }
+            ].map((pillar, index) => (
+              <div key={index} className={`bg-white p-6 rounded-xl shadow-sm border-t-4 ${pillar.border} hover:shadow-md transition-all h-full`}>
+                <div className={`w-14 h-14 ${pillar.bg} rounded-lg flex items-center justify-center mb-4`}>
+                  {pillar.icon}
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">{pillar.title}</h3>
+                <p className="text-gray-600">{pillar.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Validation Master Plan */}
       <section className="py-20 bg-gray-50">
@@ -99,7 +99,7 @@ const QualityPractices = () => {
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
                 Comprehensive <span className="text-[var(--primary)]">Validation Master Plan</span>
               </h2>
-              
+
               <div className="space-y-6">
                 {[
                   {
@@ -142,12 +142,12 @@ const QualityPractices = () => {
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
                 <span className="text-[var(--primary)]">Quality Guardians</span> at Work
               </h2>
-              
+
               <div className="space-y-6">
                 <p className="text-gray-700">
                   Our 50+ quality specialists bring unmatched expertise in pharmaceutical compliance, with certifications in Six Sigma, Lean Manufacturing, and Regulatory Affairs.
                 </p>
-                
+
                 <div className="grid sm:grid-cols-2 gap-6">
                   {[
                     {
@@ -172,7 +172,7 @@ const QualityPractices = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="lg:w-1/2 order-1 lg:order-2">
               <Image
                 src="/img/quality-practices/quality-practices2.webp"
@@ -198,7 +198,7 @@ const QualityPractices = () => {
             </h2>
             <div className="w-20 h-1 bg-[var(--secondary)] mx-auto"></div>
           </div>
-          
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
@@ -242,7 +242,7 @@ const QualityPractices = () => {
             </h2>
             <div className="w-24 h-1 bg-[var(--primary)] mx-auto mb-8"></div>
             <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-              "At Hygiene Lifesciences, we believe quality isn't just measured in test results, but in the trust we build with every dose we produce. We would rather be the best than the biggest."
+              "At Hygiene Lifesciences Pvt Ltd, we believe quality isn't just measured in test results, but in the trust we build with every dose we produce. We would rather be the best than the biggest."
             </p>
             <button className="px-8 py-3 bg-[var(--primary)] text-white font-medium rounded-full hover:bg-[var(--primary-dark)] transition-colors">
               Download Quality Policy

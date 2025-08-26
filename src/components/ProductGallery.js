@@ -208,11 +208,11 @@ const ProductGallery = () => {
                     </div>
                 </div>
 
-                <div className="text-center mt-10 max-sm:hidden">
+                {/* <div className="text-center mt-10 max-sm:hidden">
                     <button className="bg-white text-gray-900 px-8 py-3 rounded-xl font-semibold border-2 border-gray-200 hover:border-blue-600 hover:text-blue-600 transition-all duration-200">
                         View All Products
                     </button>
-                </div>
+                </div> */}
             </div>
         </section>
     );
