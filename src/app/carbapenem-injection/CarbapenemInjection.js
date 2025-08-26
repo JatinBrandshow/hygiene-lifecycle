@@ -9,7 +9,7 @@ const CarbapenemInjection = () => {
             presentation: "Vial",
             image: "/img/carbapenem/img_1.webp"
         },
-       ,
+        ,
         // {
         //     name: "CEFTRASH-1000",
         //     description: "Meropenem 1g + Vaborbactam 1g",
@@ -139,7 +139,9 @@ const CarbapenemInjection = () => {
                     <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
                         Product <span className="text-[var(--primary)]">Specifications</span>
                     </h2>
-                    <div className="bg-white rounded-xl shadow-sm overflow-hidden p-6 border border-gray-100">
+
+                    {/* Image optional */}
+                    {/* <div className="bg-white rounded-xl shadow-sm overflow-hidden p-6 border border-gray-100 mb-10">
                         <div className="relative w-full h-auto">
                             <Image
                                 src="/img/carbapenem/Carbapenem-product-List1.webp"
@@ -150,23 +152,90 @@ const CarbapenemInjection = () => {
                                 priority
                             />
                         </div>
-                        <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10">
-                                <h3 className="font-bold text-[var(--primary)] mb-2">Broad Spectrum</h3>
-                                <p className="text-sm text-gray-600">Effective against resistant Gram-negative and Gram-positive organisms</p>
-                            </div>
-                            <div className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10">
-                                <h3 className="font-bold text-[var(--primary)] mb-2">β-lactamase Stability</h3>
-                                <p className="text-sm text-gray-600">Resistant to most β-lactamase enzymes</p>
-                            </div>
-                            <div className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10">
-                                <h3 className="font-bold text-[var(--primary)] mb-2">Dosing Flexibility</h3>
-                                <p className="text-sm text-gray-600">Multiple strengths for tailored therapy</p>
-                            </div>
+                    </div> */}
+
+
+                    {/* Table */}
+                    <div className="overflow-x-auto bg-white rounded-2xl shadow-xl border border-gray-100 transition-all duration-300 hover:shadow-2xl">
+                        <table className="w-full border-collapse text-sm md:text-base">
+                            <thead>
+                                <tr className="bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)] text-white">
+                                    <th className="p-5 text-left font-bold text-lg uppercase tracking-wider">
+                                        <div className="flex items-center">
+                                            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                            </svg>
+                                            Products
+                                        </div>
+                                    </th>
+                                    <th className="p-5 text-left font-bold text-lg uppercase tracking-wider">
+                                        <div className="flex items-center">
+                                            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                            </svg>
+                                            Strengths
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-gray-100">
+                                {[
+                                    { product: "Meropenem", strengths: "2000 mg, 1000 mg, 500 mg, 250 mg, 125 mg" },
+                                    { product: "Meropenem + Sulbactam", strengths: "1000 mg + 1000 mg, 1000 mg + 500 mg, 500 mg + 250 mg" },
+                                    { product: "Meropenem + Tazobactam", strengths: "1000 mg + 125 mg" },
+                                    { product: "Imipenem + Cilastatin", strengths: "1000 mg + 1000 mg, 500 mg + 500 mg, 250 mg + 250 mg" },
+                                    { product: "Doripenem", strengths: "500 mg, 250 mg" },
+                                    { product: "Aztreonam", strengths: "2000 mg, 1000 mg, 500 mg, 250 mg" }
+                                ].map((item, index) => (
+                                    <tr
+                                        key={index}
+                                        className="group hover:bg-gradient-to-r from-[var(--primary)]/10 to-[var(--tertiary)]/10 transition-colors duration-300 ease-in-out"
+                                    >
+                                        <td className="p-5 font-semibold text-gray-800 group-hover:text-[var(--primary)] transition-colors duration-300">
+                                            <div className="flex items-center">
+                                                <div className="w-2 h-2 bg-[var(--primary)] rounded-full mr-3 group-hover:animate-pulse"></div>
+                                                {item.product}
+                                            </div>
+                                        </td>
+                                        <td className="p-5 text-gray-700 group-hover:text-[var(--tertiary)] transition-colors duration-300">
+                                            <div className="flex flex-wrap gap-2">
+                                                {item.strengths.split(', ').map((strength, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className="px-3 py-1 bg-[var(--primary)]/10 text-[var(--primary)] rounded-full text-xs font-medium group-hover:bg-[var(--primary)]/20 transition-all duration-300"
+                                                    >
+                                                        {strength}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    {/* Features */}
+                    <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10">
+                            <h3 className="font-bold text-[var(--primary)] mb-2">Broad Spectrum</h3>
+                            <p className="text-sm text-gray-600">
+                                Effective against resistant Gram-negative and Gram-positive organisms
+                            </p>
+                        </div>
+                        <div className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10">
+                            <h3 className="font-bold text-[var(--primary)] mb-2">β-lactamase Stability</h3>
+                            <p className="text-sm text-gray-600">Resistant to most β-lactamase enzymes</p>
+                        </div>
+                        <div className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10">
+                            <h3 className="font-bold text-[var(--primary)] mb-2">Dosing Flexibility</h3>
+                            <p className="text-sm text-gray-600">Multiple strengths for tailored therapy</p>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             {/* Clinical Applications */}
             <section className="py-16 bg-white">
