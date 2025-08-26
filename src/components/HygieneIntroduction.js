@@ -109,7 +109,7 @@ const HygieneIntroduction = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-bold text-[var(--tertiary)] mb-1">Global Reach</h3>
-                                    <p className="text-gray-600 text-sm">Serving clients across multiple continents</p>
+                                    <p className="text-gray-600 text-sm"> Hygiene Lifesciences Pvt Ltd.Serving clients across multiple continents</p>
                                 </div>
                             </div>
                         </div>

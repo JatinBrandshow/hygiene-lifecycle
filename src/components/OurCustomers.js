@@ -99,26 +99,34 @@ const OurCustomers = () => {
                     transitionDuration: isAnimating ? `${duration}s` : "0s",
                 }}
             >
-                {/* Injection/Vial SVG */}
+                {/* Improved Injection/Vial SVG */}
                 <svg viewBox="0 0 100 200" className="w-full h-full">
-                    {/* Vial body */}
-                    <rect x="30" y="40" width="40" height="120" rx="5" fill="#3b82f6" stroke="#1e40af" strokeWidth="2" />
-                    
-                    {/* Vial neck */}
-                    <rect x="35" y="30" width="30" height="10" fill="#3b82f6" stroke="#1e40af" strokeWidth="2" />
-                    
-                    {/* Vial opening */}
-                    <rect x="38" y="20" width="24" height="10" fill="#3b82f6" stroke="#1e40af" strokeWidth="2" />
+                    {/* Syringe Body */}
+                    <rect x="30" y="60" width="40" height="100" rx="5" fill="#e5e7eb" stroke="#9ca3af" strokeWidth="1.5" />
                     
                     {/* Plunger */}
-                    <rect x="25" y="160" width="50" height="10" rx="2" fill="#9ca3af" stroke="#6b7280" strokeWidth="1" />
+                    <rect x="35" y="40" width="30" height="20" rx="3" fill="#d1d5db" stroke="#9ca3af" strokeWidth="1" />
                     
-                    {/* Liquid inside vial */}
-                    <rect x="32" y="145" width="36" height="15" rx="2" fill="#60a5fa" />
+                    {/* Plunger Handle */}
+                    <rect x="32" y="30" width="36" height="10" rx="2" fill="#9ca3af" />
+                    
+                    {/* Liquid inside syringe */}
+                    <rect x="32" y="120" width="36" height="40" fill="#60a5fa" />
+                    
+                    {/* Measurement markings */}
+                    <line x1="25" y1="80" x2="30" y2="80" stroke="#9ca3af" strokeWidth="1.5" />
+                    <line x1="25" y1="100" x2="30" y2="100" stroke="#9ca3af" strokeWidth="1.5" />
+                    <line x1="25" y1="120" x2="30" y2="120" stroke="#9ca3af" strokeWidth="1.5" />
+                    <line x1="25" y1="140" x2="30" y2="140" stroke="#9ca3af" strokeWidth="1.5" />
+                    
+                    {/* Needle Hub */}
+                    <rect x="35" y="160" width="30" height="10" rx="2" fill="#9ca3af" />
                     
                     {/* Needle */}
-                    <rect x="48" y="10" width="4" height="10" fill="#9ca3af" />
-                    <polygon points="50,0 54,10 46,10" fill="#9ca3af" />
+                    <path d="M50 170 L50 190 L47 190 L50 195 L53 190 L50 190" fill="#6b7280" />
+                    
+                    {/* Needle Tip */}
+                    <polygon points="50,195 47,200 53,200" fill="#6b7280" />
                 </svg>
             </div>
         );
