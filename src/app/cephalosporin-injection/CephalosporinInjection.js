@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { FaCapsules } from "react-icons/fa";
+import { GiWeight } from "react-icons/gi";
 
 const CephalosporinInjection = () => {
     const products = [
@@ -29,7 +31,7 @@ const CephalosporinInjection = () => {
             presentation: "Vial",
             image: "/img/ceophalosporin/img_10.webp"
         },
-         {
+        {
             name: "HYGIPIP",
             presentation: "Vial",
             image: "/img/carbapenem/img_2.webp"
@@ -51,6 +53,20 @@ const CephalosporinInjection = () => {
             image: "/img/carbapenem/img_5.webp"
         }
     ];
+
+    const data = [
+        { product: "Ceftriaxone", strengths: ["2000 mg / 500 mg", "1000 mg / 250 mg"] },
+        { product: "Ceftriaxone + Sulbactam", strengths: ["2000 mg + 1000 mg / 500 mg + 250 mg", "1000 mg + 500 mg / 250 mg + 125 mg"] },
+        { product: "Ceftriaxone + Tazobactam", strengths: ["1000 mg + 125 mg / 250 mg + 31.25 mg", "500 mg + 62.5 mg "] },
+        { product: "Ceftazidime", strengths: ["2000 mg / 500 mg", "1000 mg / 250 mg"] },
+        { product: "Cefuroxime", strengths: ["1500 mg / 250 mg", "750 mg "] },
+        { product: "Cefazolin", strengths: ["1000 mg", "500 mg"] },
+        { product: "Cefoperazone + Sulbactam", strengths: ["1000 mg + 1000 mg / 500 mg + 500 mg", "1000 mg + 500 mg / 250 mg + 250 mg"] },
+        { product: "Cefepime", strengths: ["2000 mg / 500 mg", "1000 mg / 250 mg"] },
+        { product: "Cefepime + Tazobactam", strengths: ["2000 mg + 250 mg / 500 mg + 62.5 mg", "1000 mg + 125 mg / 250 mg + 31.25 mg"] },
+        { product: "Cefotaxime", strengths: ["2000 mg / 500 mg", "1000 mg / 250 mg"] }
+    ];
+
 
     return (
         <div className="font-sans bg-gray-50">
@@ -205,8 +221,10 @@ const CephalosporinInjection = () => {
                     <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
                         Product <span className="text-[var(--primary)]">Specifications</span>
                     </h2>
-                    <div className="bg-white rounded-xl shadow-sm overflow-hidden p-6 border border-gray-100 hover:shadow-md transition-shadow duration-300">
-                        <div className="relative w-full h-auto">
+
+
+                    {/* image */}
+                    {/* <div className="relative w-full h-auto">
                             <Image
                                 src="/img/ceophalosporin/Cephalosporin-product-List111.jpg"
                                 alt="Cephalosporin Product Strengths"
@@ -215,48 +233,109 @@ const CephalosporinInjection = () => {
                                 className="w-full h-auto rounded-lg hover:scale-[1.01] transition-transform duration-300"
                                 priority
                             />
-                        </div>
-                        <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {[
-                                {
-                                    title: "Broad Spectrum",
-                                    description: "Effective against resistant Gram-negative and Gram-positive organisms"
-                                },
-                                {
-                                    title: "β-lactamase Stability",
-                                    description: "Resistant to most β-lactamase enzymes"
-                                },
-                                {
-                                    title: "Dosing Flexibility",
-                                    description: "Multiple strengths for tailored therapy"
-                                }
-                            ].map((item, index) => (
-                                <motion.div
-                                    key={index}
-                                    className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10 hover:shadow-lg hover:border-[var(--primary)]/20 transition-all duration-300"
-                                    whileHover={{
-                                        y: -8,
-                                        scale: 1.03,
-                                        backgroundColor: "rgba(var(--primary-rgb), 0.08)"
-                                    }}
-                                    transition={{
-                                        type: "spring",
-                                        stiffness: 300,
-                                        damping: 10
-                                    }}
-                                >
-                                    <h3 className="font-bold text-[var(--primary)] mb-2 group-hover:text-[var(--primary-dark)] transition-colors duration-300">
-                                        {item.title}
-                                    </h3>
-                                    <p className="text-sm text-gray-600 group-hover:text-gray-700 transition-colors duration-300">
-                                        {item.description}
-                                    </p>
-                                </motion.div>
-                            ))}
-                        </div>
+                        </div> */}
+
+                    {/* Table */}
+                    <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <table className="w-full border-collapse text-sm md:text-base">
+                            <thead>
+                                <tr className="bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)] text-white">
+                                    <th className="p-4 text-left font-semibold">
+                                        <div className="flex items-center gap-2">
+                                            <FaCapsules className="w-5 h-5" /> Products
+                                        </div>
+                                    </th>
+                                    <th className="p-4 text-left font-semibold">
+                                        <div className="flex items-center gap-2">
+                                            <GiWeight className="w-5 h-5" /> Strength 1
+                                        </div>
+                                    </th>
+                                    <th className="p-4 text-left font-semibold">
+                                        <div className="flex items-center gap-2">
+                                            <GiWeight className="w-5 h-5" /> Strength 2
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-gray-100">
+                                {data.map((item, index) => (
+                                    <tr
+                                        key={index}
+                                        className="hover:bg-gradient-to-r from-[var(--primary)]/10 to-[var(--tertiary)]/10 transition-colors"
+                                    >
+                                        <td className="p-4 font-medium text-gray-800">{item.product}</td>
+                                        <td className="p-4 text-gray-700">
+                                            <div className="flex flex-wrap gap-2">
+                                                {item.strengths[0].split(" / ").map((str, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium"
+                                                    >
+                                                        {str}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </td>
+                                        <td className="p-4 text-gray-700">
+                                            <div className="flex flex-wrap gap-2">
+                                                {item.strengths[1].split(" / ").map((str, i) => (
+                                                    <span
+                                                        key={i}
+                                                        className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium"
+                                                    >
+                                                        {str}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {/* Features below table */}
+                    <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {[
+                            {
+                                title: "Broad Spectrum",
+                                description: "Effective against resistant Gram-negative and Gram-positive organisms"
+                            },
+                            {
+                                title: "β-lactamase Stability",
+                                description: "Resistant to most β-lactamase enzymes"
+                            },
+                            {
+                                title: "Dosing Flexibility",
+                                description: "Multiple strengths for tailored therapy"
+                            }
+                        ].map((item, index) => (
+                            <motion.div
+                                key={index}
+                                className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10 hover:shadow-lg hover:border-[var(--primary)]/20 transition-all duration-300"
+                                whileHover={{
+                                    y: -8,
+                                    scale: 1.03,
+                                    backgroundColor: "rgba(var(--primary-rgb), 0.08)"
+                                }}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 300,
+                                    damping: 10
+                                }}
+                            >
+                                <h3 className="font-bold text-[var(--primary)] mb-2">
+                                    {item.title}
+                                </h3>
+                                <p className="text-sm text-gray-600">
+                                    {item.description}
+                                </p>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>
+
 
             {/* Clinical Applications */}
             <section className="py-16 bg-white">
