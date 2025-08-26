@@ -13,7 +13,7 @@ export default function Contact() {
       phone: "+91 99103 09423",
       icon: <FaBuilding />,
       hours: "Mon-Fri: 9:00 AM - 6:00 PM",
-      email: "info@hyginelifesciences.com"
+      email: "hygienelifesciences@gmail.com"
     },
     {
       title: "MARKETING OFFICE",
@@ -22,7 +22,7 @@ export default function Contact() {
       phone: "+91 99103 09423",
       icon: <FaMapMarkerAlt />,
       hours: "Mon-Sat: 9:30 AM - 7:00 PM",
-      email: "info@hyginelifesciences.com"
+      email: "hygienelifesciences@gmail.com"
     },
     {
       title: "MANUFACTURING PLANT",
@@ -31,7 +31,7 @@ export default function Contact() {
       phone: "+91 99103 09423",
       icon: <FaMapMarkerAlt />,
       hours: "Mon-Sat: 8:00 AM - 5:00 PM",
-      email: "info@hyginelifesciences.com"
+      email: "hygienelifesciences@gmail.com"
     }
   ];
 
@@ -137,8 +137,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-tertiary">General Inquiries</h3>
-                  <a href="mailto:info@hyginelifecycle.com" className="text-primary hover:text-secondary font-medium">
-                    info@hyginelifecycle.com
+                  <a href="mailto:hygienelifesciences@gmail.com" className="text-primary hover:text-secondary font-medium">
+                    hygienelifesciences@gmail.com
                   </a>
                 </div>
               </div>
@@ -148,8 +148,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-tertiary">Sales Department</h3>
-                  <a href="mailto:sales@hyginelifecycle.com" className="text-primary hover:text-secondary font-medium">
-                    sales@hyginelifecycle.com
+                  <a href="mailto:hygienelifesciences@gmail.com" className="text-primary hover:text-secondary font-medium">
+                    hygienelifesciences@gmail.com
                   </a>
                 </div>
               </div>
@@ -159,8 +159,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-tertiary">Export Inquiries</h3>
-                  <a href="mailto:export@hyginelifecycle.com" className="text-primary hover:text-secondary font-medium">
-                    export@hyginelifecycle.com
+                  <a href="mailto:hygienelifesciences@gmail.com" className="text-primary hover:text-secondary font-medium">
+                    hygienelifesciences@gmail.com
                   </a>
                 </div>
               </div>

@@ -54,7 +54,7 @@ const ContactUs = () => {
                             </div>
                             <div>
                                 <h3 className="text-sm font-medium text-slate-500 mb-2 max-sm:text-xs">Mail</h3>
-                                <p className="text-base max-sm:text-sm">info@hyginelifesciences.com</p>
+                                <p className="text-base max-sm:text-sm">hygienelifesciences@gmail.com</p>
                                 <h3 className="text-sm font-medium text-slate-500 mt-4 mb-2 max-sm:text-xs">Phone</h3>
                                 <p className="text-base max-sm:text-sm">+91 99103 09423</p>
                             </div>
