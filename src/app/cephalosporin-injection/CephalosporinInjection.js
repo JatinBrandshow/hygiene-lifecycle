@@ -29,6 +29,27 @@ const CephalosporinInjection = () => {
             presentation: "Vial",
             image: "/img/ceophalosporin/img_10.webp"
         },
+         {
+            name: "HYGIPIP",
+            presentation: "Vial",
+            image: "/img/carbapenem/img_2.webp"
+        },
+        {
+            name: "Hygicef-SB",
+            presentation: "Vial",
+            image: "/img/carbapenem/img_3.webp"
+        },
+        {
+            name: "Hyceftra",
+            presentation: "Vial",
+            image: "/img/carbapenem/img_4.webp"
+        },
+        {
+            name: "HYCEFU",
+            description: "Ertapenem sodium IP equivalent to Ertapenem 1g",
+            presentation: "Vial",
+            image: "/img/carbapenem/img_5.webp"
+        }
     ];
 
     return (
