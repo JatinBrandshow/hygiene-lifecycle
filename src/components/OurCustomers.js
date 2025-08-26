@@ -18,10 +18,11 @@ const OurCustomers = () => {
         { id: 11, name: "Customer 11", src: "/img/our-customers/customer-11.webp" },
     ];
 
-    // Animated capsule component with different paths and speeds
-    const AnimatedCapsule = ({ delay = 0, duration = 20, size = "medium", pathType = "linear" }) => {
+    // Animated injection/vial component with different paths and speeds
+    const AnimatedInjection = ({ delay = 0, duration = 20, size = "medium", pathType = "linear" }) => {
         const [position, setPosition] = useState({ x: 0, y: 0 });
         const [isAnimating, setIsAnimating] = useState(false);
+        const [rotation, setRotation] = useState(0);
 
         useEffect(() => {
             const getRandomPosition = () => ({
@@ -32,6 +33,7 @@ const OurCustomers = () => {
             const animateWithPath = () => {
                 const startPos = getRandomPosition();
                 setPosition(startPos);
+                setRotation(Math.random() * 360); // Random rotation for variety
 
                 setTimeout(() => {
                     setIsAnimating(true);
@@ -84,40 +86,55 @@ const OurCustomers = () => {
         }, [delay, duration, pathType]);
 
         const sizeClasses = {
-            small: "w-12 h-4",
-            medium: "w-14 h-6",
-            large: "w-16 h-8",
+            small: "w-8 h-16",
+            medium: "w-10 h-20",
+            large: "w-12 h-24",
         };
 
         return (
             <div
                 className={`absolute ${sizeClasses[size]} opacity-20 transition-all ease-in-out pointer-events-none z-0`}
                 style={{
-                    transform: `translate(${position.x}px, ${position.y}px)`,
+                    transform: `translate(${position.x}px, ${position.y}px) rotate(${rotation}deg)`,
                     transitionDuration: isAnimating ? `${duration}s` : "0s",
                 }}
             >
-                {/* Rectangle capsule with rounded corners, blue border, and half gray/half blue background */}
-                <div className="w-full h-full rounded-full border-2 border-blue-700 overflow-hidden">
-                    <div className="w-full h-full flex">
-                        <div className="w-1/2 h-full bg-gray-300"></div>
-                        <div className="w-1/2 h-full bg-blue-700"></div>
-                    </div>
-                </div>
+                {/* Injection/Vial SVG */}
+                <svg viewBox="0 0 100 200" className="w-full h-full">
+                    {/* Vial body */}
+                    <rect x="30" y="40" width="40" height="120" rx="5" fill="#3b82f6" stroke="#1e40af" strokeWidth="2" />
+                    
+                    {/* Vial neck */}
+                    <rect x="35" y="30" width="30" height="10" fill="#3b82f6" stroke="#1e40af" strokeWidth="2" />
+                    
+                    {/* Vial opening */}
+                    <rect x="38" y="20" width="24" height="10" fill="#3b82f6" stroke="#1e40af" strokeWidth="2" />
+                    
+                    {/* Plunger */}
+                    <rect x="25" y="160" width="50" height="10" rx="2" fill="#9ca3af" stroke="#6b7280" strokeWidth="1" />
+                    
+                    {/* Liquid inside vial */}
+                    <rect x="32" y="145" width="36" height="15" rx="2" fill="#60a5fa" />
+                    
+                    {/* Needle */}
+                    <rect x="48" y="10" width="4" height="10" fill="#9ca3af" />
+                    <polygon points="50,0 54,10 46,10" fill="#9ca3af" />
+                </svg>
             </div>
         );
     };
+
     return (
         <>
             <section className="relative bg-blue-200 py-16 overflow-hidden max-lg:py-10 max-md:py-8 max-sm:py-6">
-                {/* Animated Background Capsules */}
+                {/* Animated Background Injections/Vials */}
                 <div className="absolute inset-0 overflow-hidden">
-                    <AnimatedCapsule delay={0} duration={15} size="medium" pathType="linear" />
-                    <AnimatedCapsule delay={3} duration={15} size="small" pathType="diagonal" />
-                    <AnimatedCapsule delay={7} duration={15} size="large" pathType="circular" />
-                    <AnimatedCapsule delay={12} duration={15} size="medium" pathType="zigzag" />
-                    <AnimatedCapsule delay={18} duration={15} size="small" pathType="linear" />
-                    <AnimatedCapsule delay={25} duration={15} size="large" pathType="diagonal" />
+                    <AnimatedInjection delay={0} duration={15} size="medium" pathType="linear" />
+                    <AnimatedInjection delay={3} duration={15} size="small" pathType="diagonal" />
+                    <AnimatedInjection delay={7} duration={15} size="large" pathType="circular" />
+                    <AnimatedInjection delay={12} duration={15} size="medium" pathType="zigzag" />
+                    <AnimatedInjection delay={18} duration={15} size="small" pathType="linear" />
+                    <AnimatedInjection delay={25} duration={15} size="large" pathType="diagonal" />
                 </div>
 
                 <div className="relative z-10 mx-auto max-w-[1400px] px-8 max-lg:px-6 max-md:px-4 max-sm:px-2">
