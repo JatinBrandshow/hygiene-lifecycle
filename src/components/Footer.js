@@ -14,8 +14,8 @@ const Footer = () => {
         { name: "Contact Us", path: "/contact" }
     ];
 
-    const headOfficeLocation = "11, Industrial Area, Katha Bhatoli khalan, Baddi (H.P.), India";
-    const manufacturingPlantLocation = "Khasra No - 471/2011, Bhatoli Kalan, Baddi (H.P.), India";
+    const headOfficeLocation = "Plot No - 736-C ,sector 37 , pace city 2, Gurugram, Haryana 122001";
+    const manufacturingPlantLocation = "Plot No - 471/2011, Bhatoli Kalan, Baddi (H.P.), India";
 
     return (
         <footer className="relative bg-gradient-tertiary text-white overflow-hidden">
@@ -58,8 +58,8 @@ const Footer = () => {
                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-secondary/30 transition-colors">
                                 <div className="aspect-video bg-primary/20 rounded-lg overflow-hidden mb-3">
                                     <iframe 
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.755656179026!2d76.7934153151365!3d31.21590298145872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905a5a3a6e5a6a9%3A0x3b0d5e5e5e5e5e5e!2sBaddi%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
-                                        width="100%"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76489.43593029918!2d76.95329759897987!3d28.39757455560722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d176ed2333603%3A0x92014dae0f82a3e3!2z4KS54KS-4KSH4KSc4KS_4KSoIOCkj-Ckr-CksOCkn-Clh-CklSDgpIfgpILgpKHgpL_gpK_gpL4g4KSq4KWA4KS14KWA4KSf4KWA4KWwIOCkj-CksuCkn-ClgOCkoeClgA!5e0!3m2!1shi!2sin!4v1756371500183!5m2!1shi!2sin"
+                                           width="100%"
                                         height="100%"
                                         style={{ border: 0 }}
                                         allowFullScreen
