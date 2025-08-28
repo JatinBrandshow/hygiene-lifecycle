@@ -16,7 +16,7 @@ const AccreditationPage = () => {
       // { id: 1, image: '/img/global-accreditations/Guinea.webp', alt: 'Guinea Certification' },
       { id: 2, image: '/img/global-accreditations/Kenya.webp', alt: 'Kenya Certification' },
       { id: 3, image: '/img/global-accreditations/Nigeria.webp', alt: 'Nigeria Certification' },
-      // { id: 4, image: '/img/global-accreditations/Zambia.webp', alt: 'Zambia Certification' },
+      { id: 4, image: '/img/global-accreditations/Ghana.webp', alt: 'Ghana Certification' },
       // { id: 5, image: '/img/global-accreditations/Madagascar1.webp', alt: 'Madagascar Certification' }
     ],
     // CIS: [
