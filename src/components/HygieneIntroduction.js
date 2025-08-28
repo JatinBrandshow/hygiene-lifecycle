@@ -63,11 +63,11 @@ const HygieneIntroduction = () => {
                             </p>
 
                             <p className="text-gray-700 leading-relaxed animate-slideInUp delay-300">
-                                Our facilities have been audited and approved by many International Accreditation Agencies and we currently serve clients across Africa, Latin America, South East Asia and CIS regions.
+                                Our facilities have been audited and approved by many International Accreditation Agencies and we currently serve clients across Kenya, Ghana, Nigeria, Yemen, and Afghanistan.
                             </p>
 
                             <p className="text-gray-700 leading-relaxed font-medium animate-slideInUp delay-400">
-                                Hygine Lifesciences Pvt Ltd  is one of the fastest growing quality solutions providers in healthcare - Focused on Delivering Global Standard Systems at Competitive Prices.
+                                Hygine Lifesciences Pvt Ltd is one of the fastest growing quality solutions providers in healthcare - Focused on Delivering Global Standard Systems at Competitive Prices.
                             </p>
                         </div>
 
