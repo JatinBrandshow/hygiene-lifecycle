@@ -31,7 +31,7 @@ const QualityPolicy = () => {
         </div>
       </section>
 
-      {/* Pillars of Quality - Vertical Timeline */}
+    {/* Pillars of Quality - Vertical Timeline */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-16">
@@ -50,10 +50,10 @@ const QualityPolicy = () => {
                     <div className="bg-[var(--primary)]/10 p-3 rounded-full mr-4">
                       <FaMicroscope className="text-[var(--primary)] text-2xl" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800">Scientific Rigor</h3>
+                    <h3 className="text-2xl font-bold text-gray-800">High Quality Products</h3>
                   </div>
                   <p className="text-gray-600">
-                    Implementation of stringent cGMP, cGLP standards with ERP systems for traceability and continuous process improvements.
+                    We take considerable pride in developing and consistently delivering high quality, safe and effective pharmaceutical products to meet customer satisfaction.
                   </p>
                 </div>
               </div>
@@ -77,10 +77,10 @@ const QualityPolicy = () => {
                     <div className="bg-[var(--secondary)]/10 p-3 rounded-full mr-4">
                       <FaCheckDouble className="text-[var(--secondary)] text-2xl" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800">Uncompromising Standards</h3>
+                    <h3 className="text-2xl font-bold text-gray-800">Quality Management Systems</h3>
                   </div>
                   <p className="text-gray-600">
-                    Every product undergoes 200+ quality checks from raw material to finished goods, exceeding WHO-GMP requirements.
+                    We stringently adhere to implementing Quality Management Systems and are committed to making continual improvements in all our processes.
                   </p>
                 </div>
               </div>
@@ -94,10 +94,10 @@ const QualityPolicy = () => {
                     <div className="bg-[var(--tertiary)]/10 p-3 rounded-full mr-4">
                       <FaChartLine className="text-[var(--tertiary)] text-2xl" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800">Continuous Evolution</h3>
+                    <h3 className="text-2xl font-bold text-gray-800">Continuous Improvement</h3>
                   </div>
                   <p className="text-gray-600">
-                    Our quality systems evolve through 50+ annual process optimization initiatives and employee training programs.
+                    We are dedicated to enhancing quality and customer satisfaction through continuous improvement in our Quality Management System.
                   </p>
                 </div>
               </div>
@@ -121,10 +121,10 @@ const QualityPolicy = () => {
                     <div className="bg-[var(--secondary)]/10 p-3 rounded-full mr-4">
                       <FaAward className="text-[var(--secondary)] text-2xl" />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800">Patient-Centric Excellence</h3>
+                    <h3 className="text-2xl font-bold text-gray-800">Health, Safety & Environment</h3>
                   </div>
                   <p className="text-gray-600">
-                    We measure our success by patient outcomes, not just compliance metrics. Quality that you can trust in every dose.
+                    We treat Health, Safety & Environment protection as an integral part of our Quality Strategy, ensuring responsible manufacturing practices.
                   </p>
                 </div>
               </div>
@@ -142,10 +142,10 @@ const QualityPolicy = () => {
           
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { value: "99.97%", label: "Quality Compliance Rate", icon: "✓" },
-              { value: "200+", label: "Quality Checks per Product", icon: "🔍" },
-              { value: "0", label: "Critical Regulatory Findings", icon: "🏆" },
-              { value: "50+", label: "Annual Process Improvements", icon: "🔄" }
+              { value: "100%", label: "Quality Compliance", icon: "✓" },
+              { value: "0", label: "Product Recalls", icon: "🏆" },
+              { value: "99.8%", label: "Customer Satisfaction", icon: "⭐" },
+              { value: "24/7", label: "Quality Monitoring", icon: "🔍" }
             ].map((metric, index) => (
               <div key={index} className="bg-white/10 p-6 rounded-lg text-center backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-colors">
                 <span className="text-3xl mb-3 block">{metric.icon}</span>
@@ -175,13 +175,13 @@ const QualityPolicy = () => {
                 </div>
               </div>
               <div className="md:w-2/3 md:pl-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Why Quality Matters to Us</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Commitment to Excellence</h3>
                 <div className="prose max-w-none">
                   <p className="text-gray-700">
-                    In pharmaceuticals, quality isn't just a metric—it's a moral imperative. Each product we create carries the weight of someone's health, someone's trust. That's why we've built a culture where quality is everyone's responsibility, from the lab to logistics.
+                    At Hygine Lifesciences, quality is the foundation of everything we do. We are committed to developing and delivering high quality, safe, and effective pharmaceutical products that meet the highest standards of excellence.
                   </p>
                   <p className="text-gray-700 mt-4">
-                    Our manufacturing facilities implement Six Sigma methodologies, real-time monitoring systems, and AI-driven quality prediction models to stay ahead of standards. Because when it comes to health, good enough never is.
+                    Our dedicated team implements rigorous Quality Management Systems and continuously improves our processes to ensure we not only meet but exceed customer expectations. We integrate Health, Safety, and Environmental protection into every aspect of our operations, because we believe that quality healthcare is a right, not a privilege.
                   </p>
                 </div>
               </div>
