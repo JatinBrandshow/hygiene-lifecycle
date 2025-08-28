@@ -8,21 +8,21 @@ export default function Contact() {
   const contactInfo = [
     {
       title: "CORPORATE OFFICE",
-      location: "Chandigarh",
-      address: "11, Industrial Area, Katha Bhatoli khalan, Baddi (H.P.), India",
+      location: "Haryana",
+      address: "Plot No - 736-C ,sector 37 , pace city 2, Gurugram, Haryana 122001",
       phone: "+91 99103 09423",
       icon: <FaBuilding />,
       hours: "Mon-Fri: 9:00 AM - 6:00 PM",
-      email: "hygienelifesciences@gmail.com"
+      email: "info@hyginelifesciences.com"
     },
     {
       title: "MARKETING OFFICE",
-      location: "Chandigarh",
-      address: "11, Industrial Area, Katha Bhatoli khalan, Baddi (H.P.), India",
+      location: "Haryana",
+      address: "Plot No - 736-C ,sector 37 , pace city 2, Gurugram, Haryana 122001",
       phone: "+91 99103 09423",
       icon: <FaMapMarkerAlt />,
       hours: "Mon-Sat: 9:30 AM - 7:00 PM",
-      email: "hygienelifesciences@gmail.com"
+      email: "info@hyginelifesciences.com"
     },
     {
       title: "MANUFACTURING PLANT",
@@ -31,7 +31,7 @@ export default function Contact() {
       phone: "+91 99103 09423",
       icon: <FaMapMarkerAlt />,
       hours: "Mon-Sat: 8:00 AM - 5:00 PM",
-      email: "hygienelifesciences@gmail.com"
+      email: "info@hyginelifesciences.com"
     }
   ];
 
@@ -149,7 +149,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold text-tertiary">Sales Department</h3>
                   <a href="mailto:hygienelifesciences@gmail.com" className="text-primary hover:text-secondary font-medium">
-                    hygienelifesciences@gmail.com
+                    info@hygienelifesciences.com
                   </a>
                 </div>
               </div>
@@ -158,9 +158,9 @@ export default function Contact() {
                   <FaEnvelope />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-tertiary">Export Inquiries</h3>
-                  <a href="mailto:hygienelifesciences@gmail.com" className="text-primary hover:text-secondary font-medium">
-                    hygienelifesciences@gmail.com
+                  <h3 className="font-semibold text-tertiary">Support</h3>
+                  <a href="mailto:customercare@hyginelifesciences.com" className="text-primary hover:text-secondary font-medium">
+                    customercare@hyginelifesciences.com
                   </a>
                 </div>
               </div>

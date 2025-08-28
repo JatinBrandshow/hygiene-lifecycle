@@ -18,125 +18,116 @@ const OurManagement = () => {
                 </div>
             </div>
 
-            {/* Management Section - Modern Layout */}
+            {/* Management Section - Founder & CEO */}
             <section className="py-20 max-w-7xl mx-auto px-6">
-                <div className="flex flex-col lg:flex-row gap-12 items-stretch">
-                    {/* Founder - Left Side */}
-                    <div className="lg:w-1/2 bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col">
-                        <div className="flex justify-center pt-8 px-8">
-                            <div className="relative w-48 h-48 rounded-full border-4 border-white shadow-lg overflow-hidden bg-gray-100">
-                                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                                    <Image
-                                            src="/img/our-management/founder.webp"
-                                            alt="Mr. Akhil Jain"
-                                            fill
-                                            className="object-cover"
-                                        />
-                                </div>
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Leadership</h2>
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Guided by visionaries with decades of experience in the pharmaceutical industry,
+                        driving innovation and excellence in healthcare solutions.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                    {/* Founder Card */}
+                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div className="relative h-72 bg-gradient-to-r from-blue-50 to-indigo-50 flex justify-center items-center pt-8 px-8">
+                            <div className="absolute -top-2 -right-2 w-24 h-24 bg-[var(--primary)]/10 rounded-full"></div>
+                            <div className="absolute -bottom-2 -left-2 w-24 h-24 bg-[var(--secondary)]/10 rounded-full"></div>
+
+                            <div className="relative w-56 h-56 rounded-full border-4 border-white shadow-2xl overflow-hidden bg-gray-100 z-10">
+                                <Image
+                                    src="/img/our-management/founder.webp"
+                                    alt="Mr. R.K. Singh"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                         </div>
-                        <div className="p-8 text-center">
+
+                        <div className="p-8 text-center flex-1 flex flex-col">
                             <div className="flex justify-center items-center gap-4 mb-4">
-                                <h3 className="text-2xl font-bold text-gray-800">Dr. Michael Anderson</h3>
-                                <a href="#" className="text-primary hover:text-primary-dark">
-                                    <FaLinkedin className="text-2xl" />
+                                <h3 className="text-2xl font-bold text-gray-800">Mr. R.K. Singh</h3>
+                                <a
+                                    href="#"
+                                    className="text-[var(--primary)] hover:text-[var(--primary-dark)] transition-colors bg-gray-100 p-2 rounded-full hover:bg-[var(--primary)]/10"
+                                    aria-label="Connect with Mr. R.K. Singh on LinkedIn"
+                                >
+                                    <FaLinkedin className="text-xl" />
                                 </a>
                             </div>
-                            <p className="text-primary font-medium mb-6">Founder & CEO</p>
 
-                            <div className="space-y-4 text-gray-600 text-left max-w-md mx-auto">
-                                <div className="flex items-start">
-                                    <FaBriefcase className="mt-1 mr-3 text-primary flex-shrink-0" />
-                                    <p>28+ years in pharmaceutical industry with global leadership experience</p>
-                                </div>
-                                <div className="flex items-start">
-                                    <FaUniversity className="mt-1 mr-3 text-primary flex-shrink-0" />
-                                    <p>Ph.D in Pharmaceutical Sciences, MBA in Healthcare Management</p>
-                                </div>
-                            </div>
+                            <p className="text-[var(--primary)] font-semibold mb-4">Founder & Visionary</p>
 
-                            <div className="mt-8 pt-6 border-t border-gray-100">
-                                <p className="text-gray-700 italic">
-                                    "We are committed to developing life-saving medicines through scientific excellence and ethical practices."
-                                </p>
+                            <div className="h-px w-16 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] mx-auto mb-5"></div>
+
+                            <p className="text-gray-600 mb-6 flex-1">
+                                With over 25 years of experience in pharmaceutical manufacturing,
+                                Mr. Singh established Hygine Lifesciences with a vision to deliver
+                                affordable, high-quality healthcare solutions.
+                            </p>
+
+                            <div className="flex justify-center space-x-3">
+                                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Strategic Vision</span>
+                                <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Industry Expertise</span>
+                                <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Quality Focus</span>
                             </div>
                         </div>
                     </div>
 
-                    {/* Other Leaders - Right Side */}
-                    <div className="lg:w-1/2 space-y-8">
-                        {/* HR Director */}
-                        <div className="flex flex-col sm:flex-row bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <div className="sm:w-1/3 h-full min-h-[200px] relative bg-gray-100">
-                                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                                  <Image
-                                            src="/img/our-management/director.webp"
-                                            alt="Mr. Akhil Jain"
-                                            fill
-                                            className="object-cover"
-                                        />
-                                </div>
-                            </div>
-                            <div className="sm:w-2/3 p-6">
-                                <div className="flex justify-between items-start">
-                                    <div>
-                                        <h3 className="text-xl font-bold text-gray-800">Sarah Williams</h3>
-                                        <p className="text-secondary font-medium">Director, HR & Admin</p>
-                                    </div>
-                                    <a href="#" className="text-secondary hover:text-secondary-dark">
-                                        <FaLinkedin className="text-xl" />
-                                    </a>
-                                </div>
-                                <div className="mt-4 text-gray-600 space-y-2">
-                                    <p className="flex items-start">
-                                        <FaBriefcase className="mt-1 mr-2 text-secondary flex-shrink-0" />
-                                        <span>18+ years in pharmaceutical HR leadership roles</span>
-                                    </p>
-                                    <p className="flex items-start">
-                                        <FaUniversity className="mt-1 mr-2 text-secondary flex-shrink-0" />
-                                        <span>Master's in Organizational Psychology</span>
-                                    </p>
-                                </div>
+                    {/* CEO Card */}
+                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                        <div className="relative h-72 bg-gradient-to-r from-amber-50 to-orange-50 flex justify-center items-center pt-8 px-8">
+                            <div className="absolute -top-2 -right-2 w-24 h-24 bg-[var(--secondary)]/10 rounded-full"></div>
+                            <div className="absolute -bottom-2 -left-2 w-24 h-24 bg-[var(--primary)]/10 rounded-full"></div>
+
+                            <div className="relative w-56 h-56 rounded-full border-4 border-white shadow-2xl overflow-hidden bg-gray-100 z-10">
+                                <Image
+                                    src="/img/our-management/vp.webp"
+                                    alt="Mr. A.P. Singh"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                         </div>
 
-                        {/* Operations VP */}
-                        <div className="flex flex-col sm:flex-row bg-white rounded-2xl shadow-lg overflow-hidden">
-                            <div className="sm:w-1/3 h-full min-h-[200px] relative bg-gray-100">
-                                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                                   <Image
-                                            src="/img/our-management/vp.webp"
-                                            alt="Mr. Akhil Jain"
-                                            fill
-                                            className="object-cover"
-                                        />
-                                </div>
+                        <div className="p-8 text-center flex-1 flex flex-col">
+                            <div className="flex justify-center items-center gap-4 mb-4">
+                                <h3 className="text-2xl font-bold text-gray-800">Mr. A.P. Singh</h3>
+                                <a
+                                    href="#"
+                                    className="text-[var(--primary)] hover:text-[var(--primary-dark)] transition-colors bg-gray-100 p-2 rounded-full hover:bg-[var(--primary)]/10"
+                                    aria-label="Connect with Mr. A.P. Singh on LinkedIn"
+                                >
+                                    <FaLinkedin className="text-xl" />
+                                </a>
                             </div>
-                            <div className="sm:w-2/3 p-6">
-                                <div className="flex justify-between items-start">
-                                    <div>
-                                        <h3 className="text-xl font-bold text-gray-800">Robert Chen</h3>
-                                        <p className="text-tertiary font-medium">VP, Operations</p>
-                                    </div>
-                                    <a href="#" className="text-tertiary hover:text-tertiary-dark">
-                                        <FaLinkedin className="text-xl" />
-                                    </a>
-                                </div>
-                                <div className="mt-4 text-gray-600 space-y-2">
-                                    <p className="flex items-start">
-                                        <FaBriefcase className="mt-1 mr-2 text-tertiary flex-shrink-0" />
-                                        <span>Former operations leader at top pharmaceutical companies</span>
-                                    </p>
-                                    <p className="flex items-start">
-                                        <FaUniversity className="mt-1 mr-2 text-tertiary flex-shrink-0" />
-                                        <span>B.E. in Chemical Engineering, MBA in Operations</span>
-                                    </p>
-                                </div>
+
+                            <p className="text-[var(--primary)] font-semibold mb-4">Chief Executive Officer</p>
+
+                            <div className="h-px w-16 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] mx-auto mb-5"></div>
+
+                            <p className="text-gray-600 mb-6 flex-1">
+                                Bringing 20+ years of leadership in pharmaceutical operations,
+                                Mr. A.P. Singh drives the company's mission to expand global reach
+                                while maintaining uncompromising quality standards.
+                            </p>
+
+                            <div className="flex justify-center space-x-3">
+                                <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Operational Excellence</span>
+                                <span className="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Global Strategy</span>
+                                <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Innovation</span>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                {/* Additional decorative element */}
+                <div className="flex justify-center mt-16">
+                    <div className="w-24 h-1 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] rounded-full"></div>
+                </div>
             </section>
+
 
             {/* Our Team Section - Single Group Photo */}
             <section className="py-20 bg-white">
@@ -156,11 +147,11 @@ const OurManagement = () => {
                         <div className="aspect-video relative bg-gray-100">
                             <div className="absolute inset-0 flex items-center justify-center text-gray-400">
                                 <Image
-                                            src="/img/our-management/team.webp"
-                                            alt="Mr. Akhil Jain"
-                                            fill
-                                            className="object-cover"
-                                        />
+                                    src="/img/our-management/team.webp"
+                                    alt="Mr. Akhil Jain"
+                                    fill
+                                    className="object-cover"
+                                />
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end p-8">
                                 <div className="text-white">
