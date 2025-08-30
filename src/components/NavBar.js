@@ -67,13 +67,13 @@ const NavBar = () => {
                     <div className="flex h-16 items-center justify-between">
                         {/* Logo */}
                         <Link href="/" className="flex items-center space-x-2">
-                            <div className="h-14 w-14 rounded-xl overflow-hidden bg-white flex items-center justify-center">
+                            <div className="h-16 w-40 rounded-xl overflow-hidden bg-white flex items-center justify-center">
                                 <Image 
-                                    src="/img/logo-hygiene-lifecycle.webp" 
-                                    alt="Logo" 
-                                    width={100} 
-                                    height={100} 
-                                    className="object-contain"
+                                    src="/img/hygine-lifesciences.webp" 
+                                    alt="hygiene-lifeSciences-logo" 
+                                    width={400} 
+                                    height={240} 
+                                    className="object-contain w-32 h-16"
                                 />
                             </div>
                         </Link>
