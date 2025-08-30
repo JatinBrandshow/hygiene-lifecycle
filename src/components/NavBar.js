@@ -70,7 +70,7 @@ const NavBar = () => {
                             <div className="h-16 w-40 rounded-xl overflow-hidden bg-white flex items-center justify-center">
                                 <Image 
                                     src="/img/hygine-lifesciences.webp" 
-                                    alt="hygiene-lifeSciences-logo" 
+                                    alt="hygine-lifeSciences-logo" 
                                     width={400} 
                                     height={240} 
                                     className="object-contain w-32 h-16"
@@ -153,7 +153,7 @@ const NavBar = () => {
                         <div className="flex items-center space-x-3 border-b pb-4">
                             <div className="h-14 w-14 rounded-xl overflow-hidden bg-white flex items-center justify-center">
                                 <Image 
-                                    src="/img/logo-hygiene-lifecycle.webp" 
+                                    src="/img/logo-hygine-lifesciences.webp" 
                                     alt="Logo" 
                                     width={100} 
                                     height={100} 

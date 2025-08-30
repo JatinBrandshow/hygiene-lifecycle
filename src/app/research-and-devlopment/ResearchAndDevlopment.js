@@ -88,7 +88,7 @@ const ResearchDevelopment = () => {
                                 trends in the market, developing innovative products for research and managing the roadblocks that pharmaceutical researchers may face in laboratory research across diverse therapeutic areas.
                             </p>
                             <p className="text-xl text-gray-600">
-                                Bringing new therapies to market is challenging and complex. At Hygiene Lifesciences Pvt Ltd we remain committed to accelerating drug discovery by powering innovation in 
+                                Bringing new therapies to market is challenging and complex. At Hygine Lifesciences Pvt Ltd we remain committed to accelerating drug discovery by powering innovation in 
                                 pharmaceutical solutions. Our expertise in evaluating market trends, managing laboratory related challenges and developing state-of-the-art research products benefit our customers, who leverage our solutions across diverse therapeutic areas.
                             </p>
                         </div>

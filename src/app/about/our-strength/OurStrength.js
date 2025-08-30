@@ -137,7 +137,7 @@ const OurStrengths = () => {
               <div className="relative rounded-xl overflow-hidden h-full min-h-[400px] shadow-lg">
                 <Image
                   src="/img/our-strength/strength_img2.png"
-                  alt="Hygiene Team"
+                  alt="hygine-team"
                   fill
                   className="object-cover"
                   quality={90}
@@ -229,7 +229,7 @@ const OurStrengths = () => {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl font-bold text-[var(--tertiary)] mb-4">
-            Ready to Experience the <span className="text-[var(--primary)]">Hygiene Lifesciences Pvt Ltd Difference</span>?
+            Ready to Experience the <span className="text-[var(--primary)]">Hygine Lifesciences Pvt Ltd Difference</span>?
           </h2>
           <p className="text-gray-600 mb-6 text-sm">
             Partner with a pharmaceutical company that combines quality, innovation, and reliability.

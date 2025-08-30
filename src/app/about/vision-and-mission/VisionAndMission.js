@@ -226,7 +226,7 @@ const VisionMission = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
-            The foundation of every decision we make at Hygiene Lifesciences Pvt Ltd
+            The foundation of every decision we make at Hygine Lifesciences Pvt Ltd
           </p>
         </div>
         
@@ -235,7 +235,7 @@ const VisionMission = () => {
             {
               icon: <FaHeartbeat className="text-primary text-2xl" />,
               title: "Patient-Centric Approach",
-              desc: "Hygiene Lifesciences Pvt Ltd products are designed for maximum efficiency in treating patients, with their well-being as our ultimate benchmark for success. We prioritize patient outcomes in every formulation and delivery system.",
+              desc: "Hygine Lifesciences Pvt Ltd products are designed for maximum efficiency in treating patients, with their well-being as our ultimate benchmark for success. We prioritize patient outcomes in every formulation and delivery system.",
               color: "primary"
             },
             {

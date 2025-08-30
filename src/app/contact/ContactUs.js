@@ -102,7 +102,7 @@ export default function Contact() {
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-square border-2 border-primary/20">
               <Image
                 src={deskImage}
-                alt="Hygine Lifecycle Office"
+                alt="hygine-lifesciences-office"
                 className="object-cover w-full h-full"
                 placeholder="blur"
               />
@@ -137,8 +137,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-tertiary">General Inquiries</h3>
-                  <a href="mailto:hygienelifesciences@gmail.com" className="text-primary hover:text-secondary font-medium">
-                    hygienelifesciences@gmail.com
+                  <a href="mailto:hyginelifesciences@gmail.com" className="text-primary hover:text-secondary font-medium">
+                    hyginelifesciences@gmail.com
                   </a>
                 </div>
               </div>
@@ -148,8 +148,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-tertiary">Sales Department</h3>
-                  <a href="mailto:hygienelifesciences@gmail.com" className="text-primary hover:text-secondary font-medium">
-                    info@hygienelifesciences.com
+                  <a href="mailto:hyginelifesciences@gmail.com" className="text-primary hover:text-secondary font-medium">
+                    info@hyginelifesciences.com
                   </a>
                 </div>
               </div>

@@ -145,7 +145,7 @@ export default function WhoWeAre() {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Hygiene Lifesciences Pvt Ltd ?
+              Why Choose Hygine Lifesciences Pvt Ltd ?
             </h3>
             <div className="w-20 h-1.5 bg-secondary mx-auto" />
           </div>

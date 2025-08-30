@@ -8,13 +8,13 @@ import React from "react";
 import OurCustomers from "@/components/OurCustomers";
 import StatsSection from "@/components/StatesSection";
 import OurProductRange from "@/components/OurProductRange";
-import HygieneIntroduction from "@/components/HygieneIntroduction";
+import HygineIntroduction from "@/components/HygineIntroduction";
 
 const HomePage = () => {
     return (
         <>
             <MainSection />
-            <HygieneIntroduction />
+            <HygineIntroduction />
             <VisionMissionValues />
             <QualityManagement />
             <ProductGallery />
