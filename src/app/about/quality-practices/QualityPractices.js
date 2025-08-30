@@ -199,7 +199,7 @@ const QualityPractices = () => {
             <div className="w-20 h-1 bg-[var(--secondary)] mx-auto"></div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 name: "WHO-GMP Certified",
@@ -212,17 +212,15 @@ const QualityPractices = () => {
                 icon: "🏅"
               },
               {
-                name: "USFDA Compliant",
-                description: "United States regulations",
-                icon: "🇺🇸"
-              },
-              {
-                name: "EU-GMP",
-                description: "European standards",
-                icon: "🇪🇺"
+                name: "African & Asian Countries",
+                description: "Recognized in Ghana, Kenya, Nigeria & Afghanistan",
+                icon: "🌍"
               }
             ].map((cert, index) => (
-              <div key={index} className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all text-center">
+              <div
+                key={index}
+                className="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all text-center"
+              >
                 <span className="text-3xl mb-3 block">{cert.icon}</span>
                 <h3 className="text-xl font-semibold mb-2">{cert.name}</h3>
                 <p className="text-blue-100">{cert.description}</p>
@@ -231,6 +229,7 @@ const QualityPractices = () => {
           </div>
         </div>
       </section>
+
 
       {/* Quality Commitment */}
       <section className="py-20 bg-white">

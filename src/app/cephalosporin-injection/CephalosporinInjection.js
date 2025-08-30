@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaCapsules } from "react-icons/fa";
+import { FaSyringe  } from "react-icons/fa";
 import { GiWeight } from "react-icons/gi";
 
 const CephalosporinInjection = () => {
@@ -242,7 +242,7 @@ const CephalosporinInjection = () => {
                                 <tr className="bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)] text-white">
                                     <th className="p-4 text-left font-semibold">
                                         <div className="flex items-center gap-2">
-                                            <FaCapsules className="w-5 h-5" /> Products
+                                            <FaSyringe  className="w-5 h-5" /> Products
                                         </div>
                                     </th>
                                     <th className="p-4 text-left font-semibold">
