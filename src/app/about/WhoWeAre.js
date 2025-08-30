@@ -120,13 +120,14 @@ export default function WhoWeAre() {
             <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl p-6 border-l-4 border-secondary shadow-sm">
               <h3 className="text-2xl font-semibold text-primary mb-4">Global Reach</h3>
               <p className="text-lg leading-relaxed mb-6 text-gray-700">
-                Exporting across <strong className="text-primary font-semibold">Africa</strong>,{" "}
-                <strong className="text-secondary font-semibold">Latin America</strong>,{" "}
-                <strong className="text-primary font-semibold">Southeast Asia</strong>, and{" "}
-                <strong className="text-secondary font-semibold">CIS</strong> nations.
+                Exporting across <strong className="text-primary font-semibold">Nigeria</strong>,{" "}
+                <strong className="text-secondary font-semibold">Kenya</strong>,{" "}
+                   <strong className="text-secondary font-semibold">Ghana</strong>,{" "}
+                <strong className="text-primary font-semibold">Afghanistan</strong>, and{" "}
+                <strong className="text-secondary font-semibold">Yemen</strong> nations.
               </p>
               <div className="flex flex-wrap gap-2">
-                {['Africa', 'Latin America', 'Southeast Asia', 'CIS', 'Middle East'].map((region) => (
+                {['Nigeria', 'Kenya', 'Afghanistan', 'Ghana', 'Yemen'].map((region) => (
                   <span key={region} className="bg-gradient-to-r from-primary/10 to-secondary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
                     {region}
                   </span>
