@@ -40,10 +40,10 @@ const GlobalPresence = () => {
                 <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
                     <div className="relative h-[650px] w-auto">
                         <Image
-                            src="/img/global-presence/global-presence1111.webp"
+                            src="/img/global-presence/world-map.webp"
                             alt="Global Presence Map"
                             fill
-                            className="object-contain p-4"
+                            className="object-contain "
                             quality={100}
                             priority
                         />
