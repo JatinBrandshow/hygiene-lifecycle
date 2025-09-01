@@ -151,14 +151,14 @@ const OurProductRange = () => {
                     ))}
                   </ul>
 
-                  <div className="mt-auto pt-3 md:pt-4 border-t border-gray-200/50">
+                  {/* <div className="mt-auto pt-3 md:pt-4 border-t border-gray-200/50">
                     <button className="text-xs md:text-sm font-medium text-[var(--primary)] hover:text-[var(--secondary)] transition-colors flex items-center group">
                       View specifications
                       <svg className="w-3 h-3 md:w-4 md:h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -166,14 +166,14 @@ const OurProductRange = () => {
         </div>
 
         {/* CTA */}
-        <div className="mt-10 md:mt-12 text-center">
+        {/* <div className="mt-10 md:mt-12 text-center">
           <button className="px-6 py-3 md:px-8 md:py-3.5 bg-tertiary text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 text-sm md:text-base">
             Download Full Product Catalog
             <svg className="w-3.5 h-3.5 md:w-4 md:h-4 ml-1.5 md:ml-2 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

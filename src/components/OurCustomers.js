@@ -93,7 +93,7 @@ const OurCustomers = () => {
 
         return (
             <div
-                className={`absolute ${sizeClasses[size]} opacity-20 transition-all ease-in-out pointer-events-none z-0`}
+                className={`absolute ${sizeClasses[size]} opacity-40 transition-all ease-in-out pointer-events-none z-0`}
                 style={{
                     transform: `translate(${position.x}px, ${position.y}px) rotate(${rotation}deg)`,
                     transitionDuration: isAnimating ? `${duration}s` : "0s",

@@ -48,9 +48,9 @@ const ContactUs = () => {
                         <div className="grid grid-cols-2 gap-7 mb-12 max-sm:grid-cols-1 max-lg:gap-6 max-md:gap-5 max-sm:gap-3 max-lg:mb-10 max-md:mb-8 max-sm:mb-6">
                             <div>
                                 <h3 className="text-sm font-medium text-slate-500 mb-2 max-sm:text-xs">Head Office</h3>
-                                <p className="text-base max-sm:text-sm">11, Industrial Area, Katha</p>
-                                <p className="text-base max-sm:text-sm">Bhatoli khalan, Baddi</p>
-                                <p className="text-base max-sm:text-sm">(H.P.), India</p>
+                                <p className="text-base max-sm:text-sm">Plot No. 736-C</p>
+                                <p className="text-base max-sm:text-sm">Sector 37, Pace City II</p>
+                                <p className="text-base max-sm:text-sm">Gurugram, Haryana – 122001</p>
                             </div>
                             <div>
                                 <h3 className="text-sm font-medium text-slate-500 mb-2 max-sm:text-xs">Mail</h3>

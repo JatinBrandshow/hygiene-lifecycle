@@ -62,7 +62,7 @@ const OurManagement = () => {
                             <div className="h-px w-16 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] mx-auto mb-5"></div>
 
                             <p className="text-gray-600 mb-6 flex-1">
-                                With over 25 years of experience in pharmaceutical manufacturing,
+                                With over 10+ years of experience in pharmaceutical manufacturing,
                                 Mr. Singh established Hygine Lifesciences with a vision to deliver
                                 affordable, high-quality healthcare solutions.
                             </p>
@@ -108,7 +108,7 @@ const OurManagement = () => {
                             <div className="h-px w-16 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] mx-auto mb-5"></div>
 
                             <p className="text-gray-600 mb-6 flex-1">
-                                Bringing 20+ years of leadership in pharmaceutical operations,
+                                Bringing 40+ years of leadership in pharmaceutical operations,
                                 Mr. A.P. Singh drives the company's mission to expand global reach
                                 while maintaining uncompromising quality standards.
                             </p>

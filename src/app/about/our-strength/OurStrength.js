@@ -136,7 +136,7 @@ const OurStrengths = () => {
             <div className="lg:w-1/2">
               <div className="relative rounded-xl overflow-hidden h-full min-h-[400px] shadow-lg">
                 <Image
-                  src="/img/our-strength/strength_img2.png"
+                  src="/img/our-strength/strength_img2.webp"
                   alt="hygine-team"
                   fill
                   className="object-cover"
