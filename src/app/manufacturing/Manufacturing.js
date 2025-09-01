@@ -1,8 +1,13 @@
 // components/Manufacturing.js
+"use client";
+
 import { FaIndustry, FaFlask, FaShieldAlt, FaCogs, FaChartLine, FaLeaf, FaGlobe, FaUsers } from 'react-icons/fa';
 import Image from 'next/image';
+import { useRef } from 'react';
 
 const Manufacturing = () => {
+  const capabilitiesRef = useRef(null);
+  
   const manufacturingImages = [
     { src: '/img/Plant1.webp', alt: 'Manufacturing Plant 1' },
     { src: '/img/manufacturing/Vial-Filling-Machine.webp', alt: 'Vial Filling Machine' },
@@ -57,6 +62,14 @@ const Manufacturing = () => {
     }
   ];
 
+  // Function to scroll to capabilities section
+  const scrollToCapabilities = () => {
+    capabilitiesRef.current?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  };
+
   return (
     <div className="font-sans bg-white">
       {/* Hero Section - Redesigned */}
@@ -81,7 +94,10 @@ const Manufacturing = () => {
               Delivering world-class pharmaceutical products through cutting-edge technology and uncompromising quality standards.
             </p>
             <div className="flex gap-4">
-              <button className="px-6 py-3 bg-[#173C96] text-white rounded-lg font-medium hover:bg-[#031B4E] transition-all">
+              <button 
+                onClick={scrollToCapabilities}
+                className="px-6 py-3 bg-[#173C96] text-white rounded-lg font-medium hover:bg-[#031B4E] transition-all"
+              >
                 Explore Capabilities
               </button>
               <button className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-all">
@@ -139,8 +155,8 @@ const Manufacturing = () => {
         </div>
       </section>
 
-      {/* Capabilities Section */}
-      <section className="py-20 bg-gradient-to-br from-[#173C96]/10 to-[#031B4E]/10">
+      {/* Capabilities Section - Added ref here */}
+      <section ref={capabilitiesRef} className="py-20 bg-gradient-to-br from-[#173C96]/10 to-[#031B4E]/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">

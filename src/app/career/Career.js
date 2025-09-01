@@ -7,10 +7,38 @@ import Image from 'next/image';
 
 const Careers = () => {
     const [isClient, setIsClient] = useState(false);
+       const [resumeName, setResumeName] = useState("");   // ✅ To track uploaded resume
+    const [showPopup, setShowPopup] = useState(false);
 
     useEffect(() => {
         setIsClient(true);
     }, []);
+
+   
+     const handleScrollToForm = () => {
+        const formSection = document.getElementById('form');
+        if (formSection) {
+            formSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+        const handleResumeChange = (e) => {
+        if (e.target.files.length > 0) {
+            setResumeName(e.target.files[0].name);
+        } else {
+            setResumeName("");
+        }
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setShowPopup(true);
+        setResumeName(""); // reset file after submit
+
+        // Hide popup automatically after 3s
+        setTimeout(() => setShowPopup(false), 3000);
+    };
+
 
     const generateParticles = () => {
         return [...Array(30)].map((_, i) => {
@@ -42,11 +70,7 @@ const Careers = () => {
         <div className="font-sans bg-white overflow-hidden">
             {/* Hero Section */}
             <div className="relative h-[700px] bg-gradient-to-br from-tertiary to-primary text-white overflow-hidden">
-                {isClient && (
-                    <div className="absolute inset-0 overflow-hidden">
-                        {generateParticles()}
-                    </div>
-                )}
+                {isClient && <div className="absolute inset-0 overflow-hidden">{generateParticles()}</div>}
 
                 <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-primary/20 blur-3xl"></div>
                 <div className="absolute -bottom-20 -left-20 w-60 h-60 rounded-full bg-tertiary/20 blur-2xl"></div>
@@ -61,7 +85,7 @@ const Careers = () => {
                                 INNOVATE WITH US
                             </span>
                         </div>
-                        
+
                         <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight relative">
                             <span className="text-white relative inline-block">
                                 <span className="relative z-10">Redefining</span>
@@ -71,25 +95,30 @@ const Careers = () => {
                                 <span className="absolute -bottom-2 left-0 h-1 w-full bg-secondary rounded-full"></span>
                             </span>
                         </h1>
-                        
+
                         <p className="text-xl text-white/90 mb-8 max-w-lg leading-relaxed">
                             Join our team of passionate researchers and help develop the next generation of life-saving medications
                         </p>
-                        
-                        <button className="px-8 py-3.5 bg-secondary text-white font-medium rounded-full hover:bg-secondary/90 transition-all duration-300 transform hover:scale-105 flex items-center group shadow-lg hover:shadow-xl">
+
+                        {/* 🔹 Scroll-to-form button */}
+                        <button
+                            onClick={handleScrollToForm}
+                            className="px-8 py-3.5 bg-secondary text-white font-medium rounded-full hover:bg-secondary/90 transition-all duration-300 transform hover:scale-105 flex items-center group shadow-lg hover:shadow-xl"
+                        >
                             <span className="relative overflow-hidden">
-                                <span className="block group-hover:-translate-y-7 transition-transform duration-300">Explore Careers</span>
-                                <span className="absolute left-0 top-7 block group-hover:-translate-y-7 transition-transform duration-300">Join Now →</span>
+                                <span className="block group-hover:-translate-y-7 transition-transform duration-300">
+                                    Explore Careers
+                                </span>
+                                <span className="absolute left-0 top-7 block group-hover:-translate-y-7 transition-transform duration-300">
+                                    Join Now →
+                                </span>
                             </span>
                             <IoMdRocket className="ml-2 group-hover:rotate-45 transition-transform duration-500" />
                         </button>
                     </div>
                 </div>
-
-                <div className="absolute right-20 top-1/4 w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 animate-float"></div>
-                <div className="absolute right-40 bottom-1/3 w-10 h-16 rounded-full bg-secondary/20 backdrop-blur-sm border border-secondary/30 animate-float animation-delay-2000"></div>
             </div>
-
+            
             {/* Career Paths Section */}
             <section id="careers" className="py-24 bg-white relative">
                 <div className="absolute -top-32 left-0 right-0 h-32 bg-gradient-to-b from-white to-transparent z-10"></div>
@@ -233,47 +262,62 @@ const Careers = () => {
                                         <label htmlFor="specialization" className="block text-white font-medium mb-2">Specialization</label>
                                         <select
                                             id="specialization"
-                                            className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-secondary focus:border-secondary appearance-none bg-[url('/img/chevron-down-white.svg')] bg-no-repeat bg-[right_1rem_center] bg-[length:1rem]"
+                                        className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:ring-2 focus:ring-secondary focus:border-secondary appearance-none bg-[url('/img/chevron-down-white.svg')] bg-no-repeat bg-[right_1rem_center] bg-[length:1rem]"
                                             required
                                         >
-                                            <option value="">Select your field</option>
-                                            <option value="Biochemistry">Biochemistry</option>
-                                            <option value="Molecular Biology">Molecular Biology</option>
-                                            <option value="Pharmaceutical Chemistry">Pharmaceutical Chemistry</option>
-                                            <option value="Clinical Research">Clinical Research</option>
-                                            <option value="Pharmacology">Pharmacology</option>
+                                            <option value="" className="text-gray-800 bg-white">Select your field</option>
+                                            <option value="Biochemistry" className="text-gray-800 bg-white">Biochemistry</option>
+                                            <option value="Molecular Biology" className="text-gray-800 bg-white">Molecular Biology</option>
+                                            <option value="Pharmaceutical Chemistry" className="text-gray-800 bg-white">Pharmaceutical Chemistry</option>
+                                            <option value="Clinical Research" className="text-gray-800 bg-white">Clinical Research</option>
+                                            <option value="Pharmacology" className="text-gray-800 bg-white">Pharmacology</option>
                                         </select>
                                     </div>
 
-                                    <div className="mb-6">
-                                        <label htmlFor="experience" className="block text-white font-medium mb-2">Years of Experience</label>
-                                        <select
-                                            id="experience"
-                                            className="w-full px-4 py-3 bg-white/10 border border-white/30 rounded-lg text-white placeholder-white/70 focus:ring-2 focus:ring-secondary focus:border-secondary appearance-none bg-[url('/img/chevron-down-white.svg')] bg-no-repeat bg-[right_1rem_center] bg-[length:1rem]"
-                                            required
-                                        >
-                                            <option value="">Select experience</option>
-                                            <option value="0-2">0-2 years</option>
-                                            <option value="2-5">2-5 years</option>
-                                            <option value="5-10">5-10 years</option>
-                                            <option value="10+">10+ years</option>
-                                        </select>
-                                    </div>
-
+                                     <div className="mb-6">
+                                    <label htmlFor="experience" className="block text-white font-medium mb-2">
+                                        Years of Experience
+                                    </label>
+                                    <select
+                                        id="experience"
+                                        className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white focus:ring-2 focus:ring-secondary focus:border-secondary appearance-none bg-[url('/img/chevron-down-white.svg')] bg-no-repeat bg-[right_1rem_center] bg-[length:1rem]"
+                                        required
+                                    >
+                                        <option value="" className="text-gray-800 bg-white">
+                                            Select experience
+                                        </option>
+                                        <option value="0-2" className="text-gray-800 bg-white">
+                                            0-2 years
+                                        </option>
+                                        <option value="2-5" className="text-gray-800 bg-white">
+                                            2-5 years
+                                        </option>
+                                        <option value="5-10" className="text-gray-800 bg-white">
+                                            5-10 years
+                                        </option>
+                                        <option value="10+" className="text-gray-800 bg-white">
+                                            10+ years
+                                        </option>
+                                    </select>
+                                </div>
+                                
+                                   {/* Resume Upload */}
                                     <div className="mb-6">
                                         <label htmlFor="resume" className="block text-white font-medium mb-2">Upload CV</label>
                                         <div className="flex items-center justify-center w-full">
                                             <label className="flex flex-col items-center justify-center w-full h-32 border-2 border-white/30 border-dashed rounded-lg cursor-pointer bg-white/5 hover:bg-white/10 transition-colors">
-                                                <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                                                    <FaFileMedical className="text-white/70 text-2xl mb-2" />
-                                                    <p className="mb-2 text-sm text-white/80">
-                                                        <span className="font-semibold">Click to upload</span> or drag and drop
-                                                    </p>
-                                                    <p className="text-xs text-white/60">PDF, DOC, DOCX (Max. 5MB)</p>
-                                                </div>
-                                                <input id="resume" type="file" className="hidden" accept=".pdf,.doc,.docx" required />
+                                                <FaFileMedical className="text-white/70 text-2xl mb-2" />
+                                                <p className="mb-2 text-sm text-white/80">
+                                                    <span className="font-semibold">Click to upload</span> or drag and drop
+                                                </p>
+                                                <p className="text-xs text-white/60">PDF, DOC, DOCX (Max. 5MB)</p>
+                                                <input id="resume" type="file" className="hidden" accept=".pdf,.doc,.docx" onChange={handleResumeChange} required />
                                             </label>
                                         </div>
+                                        {/* ✅ Show uploaded file name */}
+                                        {resumeName && (
+                                            <p className="mt-2 text-sm text-green-300">Uploaded: {resumeName}</p>
+                                        )}
                                     </div>
                                 </div>
 
