@@ -1,6 +1,9 @@
+"use client"
+
 // components/DomesticCustomers.js
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaSyringe } from "react-icons/fa";
 
 const DomesticCustomers = () => {
   const companyLogos = [
@@ -27,20 +30,23 @@ const DomesticCustomers = () => {
           <div className="absolute inset-0 bg-[url('/img/dot-grid-pattern.svg')] bg-[size:100px_100px]"></div>
         </div>
         
-        {/* Floating bubbles */}
+       {/* Floating Injections */}
         {[...Array(8)].map((_, i) => (
-          <div 
+          <div
             key={i}
-            className="absolute rounded-full opacity-20 bg-white"
+            className="absolute text-white/30 animate-float"
             style={{
-              width: `${Math.random() * 300 + 100}px`,
-              height: `${Math.random() * 300 + 100}px`,
+              fontSize: `${Math.random() * 40 + 40}px`, // random size (40px - 80px)
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
-              transform: `translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px)`
+              animationDuration: `${Math.random() * 10 + 10}s`, // random float speed
+              animationDelay: `${Math.random() * 5}s`, // delay for natural effect
             }}
-          ></div>
+          >
+            <FaSyringe />
+          </div>
         ))}
+
         
         <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
           <div className="max-w-2xl">
@@ -54,6 +60,20 @@ const DomesticCustomers = () => {
           </div>
         </div>
       </div>
+
+        <style jsx>{`
+        @keyframes float {
+          0% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-20px) rotate(10deg); }
+          100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .animate-float {
+          animation-name: float;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+        }
+      `}</style>
+
       {/* Enhanced Logo Showcase Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
