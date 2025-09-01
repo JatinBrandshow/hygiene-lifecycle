@@ -210,7 +210,7 @@ const ResearchDevelopment = () => {
                             },
                             {
                                 title: "Preclinical Research",
-                                description: "Laboratory for safety and efficacy",
+                                description: "Laboratory  for safety and efficacy",
                                 icon: <FaFlask className="text-[#173C96] text-2xl" />
                             },
                             {
@@ -220,7 +220,7 @@ const ResearchDevelopment = () => {
                             }
                         ].map((step, index) => (
                             <div key={index} className="relative pb-12 md:flex items-start">
-                                <div className="hidden md:block absolute left-0 w-16 h-16 bg-white rounded-full flex items-center justify-center z-10">
+                                <div className="hidden md:block absolute left-0 w-16 h-16 bg-white rounded-full items-center justify-center z-10">
                                     <div className={`w-12 h-12 ${index % 3 === 0 ? 'bg-[#173C96]/10' : index % 3 === 1 ? 'bg-[#EB006F]/10' : 'bg-[#031B4E]/10'} rounded-full flex items-center justify-center`}>
                                         {step.icon}
                                     </div>
