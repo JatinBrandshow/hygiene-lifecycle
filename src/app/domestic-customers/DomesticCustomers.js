@@ -1,5 +1,6 @@
 // components/DomesticCustomers.js
 import Image from 'next/image';
+import Link from 'next/link';
 
 const DomesticCustomers = () => {
   const companyLogos = [
@@ -184,9 +185,12 @@ const DomesticCustomers = () => {
               </ul>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="px-8 py-3.5 bg-primary text-white rounded-lg font-medium hover:shadow-lg transition-all hover:-translate-y-0.5">
+                <Link 
+                  href="/contact"
+                  className="px-8 py-3.5 bg-primary text-white rounded-lg font-medium hover:shadow-lg transition-all hover:-translate-y-0.5 text-center"
+                >
                   Contact Sales Team
-                </button>
+                </Link>
                 <button className="px-8 py-3.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-all">
                   Download Brochure
                 </button>
