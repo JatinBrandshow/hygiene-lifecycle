@@ -210,13 +210,8 @@ const ResearchDevelopment = () => {
                             },
                             {
                                 title: "Preclinical Research",
-                                description: "Laboratory and animal testing for safety and efficacy",
+                                description: "Laboratory for safety and efficacy",
                                 icon: <FaFlask className="text-[#173C96] text-2xl" />
-                            },
-                            {
-                                title: "Clinical Development",
-                                description: "Human trials to demonstrate safety and effectiveness",
-                                icon: <FaUsers className="text-[#EB006F] text-2xl" />
                             },
                             {
                                 title: "Regulatory Approval",
