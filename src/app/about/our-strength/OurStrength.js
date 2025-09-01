@@ -1,6 +1,7 @@
 // components/OurStrengths.js
 import { FaLeaf, FaUsers, FaHandshake, FaRocket, FaHeadphones, FaBoxOpen, FaFlask, FaChartLine } from 'react-icons/fa';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const OurStrengths = () => {
   return (
@@ -234,9 +235,12 @@ const OurStrengths = () => {
           <p className="text-gray-600 mb-6 text-sm">
             Partner with a pharmaceutical company that combines quality, innovation, and reliability.
           </p>
-          <button className="px-6 py-3 bg-[var(--primary)] text-white rounded-lg font-medium hover:bg-[var(--primary-dark)] transition-colors">
+          <Link 
+            href="/contact"
+            className="inline-block px-6 py-3 bg-[var(--primary)] text-white rounded-lg font-medium hover:bg-[var(--primary-dark)] transition-colors"
+          >
             Contact Our Team
-          </button>
+          </Link>
         </div>
       </section>
     </div>
