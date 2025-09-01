@@ -17,7 +17,7 @@ const HygineIntroduction = () => {
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl min-h-[300px] h-full">
                                 {" "}
                                 {/* Further reduced min-height */}
-                                <Image src="/img/building.webp" alt="Pharmaceutical Manufacturing Facility" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" priority />
+                                <Image src="/img/home-about.webp" alt="Pharmaceutical Manufacturing Facility" fill className="" sizes="(max-width: 1024px) 100vw, 50vw" priority />
                                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--tertiary)]/90 via-[var(--tertiary)]/30 to-transparent flex items-end p-6">
                                     {" "}
                                     {/* Reduced padding */}
