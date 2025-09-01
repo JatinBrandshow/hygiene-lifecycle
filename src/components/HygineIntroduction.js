@@ -1,8 +1,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useRouter } from 'next/navigation'; // Import the router
 
 const HygineIntroduction = () => {
+    const router = useRouter(); // Initialize the router
+
     return (
         <>
             <section className="py-16 px-4 sm:px-6 lg:py-24 bg-[var(--primary)]/5">
@@ -100,10 +103,16 @@ const HygineIntroduction = () => {
 
                             {/* CTA Buttons */}
                             <div className="flex flex-col sm:flex-row gap-3 pt-4 animate-fadeIn delay-1000">
-                                <button className="px-5 py-2.5 bg-[var(--primary)] text-white rounded-lg hover:bg-[var(--tertiary)] transition-all font-medium transform hover:scale-105 text-sm sm:text-base">
+                                <button 
+                                    onClick={() => router.push('/manufacturing')}
+                                    className="px-5 py-2.5 bg-[var(--primary)] text-white rounded-lg hover:bg-[var(--tertiary)] transition-all font-medium transform hover:scale-105 text-sm sm:text-base"
+                                >
                                     Learn About Our Processes
                                 </button>
-                                <button className="px-5 py-2.5 border border-[var(--primary)] text-[var(--primary)] rounded-lg hover:bg-secondary hover:text-white transition-all font-medium transform hover:scale-105 text-sm sm:text-base">
+                                <button 
+                                    onClick={() => router.push('/contact')}
+                                    className="px-5 py-2.5 border border-[var(--primary)] text-[var(--primary)] rounded-lg hover:bg-secondary hover:text-white transition-all font-medium transform hover:scale-105 text-sm sm:text-base"
+                                >
                                     Contact Quality Team
                                 </button>
                             </div>
