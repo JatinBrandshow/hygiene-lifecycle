@@ -4,8 +4,10 @@
 import { FaIndustry, FaFlask, FaShieldAlt, FaCogs, FaChartLine, FaLeaf, FaGlobe, FaUsers } from 'react-icons/fa';
 import Image from 'next/image';
 import { useRef } from 'react';
+import { useState } from "react";
 
 const Manufacturing = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const capabilitiesRef = useRef(null);
   
   const manufacturingImages = [
@@ -100,9 +102,9 @@ const Manufacturing = () => {
               >
                 Explore Capabilities
               </button>
-              <button className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-all">
-                Watch Facility Tour
-              </button>
+               <button onClick={() => setIsOpen(true)} className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-all">
+                                Watch Facility Tour
+                            </button>
             </div>
           </div>
         </div>
@@ -120,6 +122,23 @@ const Manufacturing = () => {
           </div>
         </div>
       </div>
+
+      {isOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+                    <div className="bg-white rounded-lg shadow-lg p-4 relative" style={{ width: "400px", height: "400px" }}>
+                        {/* Close Button */}
+                        <button onClick={() => setIsOpen(false)} className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-2xl">
+                            ✕
+                        </button>
+
+                        {/* Video */}
+                        <video className="w-full h-full rounded-md" controls autoPlay>
+                            <source src="/video/facility-tour.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            )}
 
       {/* Gallery Section */}
       <section className="py-20 bg-white">
