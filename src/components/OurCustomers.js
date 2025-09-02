@@ -16,8 +16,8 @@ const OurCustomers = () => {
         { id: 9, name: "Customer 9", src: "/img/our-customers/medhouse-logo.png" },
         { id: 10, name: "Customer 10", src: "/img/our-customers/medilente-logo.png" },
         { id: 11, name: "Customer 11", src: "/img/our-customers/senate-labs.png" },
-        { id: 11, name: "Customer 11", src: "/img/our-customers/wockhardt.png" },
-        { id: 11, name: "Customer 11", src: "/img/our-customers/zydus-logo.png" },
+        { id: 12, name: "Customer 11", src: "/img/our-customers/wockhardt.png" },
+        { id: 13, name: "Customer 11", src: "/img/our-customers/zydus-logo.png" },
     ];
 
     // Animated injection/vial component with different paths and speeds
