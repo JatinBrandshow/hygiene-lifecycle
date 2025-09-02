@@ -64,7 +64,7 @@ const CarbapenemInjection = () => {
                         Complete <span className="text-primary">Product Range</span>
                     </h2>
                     <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-                        Seven specialized carbapenem formulations for diverse clinical needs
+                        One specialized carbapenem formulations for diverse clinical needs
                     </p>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
