@@ -77,23 +77,23 @@ const ResearchDevelopment = () => {
 
             {/* Introduction Section */}
             <section className="py-20 bg-white">
-                <div className="max-w-6xl mx-auto px-6">
+                <div className="max-w-7xl mx-auto px-6">
                     <div className="flex flex-col lg:flex-row gap-12 items-center">
-                        <div className="lg:w-1/2 space-y-8">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+                        <div className="lg:w-8/12 space-y-8">
+                            <h2 className="text-4xl font-bold text-gray-800 mb-6 max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
                                 Accelerating <span className="text-[#173C96]">Drug Discovery</span>
                             </h2>
-                            <p className="text-xl text-gray-600">
+                            <p className="text-lg text-gray-600 max-md:text-base max-sm:text-sm">
                                 In India, we are committed to accelerating discovery of drugs and bringing new medicines to market. We offer our expertise in analyzing 
                                 trends in the market, developing innovative products for research and managing the roadblocks that pharmaceutical researchers may face in laboratory research across diverse therapeutic areas.
                             </p>
-                            <p className="text-xl text-gray-600">
+                            <p className="text-lg text-gray-600 max-md:text-base max-sm:text-sm">
                                 Bringing new therapies to market is challenging and complex. At Hygine Lifesciences Pvt Ltd we remain committed to accelerating drug discovery by powering innovation in 
                                 pharmaceutical solutions. Our expertise in evaluating market trends, managing laboratory related challenges and developing state-of-the-art research products benefit our customers, who leverage our solutions across diverse therapeutic areas.
                             </p>
                         </div>
-                        <div className="lg:w-1/2">
-                            <div className="grid grid-cols-2 gap-6">
+                        <div className="lg:w-4/12">
+                            <div className="grid grid-cols-2 gap-4 max-md:gap-3 max-sm:gap-2">
                                 {rndImages.slice(0, 2).map((image, index) => (
                                     <div key={index} className="relative aspect-square rounded-md overflow-hidden shadow-lg">
                                         <Image
