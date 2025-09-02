@@ -211,9 +211,9 @@ const DomesticCustomers = () => {
                 >
                   Contact Sales Team
                 </Link>
-                <button className="px-8 py-3.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-all">
+                {/* <button className="px-8 py-3.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-all">
                   Download Brochure
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

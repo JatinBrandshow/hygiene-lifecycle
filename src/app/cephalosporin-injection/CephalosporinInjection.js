@@ -106,8 +106,8 @@ const CephalosporinInjection = () => {
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-800 mb-3 md:mb-4">
                         Complete <span className="text-[var(--primary)]">Product Range</span>
                     </h2>
-                    <p className="text-base sm:text-lg md:text-xl text-gray-600 text-center mb-8 md:mb-10 lg:mb-12 max-w-3xl mx-auto">
-                        Specialized cephalosporin formulations for diverse clinical needs
+                    <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                        Nine specialized cephalosporin formulations for diverse clinical needs
                     </p>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
