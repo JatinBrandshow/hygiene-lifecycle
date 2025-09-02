@@ -159,7 +159,7 @@ const DomesticCustomers = () => {
                     <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
                         <div className="lg:w-1/2">
                             <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
-                                <Image src="/img/domestic-customer/strength_img2.png" alt="Pharmaceutical Partnership" fill className="object-cover transition-transform duration-500 hover:scale-105" />
+                                <Image src="/img/domestic-customer/strength_img2.webp" alt="Pharmaceutical Partnership" fill className="object-cover transition-transform duration-500 hover:scale-105" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                             </div>
                         </div>
