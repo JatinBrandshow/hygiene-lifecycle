@@ -37,10 +37,10 @@ const OurManagement = () => {
 
                             <div className="relative w-56 h-56 rounded-full border-4 border-white shadow-2xl overflow-hidden bg-gray-100 z-10">
                                 <Image
-                                    src="/img/our-management/founder.webp"
+                                    src="/img/our-management/rk-singh.webp"
                                     alt="Mr. R.K. Singh"
                                     fill
-                                    className="object-cover"
+                                    className="object-cover object-top"
                                 />
                             </div>
                         </div>
@@ -83,7 +83,7 @@ const OurManagement = () => {
 
                             <div className="relative w-56 h-56 rounded-full border-4 border-white shadow-2xl overflow-hidden bg-gray-100 z-10">
                                 <Image
-                                    src="/img/our-management/vp.webp"
+                                    src="/img/our-management/ap-singh.webp"
                                     alt="Mr. A.P. Singh"
                                     fill
                                     className="object-cover"
