@@ -26,12 +26,12 @@ const CarbapenemInjection = () => {
     ];
 
     return (
-        <div className="font-sans bg-gray-50">
-            {/* Hero Section */}
-            <div className="relative bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)] text-white py-12 md:py-20">
-                <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
-                    <div className="md:w-1/2 mb-10 md:mb-0">
-                        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+       <div className="font-sans bg-gray-50">
+            {/* Hero Section with responsive text sizes */}
+            <div className="relative bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)] text-white py-8 md:py-12 lg:py-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 mb-8 md:mb-0">
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">
                             Carbapenem <span className="text-[var(--secondary)]">Injections</span>
                         </h1>
                         <p className="text-xl text-blue-100 mb-8 max-w-lg">Comprehensive range of high-potency carbapenem antibiotics</p>
@@ -45,15 +45,16 @@ const CarbapenemInjection = () => {
                     </div>
                 </div>
             </div>
-            {/* Product Showcase */}
-            <section className="py-16 bg-white">
-                <div className="max-w-7xl mx-auto px-6">
-                    <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
+            
+            {/* Product Showcase with responsive text */}
+            <section className="py-12 sm:py-16 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-800 mb-3 md:mb-4">
                         Complete <span className="text-primary">Product Range</span>
                     </h2>
                     <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">One specialized carbapenem formulations for diverse clinical needs</p>
 
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
                         {products.map((product, index) => (
                             <motion.div
                                 key={index}
@@ -70,7 +71,7 @@ const CarbapenemInjection = () => {
                             >
                                 {/* Image Container */}
                                 <motion.div
-                                    className="relative h-64 bg-gray-50 overflow-hidden"
+                                    className="relative h-48 sm:h-56 md:h-64 bg-gray-50 overflow-hidden"
                                     whileHover={{
                                         scale: 1.05,
                                         transition: { duration: 0.3 },
@@ -101,10 +102,10 @@ const CarbapenemInjection = () => {
                 </div>
             </section>
 
-            {/* Product Strengths */}
-            <section className="py-16 bg-gray-50">
-                <div className="max-w-6xl mx-auto px-6">
-                    <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+            {/* Product Strengths with responsive text */}
+            <section className="py-12 sm:py-16 bg-gray-50">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8 md:mb-12">
                         Product <span className="text-[var(--primary)]">Specifications</span>
                     </h2>
 
@@ -123,17 +124,17 @@ const CarbapenemInjection = () => {
                     </div> */}
 
                     {/* Table */}
-                    <div className="overflow-x-auto bg-white rounded-2xl shadow-xl border border-gray-100 transition-all duration-300 hover:shadow-2xl">
-                        <table className="w-full border-collapse text-sm md:text-base">
+                    <div className="overflow-x-auto bg-white rounded-xl md:rounded-2xl shadow-lg md:shadow-xl border border-gray-100 transition-all duration-300 hover:shadow-xl md:hover:shadow-2xl text-sm md:text-base">
+                        <table className="w-full border-collapse">
                             <thead>
                                 <tr className="bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)] text-white">
-                                    <th className="p-5 text-left font-bold text-lg uppercase tracking-wider">
+                                    <th className="p-3 md:p-5 text-left font-bold text-base md:text-lg uppercase tracking-wider">
                                         <div className="flex items-center">
                                             <FaSyringe className="w-5 h-5" />
                                             Products
                                         </div>
                                     </th>
-                                    <th className="p-5 text-left font-bold text-lg uppercase tracking-wider">
+                                    <th className="p-3 md:p-5 text-left font-bold text-base md:text-lg uppercase tracking-wider">
                                         <div className="flex items-center">
                                             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -160,7 +161,7 @@ const CarbapenemInjection = () => {
                                     <tr key={index} className="group hover:bg-gradient-to-r from-[var(--primary)]/10 to-[var(--tertiary)]/10 transition-colors duration-300 ease-in-out">
                                         <td className="p-5 font-semibold text-gray-800 group-hover:text-[var(--primary)] transition-colors duration-300">
                                             <div className="flex items-center">
-                                                <div className="w-2 h-2 bg-[var(--primary)] rounded-full mr-3 group-hover:animate-pulse"></div>
+                                                <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-[var(--primary)] rounded-full mr-2 md:mr-3 group-hover:animate-pulse"></div>
                                                 {item.product}
                                             </div>
                                         </td>
@@ -185,13 +186,13 @@ const CarbapenemInjection = () => {
                             <h3 className="font-bold text-[var(--primary)] mb-2">Broad Spectrum</h3>
                             <p className="text-sm text-gray-600">Effective against resistant Gram-negative and Gram-positive organisms</p>
                         </div>
-                        <div className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10">
-                            <h3 className="font-bold text-[var(--primary)] mb-2">β-lactamase Stability</h3>
-                            <p className="text-sm text-gray-600">Resistant to most β-lactamase enzymes</p>
+                        <div className="bg-[var(--primary)]/5 p-3 md:p-4 rounded-lg border border-[var(--primary)]/10">
+                            <h3 className="font-bold text-[var(--primary)] mb-1 md:mb-2 text-sm md:text-base">β-lactamase Stability</h3>
+                            <p className="text-xs md:text-sm text-gray-600">Resistant to most β-lactamase enzymes</p>
                         </div>
-                        <div className="bg-[var(--primary)]/5 p-4 rounded-lg border border-[var(--primary)]/10">
-                            <h3 className="font-bold text-[var(--primary)] mb-2">Dosing Flexibility</h3>
-                            <p className="text-sm text-gray-600">Multiple strengths for tailored therapy</p>
+                        <div className="bg-[var(--primary)]/5 p-3 md:p-4 rounded-lg border border-[var(--primary)]/10">
+                            <h3 className="font-bold text-[var(--primary)] mb-1 md:mb-2 text-sm md:text-base">Dosing Flexibility</h3>
+                            <p className="text-xs md:text-sm text-gray-600">Multiple strengths for tailored therapy</p>
                         </div>
                     </div>
                 </div>
@@ -203,43 +204,43 @@ const CarbapenemInjection = () => {
                     <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
                         Clinical <span className="text-[var(--primary)]">Applications</span>
                     </h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div className="bg-[var(--primary)]/5 p-6 rounded-xl border border-[var(--primary)]/10">
-                            <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-4">
-                                <svg className="w-5 h-5 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                        <div className="bg-[var(--primary)]/5 p-4 md:p-6 rounded-xl border border-[var(--primary)]/10">
+                            <div className="w-8 h-8 md:w-10 md:h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-3 md:mb-4">
+                                <svg className="w-4 h-4 md:w-5 md:h-5 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                                     <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <h3 className="font-bold text-gray-800 mb-2">Intra-abdominal Infections</h3>
-                            <p className="text-sm text-gray-600">Complicated intra-abdominal infections in adults</p>
+                            <h3 className="font-bold text-gray-800 mb-1 md:mb-2 text-sm md:text-base">Intra-abdominal Infections</h3>
+                            <p className="text-xs md:text-sm text-gray-600">Complicated intra-abdominal infections in adults</p>
                         </div>
-                        <div className="bg-[var(--primary)]/5 p-6 rounded-xl border border-[var(--primary)]/10">
-                            <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-4">
-                                <svg className="w-5 h-5 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
+                        <div className="bg-[var(--primary)]/5 p-4 md:p-6 rounded-xl border border-[var(--primary)]/10">
+                            <div className="w-8 h-8 md:w-10 md:h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-3 md:mb-4">
+                                <svg className="w-4 h-4 md:w-5 md:h-5 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <h3 className="font-bold text-gray-800 mb-2">UTI & Pyelonephritis</h3>
-                            <p className="text-sm text-gray-600">Complicated urinary tract infections including pyelonephritis</p>
+                            <h3 className="font-bold text-gray-800 mb-1 md:mb-2 text-sm md:text-base">UTI & Pyelonephritis</h3>
+                            <p className="text-xs md:text-sm text-gray-600">Complicated urinary tract infections including pyelonephritis</p>
                         </div>
-                        <div className="bg-[var(--primary)]/5 p-6 rounded-xl border border-[var(--primary)]/10">
-                            <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-4">
-                                <svg className="w-5 h-5 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
+                        <div className="bg-[var(--primary)]/5 p-4 md:p-6 rounded-xl border border-[var(--primary)]/10">
+                            <div className="w-8 h-8 md:w-10 md:h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-3 md:mb-4">
+                                <svg className="w-4 h-4 md:w-5 md:h-5 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm11 1H6v8l4-2 4 2V6z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <h3 className="font-bold text-gray-800 mb-2">Pneumonia</h3>
-                            <p className="text-sm text-gray-600">Hospital-acquired and ventilator-associated pneumonia</p>
+                            <h3 className="font-bold text-gray-800 mb-1 md:mb-2 text-sm md:text-base">Pneumonia</h3>
+                            <p className="text-xs md:text-sm text-gray-600">Hospital-acquired and ventilator-associated pneumonia</p>
                         </div>
-                        <div className="bg-[var(--primary)]/5 p-6 rounded-xl border border-[var(--primary)]/10">
-                            <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-4">
-                                <svg className="w-5 h-5 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
+                        <div className="bg-[var(--primary)]/5 p-4 md:p-6 rounded-xl border border-[var(--primary)]/10">
+                            <div className="w-8 h-8 md:w-10 md:h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-3 md:mb-4">
+                                <svg className="w-4 h-4 md:w-5 md:h-5 text-[var(--primary)]" fill="currentColor" viewBox="0 0 20 20">
                                     <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <h3 className="font-bold text-gray-800 mb-2">Bacteremia</h3>
-                            <p className="text-sm text-gray-600">Bacteremia and septicemia caused by susceptible organisms</p>
+                            <h3 className="font-bold text-gray-800 mb-1 md:mb-2 text-sm md:text-base">Bacteremia</h3>
+                            <p className="text-xs md:text-sm text-gray-600">Bacteremia and septicemia caused by susceptible organisms</p>
                         </div>
                     </div>
                 </div>
