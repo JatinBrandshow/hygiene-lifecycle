@@ -1,7 +1,7 @@
-'use client';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import { FaSyringe  } from "react-icons/fa";
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { FaSyringe } from "react-icons/fa";
 import { GiWeight } from "react-icons/gi";
 
 const CephalosporinInjection = () => {
@@ -9,49 +9,49 @@ const CephalosporinInjection = () => {
         {
             name: "HYCEFU",
             presentation: "Vial",
-            image: "/img/ceophalosporin/img_6.webp"
+            image: "/img/ceophalosporin/img_6.webp",
         },
         {
             name: "HYTAXIME",
             presentation: "Vial",
-            image: "/img/ceophalosporin/img_7.webp"
+            image: "/img/ceophalosporin/img_7.webp",
         },
         {
             name: "HYCEFTA",
             presentation: "Vial",
-            image: "/img/ceophalosporin/img_8.webp"
+            image: "/img/ceophalosporin/img_8.webp",
         },
         {
             name: "HYTAZO",
             presentation: "Vial",
-            image: "/img/ceophalosporin/img_9.webp"
+            image: "/img/ceophalosporin/img_9.webp",
         },
         {
             name: "HYGICEFE",
             presentation: "Vial",
-            image: "/img/ceophalosporin/img_10.webp"
+            image: "/img/ceophalosporin/img_10.webp",
         },
         {
             name: "HYGIPIP",
             presentation: "Vial",
-            image: "/img/carbapenem/img_2.webp"
+            image: "/img/carbapenem/img_2.webp",
         },
         {
             name: "Hygicef-SB",
             presentation: "Vial",
-            image: "/img/carbapenem/img_3.webp"
+            image: "/img/carbapenem/img_3.webp",
         },
         {
             name: "Hyceftra",
             presentation: "Vial",
-            image: "/img/carbapenem/img_4.webp"
+            image: "/img/carbapenem/img_4.webp",
         },
         {
             name: "HYCEFU",
             description: "Ertapenem sodium IP equivalent to Ertapenem 1g",
             presentation: "Vial",
-            image: "/img/carbapenem/img_5.webp"
-        }
+            image: "/img/carbapenem/img_5.webp",
+        },
     ];
 
     const data = [
@@ -64,7 +64,7 @@ const CephalosporinInjection = () => {
         { product: "Cefoperazone + Sulbactam", strengths: ["1000 mg + 1000 mg / 500 mg + 500 mg", "1000 mg + 500 mg / 250 mg + 250 mg"] },
         { product: "Cefepime", strengths: ["2000 mg / 500 mg", "1000 mg / 250 mg"] },
         { product: "Cefepime + Tazobactam", strengths: ["2000 mg + 250 mg / 500 mg + 62.5 mg", "1000 mg + 125 mg / 250 mg + 31.25 mg"] },
-        { product: "Cefotaxime", strengths: ["2000 mg / 500 mg", "1000 mg / 250 mg"] }
+        { product: "Cefotaxime", strengths: ["2000 mg / 500 mg", "1000 mg / 250 mg"] },
     ];
 
     return (
@@ -76,25 +76,13 @@ const CephalosporinInjection = () => {
                         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">
                             Cephalosporin <span className="text-[var(--secondary)]">Injections</span>
                         </h1>
-                        <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-3 md:mb-6 max-w-lg">
-                            Comprehensive range of cephalosporin antibiotics
-                        </p>
+                        <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-3 md:mb-6 max-w-lg">Comprehensive range of cephalosporin antibiotics</p>
                         <div className="w-24 md:w-32 h-1.5 bg-gradient-to-r from-[var(--secondary)] to-[var(--primary-light)] rounded-full mb-3 md:mb-6"></div>
-                        <p className="text-sm sm:text-base text-blue-100 max-w-xl">
-                            Hygine Lifesciences Pvt Ltd complete cephalosporin portfolio includes specialized formulations for
-                            treating a wide spectrum of bacterial infections.
-                        </p>
+                        <p className="text-sm sm:text-base text-blue-100 max-w-xl">Hygine Lifesciences Pvt Ltd complete cephalosporin portfolio includes specialized formulations for treating a wide spectrum of bacterial infections.</p>
                     </div>
                     <div className="md:w-1/2 flex justify-center w-full mt-6 md:mt-0">
                         <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 aspect-video">
-                            <Image
-                                src="/img/Carbapenem1.webp"
-                                alt="Cephalosporin Injection Range"
-                                fill
-                                className="object-contain"
-                                priority
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                            />
+                            <Image src="/img/Carbapenem1.webp" alt="Cephalosporin Injection Range" fill className="object-contain" priority sizes="(max-width: 768px) 100vw, 50vw" />
                         </div>
                     </div>
                 </div>
@@ -106,9 +94,7 @@ const CephalosporinInjection = () => {
                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center text-gray-800 mb-3 md:mb-4">
                         Complete <span className="text-[var(--primary)]">Product Range</span>
                     </h2>
-                    <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-                        Nine specialized cephalosporin formulations for diverse clinical needs
-                    </p>
+                    <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">Nine specialized cephalosporin formulations for diverse clinical needs</p>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
                         {products.map((product, index) => (
@@ -123,41 +109,31 @@ const CephalosporinInjection = () => {
                                     transition: {
                                         type: "spring",
                                         stiffness: 200,
-                                        damping: 10
-                                    }
+                                        damping: 10,
+                                    },
                                 }}
                                 transition={{
                                     type: "spring",
                                     stiffness: 300,
-                                    damping: 15
+                                    damping: 15,
                                 }}
                             >
                                 <motion.div
                                     className="relative h-44 sm:h-52 md:h-60 bg-gray-50 overflow-hidden"
                                     whileHover={{
                                         scale: 1.03,
-                                        transition: { duration: 0.3 }
+                                        transition: { duration: 0.3 },
                                     }}
                                 >
-                                    <motion.div
-                                        className="absolute inset-0 bg-[var(--primary)]/10 opacity-0 z-10"
-                                        whileHover={{ opacity: 0.2 }}
-                                        transition={{ duration: 0.3 }}
-                                    />
+                                    <motion.div className="absolute inset-0 bg-[var(--primary)]/10 opacity-0 z-10" whileHover={{ opacity: 0.2 }} transition={{ duration: 0.3 }} />
                                     <motion.div
                                         className="relative w-full h-full"
                                         whileHover={{
                                             y: -5,
-                                            transition: { duration: 0.4 }
+                                            transition: { duration: 0.4 },
                                         }}
                                     >
-                                        <Image
-                                            src={product.image}
-                                            alt={product.name}
-                                            fill
-                                            className="object-contain p-4 sm:p-5 md:p-6"
-                                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                        />
+                                        <Image src={product.image} alt={product.name} fill className="object-contain p-4 sm:p-5 md:p-6" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
                                     </motion.div>
                                 </motion.div>
 
@@ -165,20 +141,18 @@ const CephalosporinInjection = () => {
                                     className="p-4 sm:p-5 md:p-6 border-t border-gray-100"
                                     whileHover={{
                                         backgroundColor: "rgba(249, 250, 251, 0.8)",
-                                        transition: { duration: 0.3 }
+                                        transition: { duration: 0.3 },
                                     }}
                                 >
                                     <div className="relative inline-block mb-2 md:mb-3">
-                                        <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 relative z-10">
-                                            {product.name}
-                                        </h3>
+                                        <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 relative z-10">{product.name}</h3>
                                         <motion.div
                                             className="absolute bottom-0 left-0 h-1 bg-[var(--primary)] origin-left"
                                             initial={{ scaleX: 0 }}
                                             whileHover={{
                                                 scaleX: 1,
                                                 backgroundColor: "var(--primary)",
-                                                transition: { duration: 0.4 }
+                                                transition: { duration: 0.4 },
                                             }}
                                         />
                                     </div>
@@ -188,16 +162,10 @@ const CephalosporinInjection = () => {
                                         whileHover={{
                                             x: 5,
                                             color: "var(--primary-dark)",
-                                            transition: { type: "spring", stiffness: 300 }
+                                            transition: { type: "spring", stiffness: 300 },
                                         }}
                                     >
-                                        <motion.svg
-                                            className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2"
-                                            fill="currentColor"
-                                            viewBox="0 0 20 20"
-                                            whileHover={{ rotate: 90 }}
-                                            transition={{ type: "spring", stiffness: 500 }}
-                                        >
+                                        <motion.svg className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" fill="currentColor" viewBox="0 0 20 20" whileHover={{ rotate: 90 }} transition={{ type: "spring", stiffness: 500 }}>
                                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                                         </motion.svg>
                                         <span>{product.presentation}</span>
@@ -224,19 +192,19 @@ const CephalosporinInjection = () => {
                                     <tr className="bg-gradient-to-r from-[var(--primary)] to-[var(--tertiary)] text-white">
                                         <th className="p-2 sm:p-3 md:p-4 text-left font-semibold whitespace-nowrap">
                                             <div className="flex items-center gap-1 sm:gap-2">
-                                                <FaSyringe  className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" /> 
+                                                <FaSyringe className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
                                                 <span className="text-xs sm:text-sm md:text-base">Products</span>
                                             </div>
                                         </th>
                                         <th className="p-2 sm:p-3 md:p-4 text-left font-semibold whitespace-nowrap">
                                             <div className="flex items-center gap-1 sm:gap-2">
-                                                <GiWeight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" /> 
+                                                <GiWeight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
                                                 <span className="text-xs sm:text-sm md:text-base">Strength 1</span>
                                             </div>
                                         </th>
                                         <th className="p-2 sm:p-3 md:p-4 text-left font-semibold whitespace-nowrap">
                                             <div className="flex items-center gap-1 sm:gap-2">
-                                                <GiWeight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" /> 
+                                                <GiWeight className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
                                                 <span className="text-xs sm:text-sm md:text-base">Strength 2</span>
                                             </div>
                                         </th>
@@ -244,20 +212,12 @@ const CephalosporinInjection = () => {
                                 </thead>
                                 <tbody className="divide-y divide-gray-100">
                                     {data.map((item, index) => (
-                                        <tr
-                                            key={index}
-                                            className="hover:bg-gradient-to-r from-[var(--primary)]/10 to-[var(--tertiary)]/10 transition-colors"
-                                        >
-                                            <td className="p-2 sm:p-3 md:p-4 font-medium text-gray-800 text-xs sm:text-sm md:text-base whitespace-nowrap">
-                                                {item.product}
-                                            </td>
+                                        <tr key={index} className="hover:bg-gradient-to-r from-[var(--primary)]/10 to-[var(--tertiary)]/10 transition-colors">
+                                            <td className="p-2 sm:p-3 md:p-4 font-medium text-gray-800 text-xs sm:text-sm md:text-base whitespace-nowrap">{item.product}</td>
                                             <td className="p-2 sm:p-3 md:p-4 text-gray-700">
                                                 <div className="flex flex-wrap gap-1 sm:gap-2">
                                                     {item.strengths[0].split(" / ").map((str, i) => (
-                                                        <span
-                                                            key={i}
-                                                            className="px-2 py-0.5 sm:px-2.5 sm:py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium whitespace-nowrap"
-                                                        >
+                                                        <span key={i} className="px-2 py-0.5 sm:px-2.5 sm:py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium whitespace-nowrap">
                                                             {str}
                                                         </span>
                                                     ))}
@@ -265,14 +225,12 @@ const CephalosporinInjection = () => {
                                             </td>
                                             <td className="p-2 sm:p-3 md:p-4 text-gray-700">
                                                 <div className="flex flex-wrap gap-1 sm:gap-2">
-                                                    {item.strengths[1] && item.strengths[1].split(" / ").map((str, i) => (
-                                                        <span
-                                                            key={i}
-                                                            className="px-2 py-0.5 sm:px-2.5 sm:py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium whitespace-nowrap"
-                                                        >
-                                                            {str}
-                                                        </span>
-                                                    ))}
+                                                    {item.strengths[1] &&
+                                                        item.strengths[1].split(" / ").map((str, i) => (
+                                                            <span key={i} className="px-2 py-0.5 sm:px-2.5 sm:py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium whitespace-nowrap">
+                                                                {str}
+                                                            </span>
+                                                        ))}
                                                 </div>
                                             </td>
                                         </tr>
@@ -287,16 +245,16 @@ const CephalosporinInjection = () => {
                         {[
                             {
                                 title: "Broad Spectrum",
-                                description: "Effective against resistant Gram-negative and Gram-positive organisms"
+                                description: "Effective against resistant Gram-negative and Gram-positive organisms",
                             },
                             {
                                 title: "β-lactamase Stability",
-                                description: "Resistant to most β-lactamase enzymes"
+                                description: "Resistant to most β-lactamase enzymes",
                             },
                             {
                                 title: "Dosing Flexibility",
-                                description: "Multiple strengths for tailored therapy"
-                            }
+                                description: "Multiple strengths for tailored therapy",
+                            },
                         ].map((item, index) => (
                             <motion.div
                                 key={index}
@@ -304,20 +262,16 @@ const CephalosporinInjection = () => {
                                 whileHover={{
                                     y: -5,
                                     scale: 1.02,
-                                    backgroundColor: "rgba(var(--primary-rgb), 0.08)"
+                                    backgroundColor: "rgba(var(--primary-rgb), 0.08)",
                                 }}
                                 transition={{
                                     type: "spring",
                                     stiffness: 300,
-                                    damping: 10
+                                    damping: 10,
                                 }}
                             >
-                                <h3 className="font-bold text-[var(--primary)] mb-1 sm:mb-2 text-sm sm:text-base">
-                                    {item.title}
-                                </h3>
-                                <p className="text-xs sm:text-sm text-gray-600">
-                                    {item.description}
-                                </p>
+                                <h3 className="font-bold text-[var(--primary)] mb-1 sm:mb-2 text-sm sm:text-base">{item.title}</h3>
+                                <p className="text-xs sm:text-sm text-gray-600">{item.description}</p>
                             </motion.div>
                         ))}
                     </div>
@@ -340,7 +294,7 @@ const CephalosporinInjection = () => {
                                     </svg>
                                 ),
                                 title: "Respiratory Infections",
-                                description: "Pneumonia, bronchitis, and other respiratory tract infections"
+                                description: "Pneumonia, bronchitis, and other respiratory tract infections",
                             },
                             {
                                 icon: (
@@ -349,7 +303,7 @@ const CephalosporinInjection = () => {
                                     </svg>
                                 ),
                                 title: "Skin Infections",
-                                description: "Cellulitis, abscesses, and wound infections"
+                                description: "Cellulitis, abscesses, and wound infections",
                             },
                             {
                                 icon: (
@@ -358,7 +312,7 @@ const CephalosporinInjection = () => {
                                     </svg>
                                 ),
                                 title: "UTI",
-                                description: "Urinary tract infections including pyelonephritis"
+                                description: "Urinary tract infections including pyelonephritis",
                             },
                             {
                                 icon: (
@@ -367,21 +321,19 @@ const CephalosporinInjection = () => {
                                     </svg>
                                 ),
                                 title: "Surgical Prophylaxis",
-                                description: "Prevention of surgical site infections"
-                            }
+                                description: "Prevention of surgical site infections",
+                            },
                         ].map((app, index) => (
                             <motion.div
                                 key={index}
                                 className="bg-[var(--primary)]/5 p-4 sm:p-5 md:p-6 rounded-lg sm:rounded-xl border border-[var(--primary)]/10"
                                 whileHover={{
                                     y: -3,
-                                    boxShadow: "0 8px 12px -4px rgba(0, 0, 0, 0.1)"
+                                    boxShadow: "0 8px 12px -4px rgba(0, 0, 0, 0.1)",
                                 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
-                                <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4">
-                                    {app.icon}
-                                </div>
+                                <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center mb-3 sm:mb-4">{app.icon}</div>
                                 <h3 className="font-bold text-gray-800 mb-1 sm:mb-2 text-sm sm:text-base">{app.title}</h3>
                                 <p className="text-xs sm:text-sm text-gray-600">{app.description}</p>
                             </motion.div>

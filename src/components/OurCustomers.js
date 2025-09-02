@@ -105,28 +105,28 @@ const OurCustomers = () => {
                 <svg viewBox="0 0 100 200" className="w-full h-full">
                     {/* Syringe Body */}
                     <rect x="30" y="60" width="40" height="100" rx="5" fill="#e5e7eb" stroke="#9ca3af" strokeWidth="1.5" />
-                    
+
                     {/* Plunger */}
                     <rect x="35" y="40" width="30" height="20" rx="3" fill="#d1d5db" stroke="#9ca3af" strokeWidth="1" />
-                    
+
                     {/* Plunger Handle */}
                     <rect x="32" y="30" width="36" height="10" rx="2" fill="#9ca3af" />
-                    
+
                     {/* Liquid inside syringe */}
                     <rect x="32" y="120" width="36" height="40" fill="#60a5fa" />
-                    
+
                     {/* Measurement markings */}
                     <line x1="25" y1="80" x2="30" y2="80" stroke="#9ca3af" strokeWidth="1.5" />
                     <line x1="25" y1="100" x2="30" y2="100" stroke="#9ca3af" strokeWidth="1.5" />
                     <line x1="25" y1="120" x2="30" y2="120" stroke="#9ca3af" strokeWidth="1.5" />
                     <line x1="25" y1="140" x2="30" y2="140" stroke="#9ca3af" strokeWidth="1.5" />
-                    
+
                     {/* Needle Hub */}
                     <rect x="35" y="160" width="30" height="10" rx="2" fill="#9ca3af" />
-                    
+
                     {/* Needle */}
                     <path d="M50 170 L50 190 L47 190 L50 195 L53 190 L50 190" fill="#6b7280" />
-                    
+
                     {/* Needle Tip */}
                     <polygon points="50,195 47,200 53,200" fill="#6b7280" />
                 </svg>
@@ -156,8 +156,8 @@ const OurCustomers = () => {
 
                             {/* Description */}
                             <p className="max-w-4xl text-lg text-gray-800 leading-relaxed max-md:text-base max-sm:text-sm">
-                                Hygine Lifesciences Pvt Ltd serves a diverse set of customers worldwide. Our customers include healthcare providers, hospitals, pharmaceutical distributors, and government healthcare agencies. With commitment to
-                                quality and affordability, we ensure our Dry powder Injectable products meet the stringent requirements of our valued customers across various regions of India and the world.
+                                Hygine Lifesciences Pvt Ltd serves a diverse set of customers worldwide. Our customers include healthcare providers, hospitals, pharmaceutical distributors, and government healthcare agencies. With commitment
+                                to quality and affordability, we ensure our Dry powder Injectable products meet the stringent requirements of our valued customers across various regions of India and the world.
                             </p>
                         </div>
 
