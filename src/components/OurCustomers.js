@@ -5,17 +5,19 @@ import { useEffect, useState } from "react";
 const OurCustomers = () => {
     // Sample customer logos - you can replace these with actual customer logos
     const customerLogos = [
-        { id: 1, name: "Customer 1", src: "/img/our-customers/customer-1.webp" },
-        { id: 2, name: "Customer 2", src: "/img/our-customers/customer-2.webp" },
-        { id: 3, name: "Customer 3", src: "/img/our-customers/customer-3.webp" },
-        { id: 4, name: "Customer 4", src: "/img/our-customers/customer-4.webp" },
-        { id: 5, name: "Customer 5", src: "/img/our-customers/customer-5.webp" },
-        { id: 6, name: "Customer 6", src: "/img/our-customers/customer-6.webp" },
-        { id: 7, name: "Customer 7", src: "/img/our-customers/customer-7.webp" },
-        { id: 8, name: "Customer 8", src: "/img/our-customers/customer-8.webp" },
-        { id: 9, name: "Customer 9", src: "/img/our-customers/customer-9.webp" },
-        { id: 10, name: "Customer 10", src: "/img/our-customers/customer-10.webp" },
-        { id: 11, name: "Customer 11", src: "/img/our-customers/customer-11.webp" },
+        { id: 1, name: "Customer 1", src: "/img/our-customers/aster-logo.svg" },
+        { id: 2, name: "Customer 2", src: "/img/our-customers/brd-logo.png" },
+        { id: 3, name: "Customer 3", src: "/img/our-customers/cablin-logo.webp" },
+        { id: 4, name: "Customer 4", src: "/img/our-customers/cureton.webp" },
+        { id: 5, name: "Customer 5", src: "/img/our-customers/health-kind-logo.webp" },
+        { id: 6, name: "Customer 6", src: "/img/our-customers/knvm-medhouse.png" },
+        { id: 7, name: "Customer 7", src: "/img/our-customers/l-t-logo.webp" },
+        { id: 8, name: "Customer 8", src: "/img/our-customers/matu-logo.png" },
+        { id: 9, name: "Customer 9", src: "/img/our-customers/medhouse-logo.png" },
+        { id: 10, name: "Customer 10", src: "/img/our-customers/medilente-logo.png" },
+        { id: 11, name: "Customer 11", src: "/img/our-customers/senate-labs.png" },
+        { id: 11, name: "Customer 11", src: "/img/our-customers/wockhardt.png" },
+        { id: 11, name: "Customer 11", src: "/img/our-customers/zydus-logo.png" },
     ];
 
     // Animated injection/vial component with different paths and speeds
@@ -148,7 +150,7 @@ const OurCustomers = () => {
                 <div className="relative z-10 mx-auto max-w-[1400px] px-8 max-lg:px-6 max-md:px-4 max-sm:px-2">
                     <div className="flex flex-row lg:items-start gap-8 max-lg:flex-col max-md:flex-col max-sm:flex-col max-lg:gap-0 max-md:gap-0 max-sm:gap-0">
                         {/* First Column - 4/6 width - Heading and Paragraph */}
-                        <div className="w-full lg:w-7/12 mb-0 max-lg:mb-8 max-md:mb-6 max-sm:mb-4">
+                        <div className="w-full lg:w-6/12 mb-0 max-lg:mb-8 max-md:mb-6 max-sm:mb-4">
                             {/* Heading */}
                             <h2 className="text-5xl font-bold tracking-tight text-gray-900 mb-6 max-md:text-3xl max-lg:text-4xl max-sm:text-2xl max-lg:mb-5 max-md:mb-4 max-sm:mb-3">Our Customers</h2>
 
@@ -160,9 +162,9 @@ const OurCustomers = () => {
                         </div>
 
                         {/* Second Column - 2/6 width - Customer Logos */}
-                        <div className="w-full lg:w-5/12">
+                        <div className="w-full lg:w-6/12">
                             {/* Customer Logos Grid - 3 columns, multiple rows */}
-                            <div className="grid grid-cols-4 gap-4 max-md:gap-3 max-sm:gap-2">
+                            <div className="grid grid-cols-5 gap-4 max-md:gap-3 max-sm:gap-2">
                                 {customerLogos.map((customer) => (
                                     <div key={customer.id} className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100 p-2 max-sm:p-0.5">
                                         <img src={customer.src || "/placeholder.svg"} alt={customer.name} className="h-12 w-32 object-contain" />
