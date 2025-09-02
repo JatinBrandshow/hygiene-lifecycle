@@ -152,11 +152,7 @@ const CarbapenemInjection = () => {
                             <tbody className="divide-y divide-gray-100">
                                 {[
                                     { product: "Meropenem", strengths: "2000 mg, 1000 mg, 500 mg, 250 mg, 125 mg" },
-                                    { product: "Meropenem + Sulbactam", strengths: "1000 mg + 1000 mg, 1000 mg + 500 mg, 500 mg + 250 mg" },
-                                    { product: "Meropenem + Tazobactam", strengths: "1000 mg + 125 mg" },
-                                    { product: "Imipenem + Cilastatin", strengths: "1000 mg + 1000 mg, 500 mg + 500 mg, 250 mg + 250 mg" },
-                                    { product: "Doripenem", strengths: "500 mg, 250 mg" },
-                                    { product: "Aztreonam", strengths: "2000 mg, 1000 mg, 500 mg, 250 mg" },
+
                                 ].map((item, index) => (
                                     <tr key={index} className="group hover:bg-gradient-to-r from-[var(--primary)]/10 to-[var(--tertiary)]/10 transition-colors duration-300 ease-in-out">
                                         <td className="p-5 font-semibold text-gray-800 group-hover:text-[var(--primary)] transition-colors duration-300">
