@@ -7,18 +7,19 @@ import { FaSyringe } from "react-icons/fa";
 
 const DomesticCustomers = () => {
   const companyLogos = [
-    { src: '/img/domestic-customer/client-lo-1.webp', alt: 'Company 1' },
-    { src: '/img/domestic-customer/client-lo-2.webp', alt: 'Company 2' },
-    { src: '/img/domestic-customer/client-lo-3.webp', alt: 'Company 3' },
-    { src: '/img/domestic-customer/client-lo-4.webp', alt: 'Company 4' },
-    { src: '/img/domestic-customer/client-lo-5.webp', alt: 'Company 5' },
-    { src: '/img/domestic-customer/client-lo-6.webp', alt: 'Company 6' },
-    { src: '/img/domestic-customer/client-lo-7.webp', alt: 'Company 7' },
-    { src: '/img/domestic-customer/client-lo-8.webp', alt: 'Company 8' },
-    { src: '/img/domestic-customer/client-lo-9.webp', alt: 'Company 9' },
-    { src: '/img/domestic-customer/client-lo-10.webp', alt: 'Company 10' },
-    { src: '/img/domestic-customer/client-lo-11.webp', alt: 'Company 11' },
-    { src: '/img/domestic-customer/client-lo-12.webp', alt: 'Company 12' }
+    { src: '/img/domestic-customer/aster-logo.webp', alt: 'Company 1' },
+    { src: '/img/domestic-customer/brd-logo.webp', alt: 'Company 2' },
+    { src: '/img/domestic-customer/cablin-logo.webp', alt: 'Company 3' },
+    { src: '/img/domestic-customer/cureton.webp', alt: 'Company 4' },
+    { src: '/img/domestic-customer/health-kind-logo.webp', alt: 'Company 5' },
+    { src: '/img/domestic-customer/knvm-medhouse.webp', alt: 'Company 6' },
+    { src: '/img/domestic-customer/l-t-logo.webp', alt: 'Company 7' },
+    { src: '/img/domestic-customer/matu-logo.webp', alt: 'Company 8' },
+    { src: '/img/domestic-customer/medhouse-logo.webp', alt: 'Company 9' },
+    { src: '/img/domestic-customer/medilente-logo.webp', alt: 'Company 10' },
+    { src: '/img/domestic-customer/senate-labs.webp', alt: 'Company 11' },
+    { src: '/img/domestic-customer/wockhardt.webp', alt: 'Company 12' },
+    { src: '/img/domestic-customer/zydus-logo.webp', alt: 'Company 13' }
   ];
 
   return (
@@ -88,7 +89,7 @@ const DomesticCustomers = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 items-center justify-center">
+          <div className="grid grid-cols-5 gap-4 sm:gap-6 items-center justify-center max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2">
             {companyLogos.map((logo, index) => (
               <div 
                 key={index} 

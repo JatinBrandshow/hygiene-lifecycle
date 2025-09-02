@@ -5,19 +5,19 @@ import { useEffect, useState } from "react";
 const OurCustomers = () => {
     // Sample customer logos - you can replace these with actual customer logos
     const customerLogos = [
-        { id: 1, name: "Customer 1", src: "/img/our-customers/aster-logo.svg" },
-        { id: 2, name: "Customer 2", src: "/img/our-customers/brd-logo.png" },
+        { id: 1, name: "Customer 1", src: "/img/our-customers/aster-logo.webp" },
+        { id: 2, name: "Customer 2", src: "/img/our-customers/brd-logo.webp" },
         { id: 3, name: "Customer 3", src: "/img/our-customers/cablin-logo.webp" },
         { id: 4, name: "Customer 4", src: "/img/our-customers/cureton.webp" },
         { id: 5, name: "Customer 5", src: "/img/our-customers/health-kind-logo.webp" },
-        { id: 6, name: "Customer 6", src: "/img/our-customers/knvm-medhouse.png" },
+        { id: 6, name: "Customer 6", src: "/img/our-customers/knvm-medhouse.webp" },
         { id: 7, name: "Customer 7", src: "/img/our-customers/l-t-logo.webp" },
-        { id: 8, name: "Customer 8", src: "/img/our-customers/matu-logo.png" },
-        { id: 9, name: "Customer 9", src: "/img/our-customers/medhouse-logo.png" },
-        { id: 10, name: "Customer 10", src: "/img/our-customers/medilente-logo.png" },
-        { id: 11, name: "Customer 11", src: "/img/our-customers/senate-labs.png" },
-        { id: 12, name: "Customer 11", src: "/img/our-customers/wockhardt.png" },
-        { id: 13, name: "Customer 11", src: "/img/our-customers/zydus-logo.png" },
+        { id: 8, name: "Customer 8", src: "/img/our-customers/matu-logo.webp" },
+        { id: 9, name: "Customer 9", src: "/img/our-customers/medhouse-logo.webp" },
+        { id: 10, name: "Customer 10", src: "/img/our-customers/medilente-logo.webp" },
+        { id: 11, name: "Customer 11", src: "/img/our-customers/senate-labs.webp" },
+        { id: 12, name: "Customer 11", src: "/img/our-customers/wockhardt.webp" },
+        { id: 13, name: "Customer 11", src: "/img/our-customers/zydus-logo.webp" },
     ];
 
     // Animated injection/vial component with different paths and speeds
