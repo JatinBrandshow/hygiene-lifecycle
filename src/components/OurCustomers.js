@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const OurCustomers = () => {
     // Sample customer logos - you can replace these with actual customer logos
     const customerLogos = [
-        { id: 1, name: "Customer 1", src: "/img/our-customers/aster-logo.webp" },
+        { id: 1, name: "Customer 1", src: "/img/our-customers/astam-health-logo.webp" },
         { id: 2, name: "Customer 2", src: "/img/our-customers/brd-logo.webp" },
         { id: 3, name: "Customer 3", src: "/img/our-customers/cablin-logo.webp" },
         { id: 4, name: "Customer 4", src: "/img/our-customers/cureton.webp" },

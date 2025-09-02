@@ -7,7 +7,7 @@ import { FaSyringe } from "react-icons/fa";
 
 const DomesticCustomers = () => {
     const companyLogos = [
-        { src: "/img/domestic-customer/aster-logo.webp", alt: "Company 1" },
+        { src: "/img/domestic-customer/astam-health-logo.webp", alt: "Company 1" },
         { src: "/img/domestic-customer/brd-logo.webp", alt: "Company 2" },
         { src: "/img/domestic-customer/cablin-logo.webp", alt: "Company 3" },
         { src: "/img/domestic-customer/cureton.webp", alt: "Company 4" },
