@@ -13,7 +13,7 @@ const DomesticCustomers = () => {
         { src: "/img/domestic-customer/cureton.webp", alt: "Company 4" },
         { src: "/img/domestic-customer/health-kind-logo.webp", alt: "Company 5" },
         { src: "/img/domestic-customer/knvm-medhouse.webp", alt: "Company 6" },
-        { src: "/img/domestic-customer/l-t-logo.webp", alt: "Company 7" },
+        // { src: "/img/domestic-customer/l-t-logo.webp", alt: "Company 7" },
         { src: "/img/domestic-customer/matu-logo.webp", alt: "Company 8" },
         { src: "/img/domestic-customer/medhouse-logo.webp", alt: "Company 9" },
         { src: "/img/domestic-customer/medilente-logo.webp", alt: "Company 10" },

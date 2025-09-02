@@ -11,7 +11,7 @@ const OurCustomers = () => {
         { id: 4, name: "Customer 4", src: "/img/our-customers/cureton.webp" },
         { id: 5, name: "Customer 5", src: "/img/our-customers/health-kind-logo.webp" },
         { id: 6, name: "Customer 6", src: "/img/our-customers/knvm-medhouse.webp" },
-        { id: 7, name: "Customer 7", src: "/img/our-customers/l-t-logo.webp" },
+        // { id: 7, name: "Customer 7", src: "/img/our-customers/l-t-logo.webp" },
         { id: 8, name: "Customer 8", src: "/img/our-customers/matu-logo.webp" },
         { id: 9, name: "Customer 9", src: "/img/our-customers/medhouse-logo.webp" },
         { id: 10, name: "Customer 10", src: "/img/our-customers/medilente-logo.webp" },
