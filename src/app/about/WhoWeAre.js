@@ -24,7 +24,7 @@ export default function WhoWeAre() {
           className="object-top"
         />
         <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 text-center">
-          <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
+          <h1 className="text-white text-2xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in drop-shadow-lg">
             Who We Are
           </h1>
           <div className="w-24 h-1.5 bg-secondary mb-8" />
@@ -145,7 +145,7 @@ export default function WhoWeAre() {
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl md:text-4xl font-bold text-gray-900 mb-4">
               Why Choose Hygine Lifesciences Pvt Ltd ?
             </h3>
             <div className="w-20 h-1.5 bg-secondary mx-auto" />
