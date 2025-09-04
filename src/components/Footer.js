@@ -11,11 +11,11 @@ const Footer = () => {
         { name: "R&D", path: "/research-and-development" },
         { name: "Domestic Customers", path: "/domestic-customers" },
         { name: "Career", path: "/career" },
-        { name: "Contact Us", path: "/contact" }
+        { name: "Contact Us", path: "/contact" },
     ];
 
     const headOfficeLocation = "Plot No - 736-C ,sector 37 , pace city 2, Gurugram, Haryana 122001";
-    const manufacturingPlantLocation = "Plot No - 471/2011, Bhatoli Kalan, Baddi (H.P.), India";
+    const manufacturingPlantLocation = "khasra no - 2011/471 Baddi, solan,h.p";
 
     return (
         <footer className="relative bg-gradient-tertiary text-white overflow-hidden">
@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="relative z-10">
                 {/* Main Footer Content */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {/* Quick Links */}
                         <div className="space-y-6">
                             <div>
@@ -57,9 +57,9 @@ const Footer = () => {
                             </div>
                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-secondary/30 transition-colors">
                                 <div className="aspect-video bg-primary/20 rounded-lg overflow-hidden mb-3">
-                                    <iframe 
+                                    <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76489.43593029918!2d76.95329759897987!3d28.39757455560722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d176ed2333603%3A0x92014dae0f82a3e3!2z4KS54KS-4KSH4KSc4KS_4KSoIOCkj-Ckr-CksOCkn-Clh-CklSDgpIfgpILgpKHgpL_gpK_gpL4g4KSq4KWA4KS14KWA4KSf4KWA4KWwIOCkj-CksuCkn-ClgOCkoeClgA!5e0!3m2!1shi!2sin!4v1756371500183!5m2!1shi!2sin"
-                                           width="100%"
+                                        width="100%"
                                         height="100%"
                                         style={{ border: 0 }}
                                         allowFullScreen
@@ -67,9 +67,7 @@ const Footer = () => {
                                         className="rounded-lg"
                                     ></iframe>
                                 </div>
-                                <p className="text-sm text-gray-300">
-                                    {headOfficeLocation}
-                                </p>
+                                <p className="text-sm text-gray-300">{headOfficeLocation}</p>
                             </div>
                         </div>
 
@@ -84,7 +82,7 @@ const Footer = () => {
                             </div>
                             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-secondary/30 transition-colors">
                                 <div className="aspect-video bg-primary/20 rounded-lg overflow-hidden mb-3">
-                                    <iframe 
+                                    <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.755656179026!2d76.7934153151365!3d31.21590298145872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905a5a3a6e5a6a9%3A0x3b0d5e5e5e5e5e5e!2sBaddi%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
                                         width="100%"
                                         height="100%"
@@ -94,9 +92,7 @@ const Footer = () => {
                                         className="rounded-lg"
                                     ></iframe>
                                 </div>
-                                <p className="text-sm text-gray-300">
-                                    {manufacturingPlantLocation}
-                                </p>
+                                <p className="text-sm text-gray-300">{manufacturingPlantLocation}</p>
                             </div>
                         </div>
 
@@ -108,35 +104,41 @@ const Footer = () => {
                             </div>
 
                             <div className="space-y-4">
-                                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/10 hover:border-secondary/30 transition-colors">
-                                    <h4 className="font-semibold text-secondary mb-3">Hygine Lifesciences Pvt Ltd</h4>
+                                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3.5 border border-white/10 hover:border-secondary/30 transition-colors">
+                                    <h4 className="font-semibold text-secondary mb-2">Hygine Lifesciences Pvt Ltd</h4>
 
                                     <div className="space-y-3 text-sm">
                                         <div className="flex items-start gap-3">
                                             <MapPin className="w-4 h-4 mt-0.5 text-secondary flex-shrink-0" />
-                                            <p className="text-gray-300">
-                                                {manufacturingPlantLocation}
-                                            </p>
+                                            <p className="text-gray-300">{manufacturingPlantLocation}</p>
                                         </div>
 
-                                        <div className="flex items-center gap-3">
-                                            <Phone className="w-4 h-4 text-secondary flex-shrink-0" />
-                                            <div className="text-gray-300">
-                                                <p>+91 99103 09423</p>
+                                        <div className="flex flex-col gap-2">
+                                            <div className="flex items-center gap-3">
+                                                <Phone className="w-4 h-4 text-secondary flex-shrink-0" />
+                                                <p className="text-gray-300">+91 99103 09423</p>
+                                            </div>
+                                            <div className="flex items-center gap-3">
+                                                <Phone className="w-4 h-4 text-secondary flex-shrink-0" />
+                                                <p className="text-gray-300">+91 98765 43210</p>
                                             </div>
                                         </div>
 
-                                        <div className="flex items-start gap-3">
-                                            <Mail className="w-4 h-4 mt-0.5 text-secondary flex-shrink-0" />
-                                            <div className="text-gray-300 space-y-1">
-                                                <p>info@hyginelifesciences.com</p>
+                                        <div className="flex flex-col gap-2">
+                                            <div className="flex items-start gap-3">
+                                                <Mail className="w-4 h-4 mt-0.5 text-secondary flex-shrink-0" />
+                                                <p className="text-gray-300">info@hyginelifesciences.com</p>
+                                            </div>
+                                            <div className="flex items-start gap-3">
+                                                <Mail className="w-4 h-4 mt-0.5 text-secondary flex-shrink-0" />
+                                                <p className="text-gray-300">Rk2singh@yahoo.co.in</p>
                                             </div>
                                         </div>
 
                                         <div className="flex items-center gap-3">
                                             <Globe className="w-4 h-4 text-secondary flex-shrink-0" />
-                                            <Link 
-                                                href="https://www.hygine-lifesciences.in" 
+                                            <Link
+                                                href="https://www.hygine-lifesciences.in"
                                                 className="text-secondary hover:text-primary transition-colors duration-300 underline decoration-dotted underline-offset-2"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -160,12 +162,7 @@ const Footer = () => {
                                 <div className="hidden sm:block w-px h-4 bg-gray-600"></div>
                                 <p>
                                     Website Designed & Developed by{" "}
-                                    <Link 
-                                        href="https://brandshow.in/" 
-                                        className="text-secondary hover:text-white transition-colors duration-300 underline decoration-dotted underline-offset-2"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
+                                    <Link href="https://brandshow.in/" className="text-secondary hover:text-white transition-colors duration-300 underline decoration-dotted underline-offset-2" target="_blank" rel="noopener noreferrer">
                                         BrandShow
                                     </Link>
                                 </p>
