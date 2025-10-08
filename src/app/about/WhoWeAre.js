@@ -59,7 +59,7 @@ export default function WhoWeAre() {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-10">
-            <span className="relative inline-block pb-2">
+            <span className="relative inline-block pb-2 text-gray-900">
               Empowering Global Health
               <span className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-primary to-secondary transform" />
             </span>
