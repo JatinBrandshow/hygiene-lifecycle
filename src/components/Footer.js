@@ -15,7 +15,7 @@ const Footer = () => {
     ];
 
     const headOfficeLocation = "Plot No - 736-C ,sector 37 , pace city 2, Gurugram, Haryana 122001";
-    const manufacturingPlantLocation = "Khasra no - 2011/471 Baddi, Solan,H.P";
+    const manufacturingPlantLocation = "1st Floor, Khasra No, 2011/471, Bhatolikalan Solan, (H.P)";
 
     return (
         <footer className="relative bg-gradient-tertiary text-white overflow-hidden">
@@ -120,7 +120,7 @@ const Footer = () => {
                                             </div>
                                             <div className="flex items-center gap-3">
                                                 <Phone className="w-4 h-4 text-secondary flex-shrink-0" />
-                                                <p className="text-gray-300">+91 98765 43210</p>
+                                                <p className="text-gray-300">+91 98101 85577</p>
                                             </div>
                                         </div>
 
