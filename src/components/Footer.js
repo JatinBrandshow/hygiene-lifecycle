@@ -15,7 +15,7 @@ const Footer = () => {
     ];
 
     const headOfficeLocation = "Plot No - 736-C ,sector 37 , pace city 2, Gurugram, Haryana 122001";
-    const manufacturingPlantLocation = "khasra no - 2011/471 Baddi, solan,h.p";
+    const manufacturingPlantLocation = "Khasra no - 2011/471 Baddi, Solan,H.P";
 
     return (
         <footer className="relative bg-gradient-tertiary text-white overflow-hidden">

@@ -36,7 +36,7 @@ const CarbapenemInjection = () => {
                         </h1>
                         <p className="text-xl text-blue-100 mb-8 max-w-lg">Comprehensive range of high-potency carbapenem antibiotics</p>
                         <div className="w-32 h-1.5 bg-gradient-to-r from-[var(--secondary)] to-[var(--primary-light)] rounded-full mb-8"></div>
-                        <p className="text-blue-100 max-w-xl">Hygine Lifesciences Pvt Ltd complete carbapenem portfolio includes seven specialized formulations for treating serious infections with enhanced efficacy and safety profiles.</p>
+                        <p className="text-blue-100 max-w-xl">Hygine Lifesciences Pvt Ltd complete carbapenem portfolio includes specialized formulations for treating serious infections with enhanced efficacy and safety profiles.</p>
                     </div>
                     <div className="md:w-1/2 flex justify-center w-full">
                         <div className="relative w-full h-48 md:h-80">

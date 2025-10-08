@@ -27,7 +27,7 @@ export default function Contact() {
     {
       title: "MANUFACTURING PLANT",
       location: "Baddi",
-      address: "11, Industrial Area, Katha Bhatoli khalan, Baddi (H.P.), India",
+      address: "Khasra no. 2011/471, Bhatali Kalam, Baddi, Solan (H.P), 173205, India",
       phone: "+91 99103 09423",
       icon: <FaMapMarkerAlt />,
       hours: "Mon-Sat: 8:00 AM - 5:00 PM",

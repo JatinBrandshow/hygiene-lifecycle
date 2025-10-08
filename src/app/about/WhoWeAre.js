@@ -88,7 +88,7 @@ export default function WhoWeAre() {
                   <strong className="text-primary font-semibold">Hygine Lifesciences Pvt Ltd</strong> is a{" "}
                   <strong className="text-secondary font-semibold">WHO GMP</strong> certified pharmaceutical
                   company with a world-class manufacturing plant in{" "}
-                  <strong className="text-primary font-semibold">Baddi (H.P.), India</strong>.
+                  <strong className="text-primary font-semibold">Khasra no. 2011/471, Bhatali Kalam, Baddi, Solan (H.P), 173205, India</strong>.
                 </p>
               </div>
               
